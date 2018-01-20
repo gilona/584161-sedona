@@ -6,18 +6,20 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Седона">
-      </a>
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Седона">
+        </a>
+      </div>
       <nav class="main-nav">
-        <a href="#" class="main-nav__button-close-menu">Закрыть</a>
+        <button class="main-nav__menu-button main-nav__menu-button--close" type="button">Закрыть меню</button>
         <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">ГЛАВНАЯ</a></li>
-            <li class="main-nav__item"><a href="#">ФОТО И ВИДЕО</a></li>
-            <li class="main-nav__item"><a href="#">ФОРМА ОТЗЫВА</a></li>
-            <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+          <li class="main-nav__item"><a href="#">ГЛАВНАЯ</a></li>
+          <li class="main-nav__item"><a href="#">ФОТО И ВИДЕО</a></li>
+          <li class="main-nav__item"><a href="#">ФОРМА ОТЗЫВА</a></li>
+          <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
         </ul>
-        <button class="main-nav__menu-button" href="#" type="button"></button>
+        <button class="main-nav__menu-button main-nav__menu-button--open" type="button">Открыть меню</button>
       </nav>
     </header>
     <main class="page-main">
