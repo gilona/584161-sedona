@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Фото и видео города Седоны</title>
   </head>
   <body>
     <header class="page-header">
@@ -14,104 +14,100 @@
       <nav class="main-nav">
         <button class="main-nav__menu-button main-nav__menu-button--close" type="button">Закрыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">ГЛАВНАЯ</a></li>
-          <li class="main-nav__item"><a href="#">ФОТО И ВИДЕО</a></li>
-          <li class="main-nav__item"><a href="#">ФОРМА ОТЗЫВА</a></li>
+          <li class="main-nav__item"><a href="index.html">ГЛАВНАЯ</a></li>
+          <li class="main-nav__item"><a href="foto.html">ФОТО И ВИДЕО</a></li>
+          <li class="main-nav__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
           <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
         </ul>
         <button class="main-nav__menu-button main-nav__menu-button--open" type="button">Открыть меню</button>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Седона</h1>
-      <section class="fotos">
-        <header class="fotos__header">
-          <h2 class="fotos__title">ФОТО И ВИДЕО</h2>
-          <p class="fotos_introduction">НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСА? ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБТЬ ОБ ПОЛИТИКЕ И ЭКОНОМИКЕ</p>
-        </header>
-        <ul class="fotos__list">
-          <li class="fotos__item">
-            <div class="fotos__image">
-              <a class="fotos__link-image" href="http://placehold.it/350x150" target="_blank">
-                <img src="http://placehold.it/280x281" alt="Народные просторы">
-              </a>
+        <h1 class="page-main__title">ФОТО И ВИДЕО</h1>
+        <p class="page-main_introduction">НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСА? ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБТЬ ОБ ПОЛИТИКЕ И ЭКОНОМИКЕ</p>
+        <div class="fotos">
+          <ul class="fotos__list">
+              <li class="fotos__item">
+                <div class="fotos__image">
+                  <a class="fotos__link-image" href="http://placehold.it/350x150" target="_blank">
+                    <img src="http://placehold.it/280x281" alt="Народные просторы">
+                  </a>
+                </div>
+                <div class="fotos__info-image">
+                  <b class="fotos__name">НЕРОДНЫЕ ПРОСТОРЫ</b>
+                  <div class="fotos__author">
+                    <span class="fotos__author-caption">Автор фото:</span>
+                    <span class="fotos__author-value">Борис</span>
+                  </div>
+                  <div class="fotos__likes">
+                    <a class="fotos__like-link" href="#">like</a>
+                    <span class="fotos__like-counter">1350</span>
+                  </div>
+                </div>
+              </li>
+              <li class="fotos__item">
+                <div class="fotos__image">
+                    <a class="fotos__link-image" href="http://placehold.it/350x150" target="_blank">
+                      <img src="http://placehold.it/280x281" alt="Местная растительность">
+                    </a>
+                </div>
+                <div class="fotos__info-image">
+                  <b class="fotos__name">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</b>
+                  <div class="fotos__author">
+                    <span class="fotos__author-caption">Автор фото:</span>
+                    <span class="fotos__author-value">Сергей</span>
+                  </div>
+                  <div class="fotos__likes">
+                    <a class="fotos__like-link" href="#">like</a>
+                    <span class="fotos__like-counter">143</span>
+                  </div>
+                </div>
+              </li>
+              <li class="fotos__item">
+                <div class="fotos__image">
+                    <a class="fotos__link-image" href="http://placehold.it/350x150" target="_blank">
+                      <img src="http://placehold.it/280x281" alt="Дорога на север">
+                    </a>
+                </div>
+                <div class="fotos__info-image">
+                  <b class="fotos__name">ДОРОГА НА СЕВЕР</b>
+                  <div class="fotos__author">
+                    <span class="fotos__author-caption">Автор фото:</span>
+                    <span class="fotos__author-value">Петр</span>
+                  </div>
+                  <div class="fotos__likes">
+                    <a class="fotos__like-link" href="#">like</a>
+                    <span class="fotos__like-counter">96</span>
+                  </div>
+                </div>
+              </li>
+              <li class="fotos__item">
+                <div class="fotos__image">
+                    <a class="fotos__link-image" href="http://placehold.it/350x150" target="_blank">
+                      <img src="http://placehold.it/280x281" alt="Мост Дьявола">
+                    </a>
+                </div>
+                <div class="fotos__info-image">
+                  <b class="fotos__name">МОСТ ДЬЯВОЛА</b>
+                  <div class="fotos__author">
+                    <span class="fotos__author-caption">Автор фото:</span>
+                    <span class="fotos__author-value">Антон</span>
+                  </div>
+                  <div class="fotos__likes">
+                    <a class="fotos__like-link" href="#">like</a>
+                    <span class="fotos__like-counter">254</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="presentation">
+              <b class="presentation__slogan">ЗАИНТЕРЕСОВАЛИСЬ?</b>
+              <p class="presentation__introduction">СМОТРИТЕ ВИДЕОПРЕЗЕНТАЦИЮ И СКОРЕЕ ЗА БИЛЕТАМИ, ПОКА ОНИ НЕ ПОДОРОЖАЛИ В ОЧЕРЕДНОЙ РАЗ!</p>
+              <video class="presentation__video" poster="http://placehold.it/320x206">
+                <source src="#">
+              </video>
             </div>
-            <div class="fotos__info-image">
-              <b class="fotos__name">НАРОДНЫЕ ПРОСТОРЫ</b>
-              <div class="fotos__author">
-                <span class="fotos__author-caption">Автор фото:</span>
-                <span class="fotos__author-value">Борис</span>
-              </div>
-              <div class="fotos__likes">
-                <a class="fotos__like-link" href="#">like</a>
-                <span class="fotos__like-counter">1350</span>
-              </div>
-            </div>
-          </li>
-          <li class="fotos__item">
-            <div class="fotos__image">
-                <a class="fotos__link-image" href="http://placehold.it/350x150" target="_blank">
-                  <img src="http://placehold.it/280x281" alt="Местная растительность">
-                </a>
-            </div>
-            <div class="fotos__info-image">
-              <b class="fotos__name">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</b>
-              <div class="fotos__author">
-                <span class="fotos__author-caption">Автор фото:</span>
-                <span class="fotos__author-value">Сергей</span>
-              </div>
-              <div class="fotos__likes">
-                <a class="fotos__like-link" href="#">like</a>
-                <span class="fotos__like-counter">143</span>
-              </div>
-            </div>
-          </li>
-          <li class="fotos__item">
-            <div class="fotos__image">
-                <a class="fotos__link-image" href="http://placehold.it/350x150" target="_blank">
-                  <img src="http://placehold.it/280x281" alt="Дорога на север">
-                </a>
-            </div>
-            <div class="fotos__info-image">
-              <b class="fotos__name">ДОРОГА НА СЕВЕР</b>
-              <div class="fotos__author">
-                <span class="fotos__author-caption">Автор фото:</span>
-                <span class="fotos__author-value">Петр</span>
-              </div>
-              <div class="fotos__likes">
-                <a class="fotos__like-link" href="#">like</a>
-                <span class="fotos__like-counter">96</span>
-              </div>
-            </div>
-          </li>
-          <li class="fotos__item">
-            <div class="fotos__image">
-                <a class="fotos__link-image" href="http://placehold.it/350x150" target="_blank">
-                  <img src="http://placehold.it/280x281" alt="Мост Дьявола">
-                </a>
-            </div>
-            <div class="fotos__info-image">
-              <b class="fotos__name">МОСТ ДЬЯВОЛА</b>
-              <div class="fotos__author">
-                <span class="fotos__author-caption">Автор фото:</span>
-                <span class="fotos__author-value">Антон</span>
-              </div>
-              <div class="fotos__likes">
-                <a class="fotos__like-link" href="#">like</a>
-                <span class="fotos__like-counter">254</span>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <section class="presentation">
-        <b class="presentation__slogan">ЗАИНТЕРЕСОВАЛИСЬ?</b>
-        <p class="presentation__introduction">СМОТРИТЕ ВИДЕОПРЕЗЕНТАЦИЮ И СКОРЕЕ ЗА БИЛЕТАМИ, ПОКА ОНИ НЕ ПОДОРОЖАЛИ В ОЧЕРЕДНОЙ РАЗ!</p>
-        <video class="presentation__video" poster="http://placehold.it/320x206">
-          <source src="#">
-        </video>
-      </section>
+        </div>
     </main>
     <footer class="page-footer">
       <b>#VISITSEDONA</b>
