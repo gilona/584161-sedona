@@ -2,33 +2,29 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__logo-wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Седона">
-        </a>
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Седона">
       </div>
       <nav class="main-nav">
-        <button class="main-nav__menu-button main-nav__menu-button--close" type="button">Закрыть меню</button>
+        <button class="main-nav__menu-button-close" type="button">Закрыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">ГЛАВНАЯ</a></li>
-          <li class="main-nav__item"><a href="foto.html">ФОТО И ВИДЕО</a></li>
-          <li class="main-nav__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
-          <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="index.html">ГЛАВНАЯ</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="photo.html">ФОТО И ВИДЕО</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="form.html">ФОРМА ОТЗЫВА</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="#">HTML ACADEMY</a></li>
         </ul>
-        <button class="main-nav__menu-button main-nav__menu-button--open" type="button">Открыть меню</button>
+        <button class="main-nav__menu-button-open" type="button">Открыть меню</button>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-      <section class="reasons">
-        <header class="reasons__header">
-          <h2 class="reasons_title">СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
-          <p class="reasons__introduction">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ ЧЕМ ГРАНД-КОНЬОН</p>
-        </header>
+      <h1 class="page-main__header">СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
+      <p class="page-main__introduction">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД-КОНЬОН</p>
+      <div class="reasons">
         <ul class="reasons__list">
           <li class="reasons__item reasons__item--full">
             <b class="reasons__reason-slogan">НАСТОЯЩИЙ ГОРОДОК</b>
@@ -76,13 +72,14 @@
             <p class="reasons__reason-description">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КОНЬОН И ТОЛПИТСЯ ТАМ</p>
           </li>
         </ul>
-      </section>
+      </div>
 
       <div class="search-hotels">
         <b class="search-hotels__slogan">ЗАИНТЕРЕСОВАЛИСЬ?</b>
         <p class="search-hotels__introduction">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
         <a class="search-hotels__button-search" href="search-hotel.html">НАЙТИ ГОСТИНИЦУ</a>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803022.420770355!2d-114.34882230079047!3d35.324656415819135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1516457278510" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803022.420770355!2d-114.34882230079047!3d35.324656415819135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1516457278510"width="100%" height="450" frameborder="0" style="border:0" allowfullscreen>
+        </iframe>
       </div>
     </main>
     <footer class="page-footer">
@@ -100,9 +97,9 @@
               </li>
           </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__text">РАЗРАБОТАНО</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptives"><img src="http://placehold.it/150x100" alt="HtmlAcademy"></a>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">РАЗРАБОТАНО</span>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptives"><img src="http://placehold.it/40x40" alt="HtmlAcademy"></a>
       </div>
     </footer>
   </body>

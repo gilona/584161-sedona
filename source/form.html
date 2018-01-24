@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Оставить отзыв о Седоне</title>
   </head>
   <body>
@@ -12,88 +13,86 @@
         </a>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__menu-button main-nav__menu-button--close" type="button">Закрыть меню</button>
+        <button class="main-nav__menu-button-close" type="button">Закрыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html">ГЛАВНАЯ</a></li>
-          <li class="main-nav__item"><a href="foto.html">ФОТО И ВИДЕО</a></li>
-          <li class="main-nav__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
-          <li class="main-nav__item"><a href="#">HTML ACADEMY</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="index.html">ГЛАВНАЯ</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="photo.html">ФОТО И ВИДЕО</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="form.html">ФОРМА ОТЗЫВА</a></li>
+          <li class="main-nav__item"><a class="main-nav__item-link" href="#">HTML ACADEMY</a></li>
         </ul>
-        <button class="main-nav__menu-button main-nav__menu-button--open" type="button">Открыть меню</button>
+        <button class="main-nav__menu-button-open" type="button">Открыть меню</button>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="page-main__header">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
       <p class="page-main__introduction">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ СВОЙ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
-      <form class="review" name="interview" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="review__user-name">
-        <legend><b>ПРЕДСТАВЬТЕСЬ:</b></legend>
-        <p>
-          <label class="review__caption" for="first-name">ИМЯ*:</label>
-          <input class="review__value" type="text" id="first-name" required>
-        </p>
-        <p>
-          <label class="review__caption" for="second-name">ФАМИЛИЯ*:</label>
-          <input class="review__value" type="text" id="second-name" required>
-        </p>
-        <p>
-          <label class="review__caption" for="third-name">ОТЧЕСТВО:</label>
-          <input class="review__value" type="text" id="third-name">
-        </p>
-      </fieldset>
-
-      <fieldset class="review__contacts">
-          <legend><b>КОНТАКТНАЯ ИНФОРМАЦИЯ:</b></legend>
+      <form class="review" name="review" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="review__group">
+          <legend>ПРЕДСТАВЬТЕСЬ:</legend>
           <p>
-            <label class="review__caption" for="phone">ТЕЛЕФОН*:</label>
-            <input class="review__value" type="text" id="phone" required placeholder="Введите телефон">
-            <img class="review__image" src="http://placehold.it/60x60" alt="Телефон">
+            <label class="review__caption" for="first-name">ИМЯ*:</label>
+            <input class="review__value" type="text" id="first-name" required>
+          </p>
+          <p>
+            <label class="review__caption" for="second-name">ФАМИЛИЯ*:</label>
+            <input class="review__value" type="text" id="second-name" required>
+          </p>
+          <p>
+            <label class="review__caption" for="third-name">ОТЧЕСТВО:</label>
+            <input class="review__value" type="text" id="third-name">
+          </p>
+        </fieldset>
+
+        <fieldset class="review__group">
+          <legend>КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
+          <p>
+            <label class="review__caption" for="phone" >ТЕЛЕФОН*:</label>
+            <input class="review__value" type="tel" id="phone" required placeholder="Введите телефон">
           </p>
           <p>
             <label class="review__caption" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
             <input class="review__value" type="email" id="email" required placeholder="Введите e-mail">
-            <img class="review__image" src="http://placehold.it/60x60" alt="email">
           </p>
         </fieldset>
 
-        <fieldset class="review__impression">
-          <legend><b>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</b></legend>
+        <fieldset class="review__group">
+          <legend>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
           <p>
-            <input class="review__impression-value" type="radio" name="impression" id="positive-impression" value="positive">
-            <label class="review__impression-caption" for="positive-impression"><b>Скорее положительное</b></label>
+            <input class="review__radio" type="radio" name="impression" id="positive-impression" value="positive">
+            <label class="review__radio-caption" for="positive-impression">Скорее положительное</label>
           </p>
           <p>
-            <input class="review__impression-value" type="radio" name="impression" id="negative-impression" value="negative">
-            <label class="review__impression-caption" for="negative-impression"><b>Скорее отрицательное</b></label>
+            <input class="review__radio" type="radio" name="impression" id="negative-impression" value="negative">
+            <label class="review__radio-caption" for="negative-impression">Скорее отрицательное</label>
           </p>
           <p>
-            <input class="review__impression-value" type="radio" name="impression"  id="unknown-impression" value="unknown">
-            <label class="review__impression-caption" for="unknown-impression"><b>Затрудняюсь ответить</b></label>
+            <input class="review__radio" type="radio" name="impression"  id="unknown-impression" value="unknown">
+            <label class="review__radio-caption" for="unknown-impression">Затрудняюсь ответить</label>
           </p>
         </fieldset>
 
-        <fieldset class="review__visit">
-          <legend><b>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</b></legend>
+        <fieldset class="review__group">
+          <legend>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
           <p>
-            <input class="review__visit-value" type="checkbox" name="bridge-option"  id="bridge-option" value="bridge">
-            <label class="review__visit-caption"><b>Мост Дьявола</b></label>
+            <input class="review__checkbox" type="checkbox" name="bridge-option"  id="bridge-option" value="bridge">
+            <label class="review__checkbox-caption">Мост Дьявола</label>
           </p>
           <p>
-            <input class="review__visit-value" type="checkbox" name="park-option"  id="park-option" value="park">
-            <label class="review__visit-caption"><b>Слайд-парк</b></label>
+            <input class="review__checkbox" type="checkbox" name="park-option"  id="park-option" value="park">
+            <label class="review__checkbox-caption">Слайд-парк</label>
           </p>
           <p>
-            <input class="review__visit-value" type="checkbox" name="mountain-option"  id="mountain-option" value="mountain">
-            <label class="review__visit-caption"><b>Гора-Колокол</b></label>
+            <input class="review__checkbox" type="checkbox" name="mountain-option"  id="mountain-option" value="mountain">
+            <label class="review__checkbox-caption">Гора-Колокол</label>
           </p>
           <p>
-            <input class="review__visit-value" type="checkbox" name="cliffs-option"  id="cliffs-option" value="cliffs">
-            <label class="review__visit-caption"><b>Красные скалы</b></label>
+            <input class="review__checkbox" type="checkbox" name="cliffs-option"  id="cliffs-option" value="cliffs">
+            <label class="review__checkbox-caption">Красные скалы</label>
           </p>
         </fieldset>
-        <fieldset class="review__emotions">
-            <legend><b>ОПИШИТЕ СВОИ ЭМОЦИИ:</b></legend>
-            <textarea class="review__emotions-text" name="emotions" rows="10" cols="45" placeholder="Опишите подробно свои восторги" ></textarea>
+        <fieldset class="review__group">
+            <legend>ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
+            <textarea class="review__group-textarea" name="emotions" rows="10" cols="45" placeholder="Опишите подробно свои восторги" ></textarea>
         </fieldset>
         <button class="review__send-button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
       </form>
@@ -123,9 +122,9 @@
               </li>
           </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <span class="copyright__text">РАЗРАБОТАНО</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptives"><img src="http://placehold.it/40x40" alt="HtmlAcademy"></a>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">РАЗРАБОТАНО</span>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptives"><img src="http://placehold.it/40x40" alt="HtmlAcademy"></a>
       </div>
     </footer>
   </body>
