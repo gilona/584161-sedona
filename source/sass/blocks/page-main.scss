@@ -1,0 +1,22 @@
+@import 'global-var';
+
+.page-main{
+}
+
+.page-main__header{
+  background-color: $white-color;
+  color: $black-color;
+  font-family: $time-new-roman;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.page-main__introduction{
+  background-color: $white-color;
+  color: $light-black-color;
+  font-family: $time-new-roman;
+  font-size: 14px;
+  text-align: center;
+}
+

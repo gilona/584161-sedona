@@ -1,0 +1,37 @@
+@import 'global-var';
+
+.reasons__item{
+  @include reset();
+  list-style: none;
+}
+
+.reasons__slogan-wrapper{
+  height: 133px;
+  background: $light-gray-color;
+  text-align: center;
+  padding-top: 34px;
+}
+
+.reasons__slogan{
+  color: $black-color;
+  font-size: 18px;
+}
+
+.reasons__description{
+  @include reset();
+  color: $light-black-color;
+  font-size: 14px;
+}
+
+.reasons__slogan-wrapper--blue{
+  background: $light-blue-color;
+  }
+
+  .reasons__slogan--white{
+    color: $white-color;
+  }
+
+.reasons__description--white{
+  color: $white-color;
+}
+

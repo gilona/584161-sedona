@@ -1,0 +1,35 @@
+@import 'global-var';
+
+.search-hotels{
+  height: 205px;
+  background-color: $white-color;
+  font-family: ptsans;
+  text-align: center;
+  margin: 33px 0 0px 0;
+}
+
+.search-hotels__slogan{
+  color: $black-color;
+  font-size: 21px;
+}
+
+.search-hotels__introduction{
+  color: $light-black-color;
+  font-size: 14px;
+}
+
+.search-hotels__link-search{
+  display: block;
+  height: 58px;
+  background-color: $light-blue-color;
+  color: $white-color;
+  text-decoration: none;
+  font-weight: bold;
+  font-size:21px;
+  line-height: 58px;
+}
+
+.search-hotels__map{
+  @include reset();
+  margin-top: 50px;
+}

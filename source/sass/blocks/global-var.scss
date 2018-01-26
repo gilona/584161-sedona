@@ -1,0 +1,25 @@
+$white-color: #FFFFFF;
+$light-blue-color: #81b3d2;
+$light-gray-color: #EEEEEE;
+$black-color: #000000;
+$light-black-color: #333333;
+
+$time-new-roman: 'Times New Roman';
+
+@font-face {
+  font-family: "ptsans";
+  src: url("fonts/ptsans.woff") format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ptsans";
+  src: url("fonts/ptsansbold.woff") format('woff');
+  font-weight: bold;
+}
+
+
+@mixin reset(){
+  margin: 0;
+  padding: 0;
+}
