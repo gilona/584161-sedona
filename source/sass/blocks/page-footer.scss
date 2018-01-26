@@ -1,5 +1,20 @@
-@import 'global-var';
-
 .page-footer{
+  margin-top: 41px;
   background-color:  $white-color;
+  height: 230px;
+  text-align: center;
+}
+
+.page-footer__hashtag{
+  color: $black-color;
+  font-family: ptsans;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.page-footer__copyright-text{
+  color: $black-color;
+  font-family: ptsans;
+  font-size: 14px;
+
 }
