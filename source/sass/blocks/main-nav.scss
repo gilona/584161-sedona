@@ -1,22 +1,24 @@
-.main-nav{
-}
-
 .main-nav__item{
   list-style: none;
-  background-color: $light-blue-color;
+  border-bottom: 1px solid #73a7c7;
+  border-top: 1px solid #8fbdda;
 }
 
 .main-nav__item-link{
+  height: 56px;
+  line-height: 56px;
   display: block;
-  color: $white-color;
-  font-family: ptsans;
-  font-weight: bold;
-  font-size: 18px;
-  text-decoration: none;
-  text-align: center;
-  line-height: 40px;
+  @include menu-link(18px);
+}
+
+.main-nav__item-link:hover{
+  @include menu-link-hover();
+}
+
+.main-nav__item-link:active{
+  @include menu-link-active();
 }
 
 .main-nav__menu-button-open-wrapper{
-  background-color: $white-color;
+  background-color: $basic-bg;
 }

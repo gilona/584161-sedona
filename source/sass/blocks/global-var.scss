@@ -1,8 +1,15 @@
-$white-color: #FFFFFF;
-$light-blue-color: #81b3d2;
-$light-gray-color: #EEEEEE;
-$black-color: #000000;
-$light-black-color: #333333;
+$basic-bg: #FFFFFF;
+$menu-color: #FFFFFF;
+$menu-disable-bg: #e5e5e5;
+$menu-bg: #81b3d2;
+$menu-hover-bg: #669ec0;
+$menu-active-bg: #5496bd;
+$menu-active-color: #94b9d2;
+$block-bg: #EEEEEE;
+$input-bg: #f2f2f2;
+$border-group-color: #e5e5e5;
+$basic-color: #000000;
+$description-color: #333333;
 
 $time-new-roman: 'Times New Roman';
 
@@ -22,4 +29,28 @@ $time-new-roman: 'Times New Roman';
 @mixin reset(){
   margin: 0;
   padding: 0;
+}
+
+@mixin menu-link($font-size){
+  background-color: $menu-bg;
+  color: $menu-color;
+  font-family: ptsans;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+}
+
+@mixin menu-link-hover(){
+  background-color: $menu-hover-bg;
+}
+
+@mixin menu-link-active(){
+  background-color: $menu-active-bg;
+  color: $menu-active-color;
+}
+
+@mixin menu-link-disable(){
+  background-color: $menu-disable-bg;
+  color: $menu-color;
 }

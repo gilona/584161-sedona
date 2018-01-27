@@ -1,0 +1,22 @@
+.photos{
+  background-color: $basic-bg;
+}
+
+.photos__item{
+    list-style: none;
+    border: none;
+    border-bottom: solid $border-group-color 1px;
+    padding: 23px 0 23px 0;
+}
+
+.photos__name{
+  font-family: ptsans;
+  font-size: 14px;
+  color: $basic-color;
+  text-transform: uppercase;
+}
+
+.photos__author{
+  font-family: ptsans;
+  font-size: 14px;
+  color: $description-color;

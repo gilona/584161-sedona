@@ -1,0 +1,19 @@
+.presentation{
+  height: 432px;
+  background-color: $basic-bg;
+  text-align: center;
+  padding: 40spx 0 40 0;
+}
+
+.presentation__slogan{
+  font-family: ptsans;
+  font-size: 18px;
+  color: $basic-color;
+  text-transform: uppercase;
+}
+
+.presentation__introduction{
+  font-family: ptsans;
+  font-size: 14px;
+  color: $description-color;
+}

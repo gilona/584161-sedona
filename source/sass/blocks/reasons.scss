@@ -5,31 +5,31 @@
 
 .reasons__slogan-wrapper{
   height: 133px;
-  background: $light-gray-color;
+  background: $block-bg;
   text-align: center;
   padding-top: 34px;
 }
 
 .reasons__slogan{
-  color: $black-color;
+  color: $basic-color;
   font-size: 18px;
 }
 
 .reasons__description{
   @include reset();
-  color: $light-black-color;
+  color: $description-color;
   font-size: 14px;
 }
 
 .reasons__slogan-wrapper--blue{
-  background: $light-blue-color;
+  background: $menu-bg;
   }
 
   .reasons__slogan--white{
-    color: $white-color;
+    color: $menu-color;
   }
 
 .reasons__description--white{
-  color: $white-color;
+  color: $menu-color;
 }
 
