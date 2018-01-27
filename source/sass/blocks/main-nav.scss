@@ -13,10 +13,14 @@
 
 .main-nav__item-link:hover{
   @include menu-link-hover();
+  border-bottom: 1px solid $menu-hover-bg;
+  border-top: 1px solid $menu-hover-bg;
 }
 
 .main-nav__item-link:active{
   @include menu-link-active();
+  border-bottom: 1px solid $menu-active-bg;
+  border-top: 1px solid $menu-active-bg;
 }
 
 .main-nav__menu-button-open-wrapper{
