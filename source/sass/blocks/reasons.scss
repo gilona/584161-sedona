@@ -1,0 +1,33 @@
+.reasons__item{
+  @include reset();
+  list-style: none;
+}
+
+.reasons__slogan-wrapper{
+  height: 133px;
+  background: $block-bg;
+  text-align: center;
+  padding-top: 34px;
+}
+
+.reasons__slogan{
+  color: $basic-color;
+  font-size: 18px;
+}
+
+.reasons__description{
+  @include reset();
+  color: $description-color;
+}
+
+.reasons__slogan-wrapper--blue{
+  background: $menu-bg;
+  }
+
+  .reasons__slogan--white{
+    color: $menu-color;
+  }
+
+.reasons__description--white{
+  color: $menu-color;
+}

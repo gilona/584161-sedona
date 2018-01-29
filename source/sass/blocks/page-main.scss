@@ -1,0 +1,19 @@
+.page-main{
+  padding: 0 0 40px 0;
+}
+
+.page-main__header{
+  background-color: $basic-bg;
+  color: $basic-color;
+  font-family: $time-new-roman;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.page-main__introduction{
+  background-color: $basic-bg;
+  color: $description-color;
+  font-family: $time-new-roman;
+  text-align: center;
+}

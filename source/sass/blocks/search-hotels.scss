@@ -1,0 +1,35 @@
+.search-hotels{
+  height: 622px;
+  background-color: $basic-bg;
+  text-align: center;
+  margin: 33px 0 0px 0;
+}
+
+.search-hotels__slogan{
+  color: $basic-color;
+  font-size: 21px;
+}
+
+.search-hotels__introduction{
+  color: $description-color;
+}
+
+.search-hotels__link-search{
+  display: block;
+  height: 58px;
+  line-height: 58px;
+  @include link-basic(21px);
+}
+
+.search-hotels__link-search:hover{
+  @include link-hover();
+}
+
+.search-hotels__link-search:active{
+  @include link-active();
+}
+
+.search-hotels__map{
+  @include reset();
+  margin-top: 50px;
+}
