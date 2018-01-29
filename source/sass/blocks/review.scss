@@ -3,22 +3,26 @@
   border-bottom: solid $border-group-color 1px;
 }
 
-
 .review__group-header{
   @include review-text();
 }
+
 .review__value{
   @include review-text();
 }
+
 .review__radio-caption{
   @include review-text();
 }
+
 .review__checkbox-caption{
   @include review-text();
 }
+
 .review__group-textarea{
   @include review-text();
 }
+
 .review__send-button{
   @include review-text();
 }
@@ -26,13 +30,12 @@
 .review__group-header{
   padding: 23px 0 23px 0;
 }
+
 .review__wrapper{
   margin: 0px 0 20px 0;
 }
 
 .review__caption{
-  font-family: ptsans;
-  font-size: 14px;
   color: $description-color;
 }
 

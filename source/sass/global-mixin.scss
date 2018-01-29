@@ -1,0 +1,35 @@
+@mixin reset(){
+  margin: 0;
+  padding: 0;
+}
+
+@mixin link-basic($font-size){
+  background-color: $menu-bg;
+  color: $menu-color;
+  font-family: ptsans;
+  font-weight: bold;
+  font-size: $font-size;
+  text-decoration: none;
+  text-align: center;
+}
+
+@mixin link-hover(){
+  background-color: $menu-hover-bg;
+}
+
+@mixin link-active(){
+  background-color: $menu-active-bg;
+  color: $menu-active-color;
+}
+
+@mixin link-disable(){
+  background-color: $menu-disable-bg;
+  color: $menu-color;
+}
+
+@mixin review-text(){
+    font-family: ptsans;
+    font-size: 18px;
+    font-weight: bold;
+    color: $basic-color;
+}

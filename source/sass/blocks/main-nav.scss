@@ -16,6 +16,7 @@
   border-bottom: 1px solid $menu-hover-bg;
   border-top: 1px solid $menu-hover-bg;
 }
+
 .main-nav__item-link:active{
   @include link-active();
   border-bottom: 1px solid $menu-active-bg;
