@@ -8,17 +8,16 @@
   height: 56px;
   line-height: 56px;
   display: block;
-  @include menu-link(18px);
+  @include link-basic(18px);
 }
 
 .main-nav__item-link:hover{
-  @include menu-link-hover();
+  @include link-hover();
   border-bottom: 1px solid $menu-hover-bg;
   border-top: 1px solid $menu-hover-bg;
 }
-
 .main-nav__item-link:active{
-  @include menu-link-active();
+  @include link-active();
   border-bottom: 1px solid $menu-active-bg;
   border-top: 1px solid $menu-active-bg;
 }
