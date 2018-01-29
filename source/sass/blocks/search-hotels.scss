@@ -18,15 +18,15 @@
   display: block;
   height: 58px;
   line-height: 58px;
-  @include menu-link(21px);
+  @include link(21px);
 }
 
 .search-hotels__link-search:hover{
-  @include menu-link-hover();
+  @include link-hover();
 }
 
 .search-hotels__link-search:active{
-  @include menu-link-active();
+  @include link-active();
 }
 
 .search-hotels__map{
