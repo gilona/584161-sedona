@@ -1,3 +1,7 @@
+.reasons__list{
+  @include reset();
+}
+
 .reasons__item{
   @include reset();
   list-style: none;
