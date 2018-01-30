@@ -1,8 +1,9 @@
 body {
-  width: 320px;
-  margin: 0;
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
   padding: 0;
-  font-family: ptsans;
+  font-family: ptsans, "Tahoma", sans-serif;
   font-size: 14px;
   color: $basic-color;
   background-color: $basic-bg;
