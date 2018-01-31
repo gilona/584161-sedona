@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/pp-index.css">
+    <link rel="stylesheet" href="/pixel-glass/styles.css">
+    <script src="/pixel-glass/script.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -25,17 +28,23 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__header">СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
-      <p class="page-main__introduction">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД-КОНЬОН</p>
+      <div class="page-main__header-wrapper">
+        <h1 class="page-main__header">СЕДОНА - НЕБОЛЬШОЙ<br> ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
+        <p class="page-main__introduction">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД-КОНЬОН</p>
+      </div>
       <div class="reasons">
         <ul class="reasons__list">
           <li class="reasons__item reasons__item--full">
-            <div class="reasons__slogan-wrapper reasons__slogan-wrapper--blue">
-              <b class="reasons__slogan reasons__slogan--white">НАСТОЯЩИЙ ГОРОДОК</b>
-              <p class="reasons__description reasons__description--white">-№1-</p>
-              <p class="reasons__description reasons__description--white">СЕДОНА-НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            <div class="reasons__inner reasons__inner--full">
+              <div class="reasons__slogan-wrapper reasons__slogan-wrapper--blue">
+                <b class="reasons__slogan reasons__slogan--white">НАСТОЯЩИЙ ГОРОДОК</b>
+                <p class="reasons__description reasons__description--white">-№1-</p>
+                <p class="reasons__description reasons__description--white">СЕДОНА-НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+              </div>
+              <div class="reasons__image-wrapper">
+                <img src="http://placehold.it/320x256" alt="Городок Седона">
+              </div>
             </div>
-            <img src="http://placehold.it/150x100" alt="Городок Седона">
             <ul class="reasons__list-options">
               <li class="reasons__item-options">
                 <b class="reasons__option-title">ЖИЛЬЕ</b>
@@ -52,38 +61,43 @@
             </ul>
           </li>
 
-          <li class="reasons__item reasons__item--full">
-            <div class="reasons__slogan-wrapper reasons__slogan-wrapper--blue">
-              <b class="reasons__slogan reasons__slogan--white">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b>
-              <p class="reasons__description reasons__description--white">-№2-</p>
-              <p class="reasons__description reasons__description--white">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
-            </div>
-            <img src="http://placehold.it/150x100" alt="Мост Дьявола">
-          </li>
-
           <li class="reasons__item">
-            <div class="reasons__slogan-wrapper">
-              <b class="reasons__slogan">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
-              <p class="reasons__description">-№3-</p>
-              <p class="reasons__description">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+            <div class="reasons__inner">
+                  <div class="reasons__slogan-wrapper reasons__slogan-wrapper--blue">
+                      <b class="reasons__slogan reasons__slogan--white">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b>
+                      <p class="reasons__description reasons__description--white">-№2-</p>
+                      <p class="reasons__description reasons__description--white">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
+                    </div>
+              <div class="reasons__image-wrapper">
+                    <img src="http://placehold.it/320x256" alt="Мост Дьявола">
+              </div>
             </div>
           </li>
+        </ul>
+        <ul class="reasons__other-list">
+            <li class="reasons__other-item">
+                <div class="reasons__slogan-wrapper">
+                  <b class="reasons__slogan">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
+                  <p class="reasons__description">-№3-</p>
+                  <p class="reasons__description">ВСЕ ИНТЕРЕСНЫЕ МЕСТА НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+                </div>
+              </li>
 
-          <li class="reasons__item">
-            <div class="reasons__slogan-wrapper">
-              <b class="reasons__slogan">КРАСИВАЯ ДОРОГА</b>
-              <p class="reasons__description">-№4-</p>
-              <p class="reasons__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
-            </div>
-          </li>
+              <li class="reasons__other-item">
+                <div class="reasons__slogan-wrapper">
+                  <b class="reasons__slogan">КРАСИВАЯ ДОРОГА</b>
+                  <p class="reasons__description">-№4-</p>
+                  <p class="reasons__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+                </div>
+              </li>
 
-          <li class="reasons__item">
-            <div class="reasons__slogan-wrapper">
-              <b class="reasons__slogan">МАЛО ТУРИСТОВ</b>
-              <p class="reasons__description">-№5-</p>
-              <p class="reasons__description">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КОНЬОН И ТОЛПИТСЯ ТАМ</p>
-            </div>
-          </li>
+              <li class="reasons__other-item">
+                <div class="reasons__slogan-wrapper">
+                  <b class="reasons__slogan">МАЛО ТУРИСТОВ</b>
+                  <p class="reasons__description">-№5-</p>
+                  <p class="reasons__description">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КОНЬОН И ТОЛПИТСЯ ТАМ</p>
+                </div>
+              </li>
         </ul>
       </div>
 
@@ -92,26 +106,27 @@
         <p class="search-hotels__introduction">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
         <a class="search-hotels__link-search" href="search-hotel.html">НАЙТИ ГОСТИНИЦУ</a>
         <div class="search-hotels__map">
-            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803022.420770355!2d-114.34882230079047!3d35.324656415819135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1516457278510"width="100%" height="450" frameborder="0" style="border:0" allowfullscreen>
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803022.420770355!2d-114.34882230079047!3d35.324656415819135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1516457278510"width="100%" height="350" frameborder="0" style="border:0" allowfullscreen>
             </iframe>
         </div>
       </div>
     </main>
     <footer class="page-footer">
         <b сlass="page-footer__hashtag">#VISITSEDONA</b>
-        <div class="social">
-          <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
+        <!--div class="social"-->
+          <ul class="page-footer__social-list">
+              <li class="page-footer__social-item">
+                <a class="page-footer__social-link page-footer__social-link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
               </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com" target="_blank">Facebook</a>
+              <li class="page-footer__social-item">
+                  <li class="social__item">
+                <a class="page-footer__social-link page-footer__social-link--facebook" href="https://ru-ru.facebook.com" target="_blank">Facebook</a>
               </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/?gl=RU&hl=ru" target="_blank">Youtube</a>
+              <li class="page-footer__social-item">
+                <a class="page-footer__social-link page-footer__social-link--youtube" href="https://www.youtube.com/?gl=RU&hl=ru" target="_blank">Youtube</a>
               </li>
           </ul>
-      </div>
+      <!--/div-->
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-text">РАЗРАБОТАНО</span>
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptives"><img src="http://placehold.it/40x40" alt="HtmlAcademy"></a>
