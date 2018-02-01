@@ -1,8 +1,14 @@
 .page-main{
   @include reset();
+
 }
 
 .page-main__header-wrapper{
+  height: 192px;
+
+}
+
+.page-main__header-wrapper--home{
   height: 239px;
 }
 
@@ -10,23 +16,30 @@
   @include reset();
   background-color: $basic-bg;
   color: $basic-color;
-  font-family: $time-new-roman;
+  /*font-family: $time-new-roman,$time-new-roman, sans-serif;*/
+  font-family: "ptsans-bold","Tahoma","sans-serif";
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
 }
 
 .page-main__introduction{
   background-color: $basic-bg;
   color: $description-color;
-  font-family: $time-new-roman,$time-new-roman, sans-serif;
+  /*font-family: $time-new-roman,$time-new-roman, sans-serif;*/
+  font-family: "ptsans","Tahoma","sans-serif";
   text-align: center;
 }
 
 
 @media (min-width: 768px){
   .page-main__header-wrapper{
+    height: 245px;
+  }
+
+  .page-main__header-wrapper--home{
     height: 206px;
+    padding-top: 0px;
   }
 }
 
@@ -34,5 +47,6 @@
 @media (min-width: 1200px){
   .page-main__header-wrapper{
     height: 206px;
+    padding-top: 0px;
   }
 }

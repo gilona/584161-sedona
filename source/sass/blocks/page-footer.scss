@@ -1,11 +1,11 @@
 .page-footer{
   /*padding: 40px 0 23px 0;*/
-  background-color: $basic-bg;
   height: 244px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: space-around;
+  background-color: $basic-bg;
 }
 
 /*.page-footer__hashtag{*/
@@ -58,5 +58,6 @@
   .page-footer{
     height: 121px;
     line-height: 121px;
+    justify-content: space-around;
   }
 }

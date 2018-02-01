@@ -5,11 +5,15 @@
     content: "";
     display: block;
     width: 100%;
-    height:390px;
+    height:156px;
     position: relative;
     top: 56px*4+56px;
     background-color: $menu-bg; /*временно*/
   }
+}
+
+.page-header--home::after{
+  height:390px;
 }
 
 .page-header__logo-wrapper{
@@ -27,10 +31,17 @@
       display: block;
       position: static;
       width: 100%;
-      height: 576px;
+      height: 350px;
       background-color: $menu-bg; /*временно*/
   }
 }
+
+  .page-header--home{
+    &::after{
+      width: 100%;
+      height: 576px;
+    }
+  }
 
   .page-header__logo-wrapper{
     position: absolute;
@@ -49,8 +60,14 @@
       /*top:54px;*/
       position: static;
       width: 100%;
-      height: 576px;
+      height: 360px;
       background-color: $menu-bg; /*временно*/
+    }
+  }
+
+  .page-header--home{
+    &::after{
+      height: 576px;
     }
   }
 

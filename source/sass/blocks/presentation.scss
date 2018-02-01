@@ -1,15 +1,36 @@
 .presentation{
-  height: 432px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 448px;
   text-align: center;
-  padding: 40px 0 40 0;
-  margin-bottom: 84px;
-}
+ }
 
 .presentation__slogan{
+
+  font-family: "ptsans-bold","Tahoma","sans-serif";
   font-size: 18px;
   text-transform: uppercase;
 }
 
 .presentation__introduction{
   color: $description-color;
+}
+
+@media (min-width: 768px){
+  .presentation{
+    height: 745px-65px;
+    width: 647px;
+    margin: 0 auto;
+    padding-top: 65px;
+  }
+
+  .presentation__slogan{
+    line-height: 30px;
+    font-size: 30px;
+  }
+  .presentation__video{
+    height: 500px;
+    background-color: #cccccc; /*временно*/
+  }
 }

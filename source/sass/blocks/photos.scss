@@ -1,12 +1,26 @@
 .photos{
   background-color: $basic-bg;
+  border-top: solid 1px $border-group-color ;
 }
 
+.photos__list{
+  @include reset();
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
 .photos__item{
+    height: 416px-46px;
     list-style: none;
     border: none;
-    border-bottom: solid $border-group-color 1px;
+    border-bottom: solid 1px $border-group-color ;
+    margin: 0 auto;
     padding: 23px 0 23px 0;
+}
+
+.photos__image-wrapper{
+  width: 280px;
+  margin: 0 auto;
 }
 
 .photos__name{
@@ -15,4 +29,25 @@
 
 .photos__author{
   color: $description-color;
+}
+
+@media (min-width: 768px){
+
+  .photos__list{
+    width: 650px;
+  }
+
+  .photos__item{
+    width: 325px;
+    height: 347px;
+    padding: 0px;
+    margin: 0;
+    background-color: #cccccc; /*временно*/
+    border: none;
+  }
+  .photos__item--big{
+    width: 650px;
+    height: 479px;
+    background-color: #cccccc; /*временно*/
+  }
 }
