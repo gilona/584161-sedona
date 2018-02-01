@@ -12,12 +12,11 @@
   }
 }
 
-
 .page-header__logo-wrapper{
- position: absolute;
- top: 56px*4;
- left: 80px;
- z-index: 10;
+  position: absolute;
+  top: 56px*4;
+  left: 80px;
+  z-index: 10;
 }
 
 @media (min-width: 768px){
@@ -30,7 +29,7 @@
       width: 100%;
       height: 576px;
       background-color: $menu-bg; /*временно*/
-    }
+  }
 }
 
   .page-header__logo-wrapper{
@@ -61,5 +60,4 @@
     left: 45%;
     z-index: 10;
   }
-
 }
