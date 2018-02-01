@@ -1,8 +1,13 @@
 .page-main{
-  padding: 0 0 0px 0;
+  @include reset();
+}
+
+.page-main__header-wrapper{
+  height: 239px;
 }
 
 .page-main__header{
+  @include reset();
   background-color: $basic-bg;
   color: $basic-color;
   font-family: $time-new-roman;
@@ -16,4 +21,18 @@
   color: $description-color;
   font-family: $time-new-roman,$time-new-roman, sans-serif;
   text-align: center;
+}
+
+
+@media (min-width: 768px){
+   .page-main__header-wrapper{
+    height: 206px;
+  }
+}
+
+
+@media (min-width: 1200px){
+  .page-main__header-wrapper{
+   height: 206px;
+ }
 }
