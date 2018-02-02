@@ -12,6 +12,7 @@
   text-align: center;
 }
 
+
 @mixin link-hover(){
   background-color: $menu-hover-bg;
 }
@@ -27,8 +28,8 @@
 }
 
 @mixin review-text(){
-    font-family: ptsans;
-    font-size: 18px;
-    font-weight: bold;
-    color: $basic-color;
+  font-family: "ptsans-bold","Tahoma","sans-serif";
+  font-size: 18px;
+  color: $basic-color;
 }
+
