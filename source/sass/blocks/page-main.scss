@@ -19,7 +19,7 @@
   /*font-family: $time-new-roman,$time-new-roman, sans-serif;*/
   font-family: "ptsans-bold","Tahoma","sans-serif";
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -27,7 +27,7 @@
   background-color: $basic-bg;
   color: $description-color;
   /*font-family: $time-new-roman,$time-new-roman, sans-serif;*/
-  font-family: "ptsans","Tahoma","sans-serif";
+  /*font-family: "ptsans","Tahoma","sans-serif";*/
   text-align: center;
 }
 
@@ -43,9 +43,12 @@
   }
 }
 
-
 @media (min-width: 1200px){
   .page-main__header-wrapper{
+    height: 287px;
+  }
+
+  .page-main__header-wrapper--home{
     height: 206px;
     padding-top: 0px;
   }

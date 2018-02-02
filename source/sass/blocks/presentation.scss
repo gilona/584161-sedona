@@ -21,8 +21,8 @@
   .presentation{
     height: 745px-65px;
     width: 647px;
-    margin: 0 auto;
     padding-top: 65px;
+    margin: 0 auto;
   }
 
   .presentation__slogan{
@@ -32,5 +32,15 @@
   .presentation__video{
     height: 500px;
     background-color: #cccccc; /*временно*/
+  }
+}
+
+@media (min-width: 1200px){
+
+  .presentation{
+    height: 745px-65px;
+    width: 647px;
+    margin: 0 auto 80px auto;
+    padding-top: 65px;
   }
 }

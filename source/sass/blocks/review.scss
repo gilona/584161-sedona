@@ -1,3 +1,8 @@
+.review{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .review__group{
   border: none;
   border-bottom: solid $border-group-color 1px;
