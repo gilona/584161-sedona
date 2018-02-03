@@ -8,11 +8,11 @@
   background-color: $basic-bg;
 }
 
-/*.page-footer__hashtag{*/
-  .page-footer b{
+.page-footer__hashtag{
     display: flex;
     align-items: flex-end;
-    font-family: "ptsans-bold","Tahoma","sans-serif";
+    /*font-weight: bold;*/
+    /*font-family: "ptsans-bold","Tahoma","sans-serif";*/
     font-size: 21px;
     line-height: 26px;
     width: 320px;
@@ -31,7 +31,7 @@
   width: 256px;
 }
 
-@media (min-width: 768px){
+@media (min-width: $width-tablet){
   .page-footer{
     height: 121px;
     line-height: 121px;
@@ -44,7 +44,7 @@
     width: 256px;
   }
 
-  .page-footer b{
+  .page-footer__hashtag{
     width: 256px;
   }
 
@@ -54,7 +54,7 @@
 }
 
 
-@media (min-width: 1200px){
+@media (min-width: $width-desktop){
   .page-footer{
     height: 121px;
     line-height: 121px;

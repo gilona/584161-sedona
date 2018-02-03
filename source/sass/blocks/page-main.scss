@@ -31,7 +31,7 @@
 }
 
 
-@media (min-width: 768px){
+@media (min-width: $width-tablet){
   .page-main__header-wrapper{
     height: 245px;
   }
@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: 1200px){
+@media (min-width: $width-desktop){
   .page-main__header-wrapper{
     height: 287px;
   }

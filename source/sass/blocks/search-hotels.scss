@@ -8,7 +8,6 @@
   display: block;
   color: $basic-color;
   font-size: 21px;
-  font-family: "ptsans-bold","Tahoma","sans-serif";
   margin-top: 33px;
 }
 
@@ -46,9 +45,9 @@
 }
 
 
-@media (min-width: 768px){
+@media (min-width: $width-tablet){
   .search-hotels{
-    height: 644px; /*670px-54px;*/
+    height: 644px;
   }
 
   .search-hotels__slogan{
@@ -75,7 +74,7 @@
 
 }
 
-@media (min-width: 1200px){
+@media (min-width: $width-desktop){
   .search-hotels__link-search{
     width: 458px;
   }
