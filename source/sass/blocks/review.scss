@@ -48,6 +48,8 @@
 
 .review__caption{
   color: $description-color;
+  white-space: nowrap;
+  padding-right: 14px;
 }
 
 .review__value{
@@ -110,7 +112,6 @@
   }
 
   .review__group{
-    padding: 68px 0;
     border: none;
     border-top: solid $border-group-color 1px;
   }
@@ -127,9 +128,19 @@
     width: 100%;
   }
 
+  .review__container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .review__container--resize{
+    height: 140px; /*временно*/
+  }
+
   .review__group-textarea{
     margin-bottom: 58px;
   }
+
   .review__send-button{
     width: 324px;
   }
@@ -146,6 +157,10 @@
 
   .review__group{
     width:400px;
+    border: none;
+  }
+  .review__group-header{
+    font-size: 21px;
   }
   .review__group--big
   {
@@ -157,14 +172,26 @@
 
   .review__container{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+  }
+  .review__checkbox-value{
+    padding-bottom: 0px;
   }
 
   .review__wrapper--resize{
-    width: 45%;
+    min-width: 400px; /*временно*/
+  }
+
+  .review__wrapper--grow{
+    flex-grow: 0.47;
   }
 
   .review__group--floating{
     order: -1;
+  }
+
+  .review__group--center{
+    width: 100%;
   }
 }

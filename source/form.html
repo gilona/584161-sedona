@@ -61,17 +61,17 @@
 
         <fieldset class="review__group review__group--big">
           <legend class="review__group-header">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
-         <div class="review__container">
-          <p class="review__wrapper review__wrapper--wrap review__wrapper--resize">
-            <label class="review__caption" for="phone" >ТЕЛЕФОН*:</label>
-            <input class="review__value review__value--big" type="tel" id="phone" required placeholder="Введите телефон">
-          </p>
-          <p class="review__wrapper review__wrapper--wrap review__wrapper--resize">
-            <label class="review__caption" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
-            <input class="review__value review__value--big" type="email" id="email" required placeholder="Введите e-mail">
-          </p>
-        </div>
-      </fieldset>
+          <div class="review__container">
+            <p class="review__wrapper review__wrapper--wrap review__wrapper--resize">
+              <label class="review__caption" for="phone" >ТЕЛЕФОН*:</label>
+              <input class="review__value" type="tel" id="phone" required placeholder="Введите телефон">
+            </p>
+            <p class="review__wrapper review__wrapper--wrap review__wrapper--resize review__wrapper--grow">
+              <label class="review__caption" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+              <input class="review__value" type="email" id="email" required placeholder="Введите e-mail">
+            </p>
+          </div>
+        </fieldset>
 
         <fieldset class="review__group review__group--floating">
           <legend class="review__group-header">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
@@ -97,7 +97,7 @@
 
         <fieldset class="review__group review__group--center">
           <legend class="review__group-header">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
-          <div class="review__container">
+          <div class="review__container review__container--resize">
             <p class="review__wrapper">
                 <label class="review__checkbox-caption">
                   <input class="review__checkbox" type="checkbox" name="bridge-option"  id="bridge-option" value="bridge">
