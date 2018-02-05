@@ -4,7 +4,8 @@
 }
 
 .page-main__header-wrapper{
-  height: 192px;
+  height: 190px-39px;
+  padding-top: 39px;
 }
 
 .page-main__header-wrapper--home{
@@ -26,20 +27,20 @@
 }
 
 .page-main__introduction{
-  width: 250px;
+  width: 280px;
   background-color: $basic-bg;
   color: $description-color;
   line-height: 26px;
   font-size: 14px;
   text-align: center;
-  margin: 27px auto;
+  margin: 26px auto;
 }
 
 
 @media (min-width: $width-tablet){
   .page-main__header-wrapper{
-    height: 245px;
-
+    height: 245px-70px;
+    padding-top: 70px;
   }
 
   .page-main__header-wrapper--home{
@@ -49,12 +50,14 @@
 
   .page-main__header{
     width: 440px;
-    font-size: 21px;
+    font-size: 30px;
     line-height: 26px;
   }
 
   .page-main__introduction{
-    width: auto;
+    width: 440px;
+    margin: 30px auto;
+    line-height: 24px;
   }
 }
 

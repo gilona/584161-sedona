@@ -1,9 +1,10 @@
 .page-footer{
-  height: 244px;
+  height: 234px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  align-items: space-around;
+/*  align-items: space-around;*/
+  align-items: flex-end;
   background-color: $basic-bg;
 }
 
