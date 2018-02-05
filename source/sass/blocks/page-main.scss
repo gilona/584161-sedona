@@ -63,7 +63,8 @@
 
 @media (min-width: $width-desktop){
   .page-main__header-wrapper{
-    height: 287px;
+    height: 287px-110px;
+    padding-top: 110px;
   }
 
   .page-main__header-wrapper--home{
@@ -72,7 +73,7 @@
   }
 
   .page-main__header{
-    font-size: 21px;
+    font-size: 30px;
     line-height: 26px;
   }
 }

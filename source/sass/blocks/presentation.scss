@@ -4,7 +4,7 @@
   justify-content: space-between;
   height: 458px;
   text-align: center;
-  
+
 }
 
 .presentation__slogan{
@@ -24,7 +24,7 @@
 
 @media (min-width: $width-tablet){
   .presentation{
-    height: 745px-65px;
+    height: 740px-65px;
     width: 647px;
     padding-top: 65px;
     margin: 0 auto;
@@ -33,7 +33,14 @@
   .presentation__slogan{
     line-height: 30px;
     font-size: 30px;
+    margin: 0;
   }
+
+  .presentation__introduction{
+    width: 420px;
+    margin: -50px auto 0 auto;
+  }
+
   .presentation__video{
     height: 500px;
     background-color: #cccccc; /*временно*/
@@ -45,7 +52,7 @@
   .presentation{
     height: 745px-65px;
     width: 647px;
-    margin: 0 auto 80px auto;
+    margin: 0 auto 0px auto;
     padding-top: 65px;
   }
 }
