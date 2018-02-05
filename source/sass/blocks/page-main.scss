@@ -1,12 +1,23 @@
 .page-main{
-  padding: 0 0 40px 0;
+  @include reset();
+
+}
+
+.page-main__header-wrapper{
+  height: 192px;
+
+}
+
+.page-main__header-wrapper--home{
+  height: 239px;
 }
 
 .page-main__header{
+  @include reset();
   background-color: $basic-bg;
   color: $basic-color;
-  font-family: $time-new-roman;
-  font-weight: bold;
+  /*font-family: $time-new-roman,$time-new-roman, sans-serif;*/
+  font-family: "ptsans-bold","Tahoma","sans-serif";
   font-size: 18px;
   text-align: center;
 }
@@ -14,6 +25,30 @@
 .page-main__introduction{
   background-color: $basic-bg;
   color: $description-color;
-  font-family: $time-new-roman;
+  /*font-family: $time-new-roman,$time-new-roman, sans-serif;*/
+  /*font-family: "ptsans","Tahoma","sans-serif";*/
   text-align: center;
+}
+
+
+@media (min-width: $width-tablet){
+  .page-main__header-wrapper{
+    height: 245px;
+  }
+
+  .page-main__header-wrapper--home{
+    height: 206px;
+    padding-top: 0px;
+  }
+}
+
+@media (min-width: $width-desktop){
+  .page-main__header-wrapper{
+    height: 287px;
+  }
+
+  .page-main__header-wrapper--home{
+    height: 206px;
+    padding-top: 0px;
+  }
 }

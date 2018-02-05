@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Оставить отзыв о Седоне</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/pp-form.css">
+    <link rel="stylesheet" href="pixel-glass/styles.css">
+    <script src="/pixel-glass/script.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -35,108 +38,135 @@
       </div>
     </header>
     <main class="page-main">
-      <h1 class="page-main__header">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
-      <p class="page-main__introduction">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ СВОЙ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
+      <div class="page-main__header-wrapper">
+        <h1 class="page-main__header">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
+        <p class="page-main__introduction">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ СВОЙ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
+      </div>
       <form class="review" name="review" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="review__group">
           <legend class="review__group-header">ПРЕДСТАВЬТЕСЬ:</legend>
-          <p class="review__wrapper">
-            <label class="review__caption" for="first-name">ИМЯ*:</label>
-            <input class="review__value" type="text" id="first-name" required>
-          </p>
-          <p class="review__wrapper">
-            <label class="review__caption" for="second-name">ФАМИЛИЯ*:</label>
-            <input class="review__value" type="text" id="second-name" required>
-          </p>
-          <p class="review__wrapper">
-            <label class="review__caption" for="third-name">ОТЧЕСТВО:</label>
-            <input class="review__value" type="text" id="third-name">
-          </p>
+            <p class="review__wrapper">
+                <label class="review__caption" for="first-name">ИМЯ*:</label>
+                <input class="review__value" type="text" id="first-name" required>
+              </p>
+              <p class="review__wrapper">
+                <label class="review__caption" for="second-name">ФАМИЛИЯ*:</label>
+                <input class="review__value" type="text" id="second-name" required>
+              </p>
+              <p class="review__wrapper">
+                <label class="review__caption" for="third-name">ОТЧЕСТВО:</label>
+                <input class="review__value" type="text" id="third-name">
+              </p>
         </fieldset>
 
-        <fieldset class="review__group">
+        <fieldset class="review__group review__group--big">
           <legend class="review__group-header">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
-          <p class="review__wrapper">
-            <label class="review__caption" for="phone" >ТЕЛЕФОН*:</label>
-            <input class="review__value" type="tel" id="phone" required placeholder="Введите телефон">
-          </p>
-          <p class="review__wrapper">
-            <label class="review__caption" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
-            <input class="review__value" type="email" id="email" required placeholder="Введите e-mail">
-          </p>
+          <div class="review__container">
+            <p class="review__wrapper review__wrapper--wrap review__wrapper--resize">
+              <label class="review__caption" for="phone" >
+                <span class="review__caption-first">ТЕЛЕФОН*:</span>
+                <span class="review__caption-second">КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
+              </label>
+                <input class="review__value" type="tel" id="phone" required placeholder="Введите телефон">
+            </p>
+            <p class="review__wrapper review__wrapper--wrap review__wrapper--resize review__wrapper--grow">
+              <label class="review__caption" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+              <input class="review__value" type="email" id="email" required placeholder="Введите e-mail">
+            </p>
+          </div>
         </fieldset>
 
-        <fieldset class="review__group">
+        <fieldset class="review__group review__group--floating">
           <legend class="review__group-header">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
           <p class="review__wrapper">
-            <input class="review__radio" type="radio" name="impression" id="positive-impression" value="positive">
-            <label class="review__radio-caption" for="positive-impression">Скорее положительное</label>
+            <label class="review__radio-caption" for="positive-impression">
+              <input class="review__radio" type="radio" name="impression" id="positive-impression" value="positive">
+              Скорее положительное
+            </label>
           </p>
           <p class="review__wrapper">
-            <input class="review__radio" type="radio" name="impression" id="negative-impression" value="negative">
-            <label class="review__radio-caption" for="negative-impression">Скорее отрицательное</label>
+            <label class="review__radio-caption" for="negative-impression">
+              <input class="review__radio" type="radio" name="impression" id="negative-impression" value="negative">
+              Скорее отрицательное
+            </label>
           </p>
           <p class="review__wrapper">
-            <input class="review__radio" type="radio" name="impression"  id="unknown-impression" value="unknown">
-            <label class="review__radio-caption" for="unknown-impression">Затрудняюсь ответить</label>
+            <label class="review__radio-caption" for="unknown-impression">
+              <input class="review__radio" type="radio" name="impression"  id="unknown-impression" value="unknown">
+              Затрудняюсь ответить
+            </label>
           </p>
         </fieldset>
 
-        <fieldset class="review__group">
+        <fieldset class="review__group review__group--center">
           <legend class="review__group-header">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
-          <p class="review__wrapper">
-            <input class="review__checkbox" type="checkbox" name="bridge-option"  id="bridge-option" value="bridge">
-            <label class="review__checkbox-caption">Мост Дьявола</label>
-          </p>
-          <p class="review__wrapper">
-            <input class="review__checkbox" type="checkbox" name="park-option"  id="park-option" value="park">
-            <label class="review__checkbox-caption">Слайд-парк</label>
-          </p>
-          <p class="review__wrapper">
-            <input class="review__checkbox" type="checkbox" name="mountain-option"  id="mountain-option" value="mountain">
-            <label class="review__checkbox-caption">Гора-Колокол</label>
-          </p>
-          <p class="review__wrapper">
-            <input class="review__checkbox" type="checkbox" name="cliffs-option"  id="cliffs-option" value="cliffs">
-            <label class="review__checkbox-caption">Красные скалы</label>
-          </p>
+          <div class="review__container review__container--resize">
+            <p class="review__wrapper">
+                <label class="review__checkbox-caption">
+                  <input class="review__checkbox" type="checkbox" name="bridge-option"  id="bridge-option" value="bridge">
+                  Мост Дьявола
+                </label>
+              </p>
+              <p class="review__wrapper">
+                <label class="review__checkbox-caption">
+                  <input class="review__checkbox" type="checkbox" name="park-option"  id="park-option" value="park">
+                  Слайд-парк
+                </label>
+              </p>
+              <p class="review__wrapper">
+                <label class="review__checkbox-caption">
+                  <input class="review__checkbox" type="checkbox" name="mountain-option"  id="mountain-option" value="mountain">
+                  Гора-Колокол
+                </label>
+              </p>
+              <p class="review__wrapper">
+                <label class="review__checkbox-caption">
+                  <input class="review__checkbox" type="checkbox" name="cliffs-option"  id="cliffs-option" value="cliffs">
+                  Красные скалы
+                </label>
+              </p>
+          </div>
         </fieldset>
-        <fieldset class="review__group">
+        <fieldset class="review__group review__group--big">
             <legend class="review__group-header">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
             <textarea class="review__group-textarea" name="emotions" rows="10" cols="45" placeholder="Опишите подробно свои восторги" ></textarea>
         </fieldset>
         <button class="review__send-button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <p class="review__note">* - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
       </form>
-      <div class="popup popup--failure" id="popup-failure">
-          <b class="popup__message">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
-          <p class="popup__description">ПРОВЕРЬТЕ ПОЛЯ, ВЫДЕЛЕННЫЕ КРАСНЫМ, СКОРЕЕ ВСЕГО ВЫ ЗАБЫЛИ ИХ ЗАПОЛНИТЬ</p>
-          <a href="#" class="popup__close-link">ОК</a>
-      </div>
-      <div class="popup popup--success" id="popup-success">
-          <b class="popup__message">ВАШ ОТЗЫВ ОТПРАВЛЕН!</b>
-          <p class="popup__description">СПАСИБО ЗА ВАШЕ УЧАСТИЕ, ВАШ ОТЗЫВ УЖЕ ПОСТУПИЛ К НАМ. В БЛИЖАЙШЕЕ ВРЕМЯ МЫ ОПУБЛИКУЕМ ЕГО НА САЙТЕ.</p>
-          <a href="#" class="popup__close-link">ЗАКРЫТЬ ОКНО</a>
+      <div class="popup">
+        <div class="popup__container popup__container--failure" id="popup-failure">
+            <b class="popup__message">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
+            <p class="popup__description">ПРОВЕРЬТЕ ПОЛЯ, ВЫДЕЛЕННЫЕ КРАСНЫМ, СКОРЕЕ ВСЕГО ВЫ ЗАБЫЛИ ИХ ЗАПОЛНИТЬ</p>
+            <a href="#" class="popup__close-link">ОК</a>
+        </div>
+        <div class="popup__container popup__container--success" id="popup-success">
+            <b class="popup__message">ВАШ ОТЗЫВ ОТПРАВЛЕН!</b>
+            <p class="popup__description">СПАСИБО ЗА ВАШЕ УЧАСТИЕ, ВАШ ОТЗЫВ УЖЕ ПОСТУПИЛ К НАМ. В БЛИЖАЙШЕЕ ВРЕМЯ МЫ ОПУБЛИКУЕМ ЕГО НА САЙТЕ.</p>
+            <a href="#" class="popup__close-link">ЗАКРЫТЬ ОКНО</a>
+        </div>
       </div>
     </main>
     <footer class="page-footer">
-      <b>#VISITSEDONA</b>
-      <div class="social">
-          <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com" target="_blank">Facebook</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/?gl=RU&hl=ru" target="_blank">Youtube</a>
-              </li>
-          </ul>
-      </div>
-      <div class="page-footer__copyright">
-        <span class="page-footer__copyright-text">РАЗРАБОТАНО</span>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptives"><img src="http://placehold.it/40x40" alt="HtmlAcademy"></a>
-      </div>
-    </footer>
+      <b сlass="page-footer__hashtag">#VISITSEDONA</b>
+      <!--div class="social"-->
+        <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
+            </li>
+            <li class="page-footer__social-item">
+                <li class="social__item">
+              <a class="page-footer__social-link page-footer__social-link--facebook" href="https://ru-ru.facebook.com" target="_blank">Facebook</a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--youtube" href="https://www.youtube.com/?gl=RU&hl=ru" target="_blank">Youtube</a>
+            </li>
+        </ul>
+    <!--/div-->
+    <div class="page-footer__copyright">
+      <span class="page-footer__copyright-text">РАЗРАБОТАНО</span>
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptives"><img src="http://placehold.it/40x40" alt="HtmlAcademy"></a>
+    </div>
+  </footer>
   </body>
 </html>

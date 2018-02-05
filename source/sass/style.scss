@@ -1,8 +1,8 @@
-@import 'normalize';
-@import 'global-var';
-@import 'global-mixin';
-@import 'global-fonts';
-@import 'typography';
+@import '_normalize';
+@import '_global-var';
+@import '_global-mixin';
+@import '_global-fonts';
+@import '_typography';
 @import 'blocks/page-header';
 @import 'blocks/main-nav';
 @import 'blocks/page-main';
@@ -12,4 +12,4 @@
 @import 'blocks/review';
 @import 'blocks/search-hotels';
 @import 'blocks/page-footer';
-@import 'blocks/social';
+@import 'blocks/popup';

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Фото и видео города Седоны</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/pp-photo.css">
+    <link rel="stylesheet" href="pixel-glass/styles.css">
+    <script src="/pixel-glass/script.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -27,12 +30,14 @@
       </nav>
     </header>
     <main class="page-main">
-        <h1 class="page-main__header">ФОТО И ВИДЕО</h1>
-        <p class="page-main__introduction">НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСА? ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБТЬ ОБ ПОЛИТИКЕ И ЭКОНОМИКЕ</p>
+        <div class="page-main__header-wrapper">
+            <h1 class="page-main__header">ФОТО И ВИДЕО</h1>
+            <p class="page-main__introduction">НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСА? ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБТЬ ОБ ПОЛИТИКЕ И ЭКОНОМИКЕ</p>
+        </div>
         <div class="photos">
           <ul class="photos__list">
-              <li class="photos__item">
-                <div class="photos__image-wrapper">
+              <li class="photos__item photos__item--big">
+                <div class="photos__image-wrapper photos__image-wrapper--big">
                   <a class="photos__link-image" href="http://placehold.it/350x150" target="_blank">
                     <img class="photos-image" src="http://placehold.it/280x281" alt="Неродные просторы">
                   </a>
@@ -47,9 +52,9 @@
                 </div>
               </li>
               <li class="photos__item">
-                <div class="photos__imagewrapper">
+                <div class="photos__image-wrapper">
                     <a class="photos__link-image" href="http://placehold.it/350x150" target="_blank">
-                      <img class="photos__image" src="http://placehold.it/280x281" alt="Местная растительность">
+                      <img class="photos__image" src="http://placehold.it/280x267" alt="Местная растительность">
                     </a>
                 </div>
                 <div class="photos__info-image">
@@ -64,7 +69,7 @@
               <li class="photos__item">
                 <div class="photos__image-wrapper">
                     <a class="photos__link-image" href="http://placehold.it/350x150" target="_blank">
-                      <img class="photos__image" src="http://placehold.it/280x281" alt="Дорога на север">
+                      <img class="photos__image" src="http://placehold.it/280x267" alt="Дорога на север">
                     </a>
                 </div>
                 <div class="photos__info-image">
@@ -79,7 +84,7 @@
               <li class="photos__item">
                 <div class="photos__image-wrapper">
                     <a class="photos__link-image" href="http://placehold.it/350x150" target="_blank">
-                      <img class="photos__image" src="http://placehold.it/280x281" alt="Мост Дьявола">
+                      <img class="photos__image" src="http://placehold.it/280x267" alt="Мост Дьявола">
                     </a>
                 </div>
                 <div class="photos__info-image">
@@ -102,24 +107,25 @@
           </div>
     </main>
     <footer class="page-footer">
-      <b>#VISITSEDONA</b>
-      <div class="social">
-          <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--facebook" href="https://ru-ru.facebook.com" target="_blank">Facebook</a>
-              </li>
-              <li class="social__item">
-                <a class="social__link social__link--youtube" href="https://www.youtube.com/?gl=RU&hl=ru" target="_blank">Youtube</a>
-              </li>
-          </ul>
-      </div>
-      <div class="page-footer__copyright">
-        <span class="page-footer__copyright-text">РАЗРАБОТАНО</span>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptives"><img src="http://placehold.it/40x40" alt="HtmlAcademy"></a>
-      </div>
-    </footer>
-  </body>
+      <b сlass="page-footer__hashtag">#VISITSEDONA</b>
+      <!--div class="social"-->
+        <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
+            </li>
+            <li class="page-footer__social-item">
+                <li class="social__item">
+              <a class="page-footer__social-link page-footer__social-link--facebook" href="https://ru-ru.facebook.com" target="_blank">Facebook</a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--youtube" href="https://www.youtube.com/?gl=RU&hl=ru" target="_blank">Youtube</a>
+            </li>
+        </ul>
+    <!--/div-->
+    <div class="page-footer__copyright">
+      <span class="page-footer__copyright-text">РАЗРАБОТАНО</span>
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptives"><img src="http://placehold.it/40x40" alt="HtmlAcademy"></a>
+    </div>
+  </footer>
+</body>
 </html>

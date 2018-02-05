@@ -6,12 +6,12 @@
 @mixin link-basic($font-size){
   background-color: $menu-bg;
   color: $menu-color;
-  font-family: ptsans;
-  font-weight: bold;
+  font-family: "ptsans-bold","Tahoma","sans-serif";
   font-size: $font-size;
   text-decoration: none;
   text-align: center;
 }
+
 
 @mixin link-hover(){
   background-color: $menu-hover-bg;
@@ -28,8 +28,7 @@
 }
 
 @mixin review-text(){
-    font-family: ptsans;
-    font-size: 18px;
-    font-weight: bold;
-    color: $basic-color;
+  font-family: "ptsans-bold","Tahoma","sans-serif";
+  font-size: 18px;
+  color: $basic-color;
 }

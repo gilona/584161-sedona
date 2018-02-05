@@ -1,7 +1,9 @@
 .presentation{
-  height: 432px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 448px;
   text-align: center;
-  padding: 40spx 0 40 0;
 }
 
 .presentation__slogan{
@@ -11,4 +13,32 @@
 
 .presentation__introduction{
   color: $description-color;
+}
+
+@media (min-width: $width-tablet){
+  .presentation{
+    height: 745px-65px;
+    width: 647px;
+    padding-top: 65px;
+    margin: 0 auto;
+  }
+
+  .presentation__slogan{
+    line-height: 30px;
+    font-size: 30px;
+  }
+  .presentation__video{
+    height: 500px;
+    background-color: #cccccc; /*временно*/
+  }
+}
+
+@media (min-width: $width-desktop){
+
+  .presentation{
+    height: 745px-65px;
+    width: 647px;
+    margin: 0 auto 80px auto;
+    padding-top: 65px;
+  }
 }
