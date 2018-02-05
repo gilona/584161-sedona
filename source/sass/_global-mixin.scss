@@ -6,7 +6,8 @@
 @mixin link-basic($font-size){
   background-color: $menu-bg;
   color: $menu-color;
-  font-family: "ptsans-bold","Tahoma","sans-serif";
+  font-family: "ptsans","Tahoma","sans-serif";
+  font-weight: bold;
   font-size: $font-size;
   text-decoration: none;
   text-align: center;

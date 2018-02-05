@@ -1,3 +1,13 @@
+.reasons::before{
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-left: 160px solid $menu-bg;
+  border-right: 160px solid $menu-bg;
+}
+
 .reasons__inner{
   display: flex;
   flex-wrap: wrap;
@@ -13,8 +23,9 @@
 }
 
 .reasons__image-wrapper{
-  height: 256px;
+  height: 257px;
   width: 320px;
+  overflow: hidden;
 }
 
 .reasons__slogan-wrapper{
@@ -31,30 +42,49 @@
   font-size: 18px;
 }
 
+.reasons__description{
+  line-height: 21px;
+  width: 266px;
+  margin: 13px auto;
+}
+
 .reasons__list-options{
   @include reset();
   list-style: none;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  height: 416px;
+  width: 226px;
+  height: 420px;
 }
 
 .reasons__item-options{
   text-align: left;
+  padding-left: 70px;
+  &::before{
+    content: "";
+    display: block;
+
+    background: url(/img/icon-house.svg) no-repeat;
+  }
+}
+
+.reasons__option-title{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .reasons__other-list{
   @include reset();
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .reasons__other-item{
   @include reset();
-  height: 171px;
+  height: 167px;
   list-style: none;
   background: $block-bg;
   border-bottom: 1px solid $border-group-color;
@@ -63,15 +93,25 @@
 .reasons__other-item-slogan-wrapper{
   @include reset();
   text-align: center;
-  padding-top: 33px;
+  padding-top: 28px;
 }
 
 .reasons__other-item-slogan{
   font-size: 18px;
-  font-family: "ptsans-bold","Tahoma","sans-serif";
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.reasons__other-item-description{
+  font-size: 14px;
+  line-height: 21px;
+  color: $description-color;
 }
 
 @media (min-width: $width-tablet){
+  .reasons::before{
+    display: none;
+  }
   .reasons__inner{
     width: $width-tablet;
     height: 256px;
@@ -88,20 +128,26 @@
 
   .reasons__image-wrapper{
     width: 512px;
-    height: 256px;
+    height: 254px;
     background-color: #cccccc; /*временно*/
   }
 
   .reasons__slogan-wrapper{
-    width: 256px;
-    height: 217px;
+    width: 256px-90px;
+    height: 211px;
+    padding: 43px 45px 0 45px;
   }
 
   .reasons__slogan{
     font-size: 21px;
     font-weight: bold;
+    line-height: 26px;
   }
 
+  .reasons__description{
+    width: auto;
+
+  }
   .reasons__other-item{
     width: 256px;
     height: 256px;
@@ -112,6 +158,15 @@
     padding: 0 45px;
     height: 330px;
     text-align: center;
+  }
+
+  .reasons__other-item-slogan-wrapper{
+    padding: 45px 50px 0 50px;
+  }
+
+  .reasons__other-item-slogan{
+    font-size: 21px;
+    line-height: 26px;
   }
 }
 
@@ -134,25 +189,40 @@
   .reasons__slogan-wrapper
   {
     width: 400px;
-    height: 217px;
+    height: 256px;
+    padding: 0px;
   }
+
   .reasons__slogan{
+    display: block;
     font-size: 21px;
+    padding: 50px 121px 0 121px;
+    text-align: center;
   }
+
+  .reasons__description{
+    padding: 0 100px 0 100px;
+  }
+
   .reasons__other-item{
     width: 400px;
     height: 256px;
   }
-  /*.reasons__other-item-slogan-wrapper
-  {
-    width: 100%;
-    height: 222px;
-  }*/
 
   .reasons__item-options{
     width: 280px;
     height: 330px;
     padding: 0 60px;
     text-align: center;
+  }
+
+
+  .reasons__other-item-slogan{
+    display: block;
+    padding: 0px 80px 0 80px;
+  }
+
+  .reasons__other-item-description{
+    padding: 0px 8px 0 8px;
   }
 }
