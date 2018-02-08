@@ -2,47 +2,80 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 280px;
-  margin: 0 auto;
+  width: 320px;
+  padding: 0 0px;
+  margin: 15px 0 0 0;
+  border-top: solid $border-group-color 1px;
+}
+
+.review__person-info{
+  @include reset();
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 0px 20px 8px 20px;
+  border: none;
+  border-bottom: solid $border-group-color 1px;
+}
+
+.review__contacts{
+  @include reset();
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 0px 20px 8px 20px;
+  border: none;
+  border-bottom: solid $border-group-color 1px;
 }
 
 .review__group{
   @include reset();
-  width: 280px;
+  /*width: 320px-40px;*/
+  /*height: 304px;*/
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 0px 20px 8px 20px;
   border: none;
   border-bottom: solid $border-group-color 1px;
 }
 
 .review__group-header{
   @include review-text();
-  /*padding: 23px 0 23px 0;*/
+  width: 100%;
+  padding: 17px 0px 24px 0px;
   text-align: center;
+  /*letter-spacing: -0.09em;*/
+  /*margin-bottom: 14px;*/
 }
 
-.review__wrapper{
+.review__wrapper-person{
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  @include reset();
+  margin-bottom: 18px;
+}
+
+.review__wrapper-contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  @include reset();
+  margin-bottom: 18px;
+}
+
+/*.review__wrapper{
+  display: flex;
+  align-items: center;
+  width: auto;
+  @include reset();
+  margin-bottom: 18px;
 }
 
 .review__wrapper--wrap{
   flex-wrap: wrap;
-}
+}*/
 
-.review__value{
-  @include review-text();
-  width: 100%;
-}
-
-.review__radio-caption{
-  @include review-text();
-}
-
-.review__checkbox-caption{
-  @include review-text();
-}
-
-.review__caption-second{
+.review__caption-first{
   display: none;
 }
 
@@ -53,24 +86,85 @@
 .review__caption{
   color: $description-color;
   white-space: nowrap;
-  padding-right: 14px;
+  flex-shrink: 0;
+  margin-right: 12px;
 }
 
+.review__caption--contacts-style{
+  margin-left: 24px;
+  margin-bottom: 12px;
+}
 .review__value{
-  background-color: $input-bg;
-  border: none;
-  height: 58px;
-}
-
-.review__group-textarea{
   @include review-text();
   background-color: $input-bg;
   border: none;
-  width: 100%;
-  height: 160px;
+  height: 58px;
+  min-width: 0;
+  box-sizing: border-box;
+  flex-grow: 1;
+  text-indent: 20px;
 }
 
-.review__group-textarea::-webkit-input-placeholder{
+.review__radio-group{
+  min-width: 0;
+  padding: 0px 20px 14px 20px;
+  border: none;
+  border-bottom: solid $border-group-color 1px;
+}
+
+.review__radio-wrapper{
+  height: 55px;
+  line-height: 55px;
+  margin: 0px 0 14px 0;
+}
+.review__radio{
+/*  transform:scale(4.4);
+  opacity:0.9;
+  cursor:pointer;*/
+  margin: 0px 40px 0px 20px;
+}
+
+.review__radio-caption{
+  @include review-text();
+}
+
+.review__checkbox-group{
+  padding: 0px 20px 0px 20px;
+  border: none;
+  border-bottom: solid $border-group-color 1px;
+
+}
+
+.review__checkbox-wrapper{
+  height: 55px;
+  line-height: 55px;
+  margin: 0px 0 24px 0;
+}
+.review__checkbox-caption{
+  @include review-text();
+}
+
+.review__checkbox{
+    margin: 0px 40px 0px 20px;
+}
+
+.review__group-textarea{
+  padding: 0px 20px 0px 20px;
+  border: none;
+}
+
+.review__textarea{
+  @include reset();
+  @include review-text();
+  background-color: $input-bg;
+  border: none;
+  width: 280px-40px;
+  height: 160px-38px;
+  margin-top: -10px;
+  padding: 19px;
+}
+
+.review__textarea::-webkit-input-placeholder{
   color: $basic-color;
 }
 
@@ -78,7 +172,7 @@
   color: $basic-color;
 }
 
-.review__group-textarea::-moz-placeholder{
+.review__textarea::-moz-placeholder{
   color: $basic-color;
   font-size: 18px;
   font-weight: bold;
@@ -87,7 +181,7 @@
   color: $basic-color;
 }
 
-.review__group-textarea:-ms-input-placeholder{
+.review__textarea:-ms-input-placeholder{
   color: $basic-color;
   font-size: 18px;
   font-weight: bold;
@@ -97,9 +191,13 @@
 }
 
 .review__send-button{
-  width: 100%;
+  display: block;
+  width: 280px;
   height: 58px;
+  padding: 0;
+  margin: 50px auto -5px auto;
   border:none;
+  font-size: 21px;
   background-color: $menu-bg;
   color: $menu-color;
   text-align: center;
@@ -113,12 +211,17 @@
   .review{
     width: 650px;
     margin: 0 auto;
+    border: none;
   }
 
-  .review__group{
+  .review__person-info{
+    width: 325px;
+    padding: 0px 0 0 57px;
+    margin:0;
     border: none;
-    border-top: solid $border-group-color 1px;
+    /*border-top: solid $border-group-color 1px;*/
   }
+
   .review__group--floating{
     order: -1;
   }
@@ -132,14 +235,24 @@
     width: 100%;
   }
 
-  .review__container{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  .review__group-header{
+    padding: 4px 0 59px 0;
+    text-align: left;
+    line-height: 26px;
+    font-size: 21px;
+    letter-spacing: 0.01em;
   }
 
-  .review__container--resize{
-    height: 140px; /*временно*/
+  .review__contacts{
+    @include reset();
+    margin-top: 40px;
+    border: none;
+    border-top: solid $border-group-color 1px;
+  }
+
+  .review__group-header--contacts-style{
+    text-align: center;
+    padding: 0px 0 28px 0;
   }
 
   .review__caption-first{
@@ -148,6 +261,43 @@
 
   .review__caption-second{
     display: inline;
+  }
+
+  .review__wrapper-contacts{
+    margin-bottom: 26px;
+  }
+
+  .review__radio-group{
+    box-sizing: border-box;
+    @include reset();
+    text-align: left;
+    border: none;
+    border-top: solid $border-group-color 1px;
+  }
+
+  .review__radio-wrapper{
+    padding:0;
+    margin-bottom: 26px;
+  }
+
+  .review__checkbox-group{
+    margin: 26px 0 0 0 ;
+  }
+  .review__group-header--checkbox-style{
+    width: auto;
+    text-align: center;
+    padding: 0px 150px;
+  }
+
+  .review__checkbox-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 294px-70px;
+    width: 460px;
+    padding: 51px 0;
+    margin: 0 auto;
   }
 
   .review__group-textarea{

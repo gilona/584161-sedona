@@ -1,12 +1,18 @@
 html{
+
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   background-color: $body-bg;
 }
+
 
 body{
   min-width: 320px;
   width: 320px;
   margin: 0 auto;
   padding: 0;
+  overflow-x: hidden;
   font-family: "ptsans", "Tahoma", "sans-serif";
   font-size: 14px;
   /*line-height: 21px;*/

@@ -24,13 +24,13 @@
 
 .reasons__image-wrapper{
   height: 257px;
-  width: 320px;
+  width: 100%;
   overflow: hidden;
 }
 
 .reasons__slogan-wrapper{
   height: 153px;
-  width: 320px;
+  width: 100%;
   @include reset();
   text-align: center;
   padding-top: 39px;
@@ -44,8 +44,7 @@
 
 .reasons__description{
   line-height: 21px;
-  width: 266px;
-  margin: 13px auto;
+  margin: 13px 27px;
 }
 
 .reasons__list-options{
@@ -55,17 +54,16 @@
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  width: 226px;
   height: 420px;
 }
 
 .reasons__item-options{
+  width: 226px;
   text-align: left;
   padding-left: 70px;
   &::before{
     content: "";
     display: block;
-
     background: url(/img/icon-house.svg) no-repeat;
   }
 }
@@ -74,8 +72,13 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+
 }
 
+.reasons__option-description{
+  font-size: 14px;
+  line-height: 21px;
+}
 .reasons__other-list{
   @include reset();
   display: flex;

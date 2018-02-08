@@ -1,15 +1,14 @@
 .page-main{
   @include reset();
-
 }
 
 .page-main__header-wrapper{
-  height: 190px-39px;
+  /*height: 190px-39px;*/
   padding-top: 39px;
 }
 
 .page-main__header-wrapper--home{
-  height: 239px-57px;
+  /*height: 239px-57px;*/
   padding-top: 38px;
 }
 
@@ -21,59 +20,89 @@
   line-height: 26px;
   text-align: center;
   white-space: pre-wrap;
-  width: 256px;
-  margin: 0 auto;
+  margin: 0 32px;
 
 }
 
 .page-main__introduction{
-  width: 280px;
   background-color: $basic-bg;
   color: $description-color;
-  line-height: 26px;
+  line-height: 24px;
   font-size: 14px;
   text-align: center;
-  margin: 26px auto;
+  width: auto;
+  margin: 27px 22px 26px 23px;
 }
 
+.page-main__introduction--home{
+  line-height: 26px;
+}
 
 @media (min-width: $width-tablet){
   .page-main__header-wrapper{
-    height: 245px-70px;
+    /*height: 245px-70px;*/
     padding-top: 70px;
   }
 
   .page-main__header-wrapper--home{
-    height: 206px-50px;
+    /*height: 206px-50px;*/
     padding-top: 50px;
+    padding-bottom: 26px;
   }
 
   .page-main__header{
-    width: 440px;
+    /*width: 440px;*/
+    /*margin-left: 164px;
+    margin-right: 164px;*/
+    margin: 0;
+    padding: 0 164px;
     font-size: 30px;
     line-height: 26px;
   }
 
+  .page-main__header--home{
+    font-size: 21px;
+    line-height: 26px;
+  }
   .page-main__introduction{
-    width: 440px;
-    margin: 30px auto;
+   /* width: 440px;*/
+   /* margin-left: auto;
+    margin-right: auto;*/
+    margin: 0;
+    padding: 30px 164px 70px 164px;
     line-height: 24px;
+  }
+
+  .page-main__introduction--home{
+    line-height: 26px;
+    margin: 28px 0px 26px 0px;
   }
 }
 
 @media (min-width: $width-desktop){
   .page-main__header-wrapper{
-    height: 287px-110px;
+    /*height: 287px-110px;*/
     padding-top: 110px;
   }
 
   .page-main__header-wrapper--home{
-    height: 205px-48px;
-    padding-top: 48px;
+    /*height: 205px-48px;*/
+    padding: 48px 0 25px 0;
   }
 
   .page-main__header{
     font-size: 30px;
     line-height: 26px;
+    padding: 0 380px;
+  }
+
+  .page-main__header--home{
+    font-size: 21px;
+    line-height: 26px;
+    padding: 0 380px;
+  }
+
+  .page-main__introduction{
+    padding: 30px 382px 70px 382px;
   }
 }
