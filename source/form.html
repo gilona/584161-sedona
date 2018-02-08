@@ -39,7 +39,7 @@
       </div>
       <form class="review" name="review" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="review__person-info">
-          <legend class="review__group-header">ПРЕДСТАВЬТЕСЬ:</legend>
+          <legend class="review__group-header review__group-header--person-style">ПРЕДСТАВЬТЕСЬ:</legend>
             <p class="review__wrapper-person">
               <label class="review__caption" for="first-name">ИМЯ*:
               </label>
@@ -57,23 +57,25 @@
             </p>
         </fieldset>
 
-        <fieldset class="review__contacts review__group--big">
+        <fieldset class="review__contacts">
           <legend class="review__group-header review__group-header--contacts-style">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
+          <div class="review__contacts-container">
             <p class="review__wrapper-contacts">
-              <label class="review__caption review__caption--contacts-style" for="phone" >
-                <span class="review__caption-first">ТЕЛЕФОН*:</span>
-                <span class="review__caption-second">КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
-              </label>
-              <input class="review__value review__value--contacts-style" type="tel" id="phone" required placeholder="Введите телефон">
+                <label class="review__caption review__caption--contacts-style" for="phone" >
+                  <span class="review__caption-first">ТЕЛЕФОН*:</span>
+                  <span class="review__caption-second">КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
+                </label>
+                <input class="review__value review__value--contacts-style" type="tel" id="phone" required placeholder="Введите телефон">
+              </p>
+              <p class="review__wrapper-contacts">
+                <label class="review__caption review__caption--contacts-style" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+                <input class="review__value review__value--contacts-style" type="email" id="email" required placeholder="Введите e-mail">
             </p>
-            <p class="review__wrapper-contacts review__wrapper--wrap review__wrapper--resize review__wrapper--grow">
-              <label class="review__caption review__caption--contacts-style" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
-              <input class="review__value review__value--contacts-style" type="email" id="email" required placeholder="Введите e-mail">
-            </p>
+          </div>
         </fieldset>
 
-        <fieldset class="review__radio-group review__group--floating">
-          <legend class="review__group-header">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
+        <fieldset class="review__radio-group">
+          <legend class="review__group-header review__group-header--radio-style">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
           <div class="review__radio-container">
             <p class="review__radio-wrapper">
               <label class="review__radio-caption" for="positive-impression">
@@ -96,7 +98,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="review__checkbox-group review__group--center">
+        <fieldset class="review__checkbox-group">
           <legend class="review__group-header review__group-header--checkbox-style">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
           <div class="review__checkbox-container">
             <p class="review__checkbox-wrapper">
@@ -125,8 +127,8 @@
               </p>
           </div>
         </fieldset>
-        <fieldset class="review__group-textarea review__group--big">
-            <legend class="review__group-header">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
+        <fieldset class="review__group-textarea">
+            <legend class="review__group-header review__group-header--text-area-style">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
             <textarea class="review__textarea" name="emotions" placeholder="Опишите подробно все свои восторги" ></textarea>
         </fieldset>
         <button class="review__send-button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
