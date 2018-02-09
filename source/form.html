@@ -78,20 +78,20 @@
           <legend class="review__group-header review__group-header--radio-style">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
           <div class="review__radio-container">
             <p class="review__radio-wrapper">
+              <input class="review__radio" type="radio" name="impression" id="positive-impression" value="positive">
               <label class="review__radio-caption" for="positive-impression">
-                <input class="review__radio" type="radio" name="impression" id="positive-impression" value="positive">
                 Скорее положительное
               </label>
             </p>
             <p class="review__radio-wrapper">
+              <input class="review__radio" type="radio" name="impression" id="negative-impression" value="negative">
               <label class="review__radio-caption" for="negative-impression">
-                <input class="review__radio" type="radio" name="impression" id="negative-impression" value="negative">
                 Скорее отрицательное
               </label>
             </p>
             <p class="review__radio-wrapper">
+              <input class="review__radio" type="radio" name="impression"  id="unknown-impression" value="unknown">
               <label class="review__radio-caption" for="unknown-impression">
-                <input class="review__radio" type="radio" name="impression"  id="unknown-impression" value="unknown">
                 Затрудняюсь ответить
               </label>
             </p>
@@ -102,33 +102,33 @@
           <legend class="review__group-header review__group-header--checkbox-style">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
           <div class="review__checkbox-container">
             <p class="review__checkbox-wrapper">
-                <label class="review__checkbox-caption">
-                  <input class="review__checkbox" type="checkbox" name="bridge-option"  id="bridge-option" value="bridge">
+              <input checked class="review__checkbox" type="checkbox" name="bridge-option"  id="bridge-option" value="bridge">
+              <label class="review__checkbox-caption">
                   Мост Дьявола
                 </label>
               </p>
               <p class="review__checkbox-wrapper">
+                <input checked class="review__checkbox" type="checkbox" name="park-option"  id="park-option" value="park">
                 <label class="review__checkbox-caption">
-                  <input class="review__checkbox" type="checkbox" name="park-option"  id="park-option" value="park">
                   Слайд-парк
                 </label>
               </p>
               <p class="review__checkbox-wrapper">
+                <input class="review__checkbox" type="checkbox" name="mountain-option"  id="mountain-option" value="mountain">
                 <label class="review__checkbox-caption">
-                  <input class="review__checkbox" type="checkbox" name="mountain-option"  id="mountain-option" value="mountain">
                   Гора-Колокол
                 </label>
               </p>
               <p class="review__checkbox-wrapper">
+                <input class="review__checkbox" type="checkbox" name="cliffs-option"  id="cliffs-option" value="cliffs">
                 <label class="review__checkbox-caption">
-                  <input class="review__checkbox" type="checkbox" name="cliffs-option"  id="cliffs-option" value="cliffs">
                   Красные скалы
                 </label>
               </p>
           </div>
         </fieldset>
         <fieldset class="review__group-textarea">
-            <legend class="review__group-header review__group-header--text-area-style">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
+            <legend class="review__group-header review__group-header--textarea-style">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
             <textarea class="review__textarea" name="emotions" placeholder="Опишите подробно все свои восторги" ></textarea>
         </fieldset>
         <button class="review__send-button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>

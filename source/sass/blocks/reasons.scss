@@ -1,11 +1,14 @@
-.reasons::before{
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 18px solid transparent;
-  border-left: 160px solid $menu-bg;
-  border-right: 160px solid $menu-bg;
+.reasons{
+  margin-top: 26px;
+  &::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 18px solid transparent;
+    border-left: 160px solid $menu-bg;
+    border-right: 160px solid $menu-bg;
+  }
 }
 
 .reasons__inner{
@@ -112,8 +115,11 @@
 }
 
 @media (min-width: $width-tablet){
-  .reasons::before{
+  .reasons{
+    margin-top: 0px;
+    &::before{
     display: none;
+    }
   }
   .reasons__inner{
     width: $width-tablet;
@@ -174,6 +180,9 @@
 }
 
 @media (min-width: $width-desktop){
+  .reasons{
+    margin-top: 25px;
+  }
   .reasons__inner{
     width: $width-desktop;
     height: 256px;

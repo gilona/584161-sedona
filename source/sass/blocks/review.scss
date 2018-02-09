@@ -4,10 +4,9 @@
   justify-content: space-between;
   width: 320px;
   padding: 0 0px;
-  margin: 15px 0 0 0;
+  margin: 16px 0 0 0;
   border-top: solid $border-group-color 1px;
 }
-
 .review__person-info{
   @include reset();
   box-sizing: border-box;
@@ -16,23 +15,18 @@
   border: none;
   border-bottom: solid $border-group-color 1px;
 }
-
+.review__wrapper-person{
+  display: flex;
+  align-items: center;
+  width: auto;
+  @include reset();
+  margin-bottom: 18px;
+}
 .review__contacts{
   @include reset();
   box-sizing: border-box;
-  min-width: 0;
-  padding: 0px 20px 8px 20px;
-  border: none;
-  border-bottom: solid $border-group-color 1px;
-}
-
-.review__group{
-  @include reset();
-  /*width: 320px-40px;*/
-  /*height: 304px;*/
-  box-sizing: border-box;
-  min-width: 0;
-  padding: 0px 20px 8px 20px;
+  width: 100%;
+  padding: 0px 20px 12px 20px;
   border: none;
   border-bottom: solid $border-group-color 1px;
 }
@@ -40,18 +34,10 @@
 .review__group-header{
   @include review-text();
   width: 100%;
-  padding: 17px 0px 24px 0px;
+  padding: 18px 0px 24px 0px;
   text-align: center;
   /*letter-spacing: -0.09em;*/
   /*margin-bottom: 14px;*/
-}
-
-.review__wrapper-person{
-  display: flex;
-  align-items: center;
-  width: auto;
-  @include reset();
-  margin-bottom: 18px;
 }
 
 .review__wrapper-contacts{
@@ -60,37 +46,22 @@
   align-items: stretch;
   width: 100%;
   @include reset();
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
-
-/*.review__wrapper{
-  display: flex;
-  align-items: center;
-  width: auto;
-  @include reset();
-  margin-bottom: 18px;
-}
-
-.review__wrapper--wrap{
-  flex-wrap: wrap;
-}*/
-
 .review__caption-first{
   display: none;
 }
-
 .review__send-button{
   @include review-text();
 }
-
 .review__caption{
   color: $description-color;
   white-space: nowrap;
   flex-shrink: 0;
   margin-right: 12px;
 }
-
 .review__caption--contacts-style{
+  text-align: left;
   margin-left: 24px;
   margin-bottom: 12px;
 }
@@ -104,55 +75,109 @@
   flex-grow: 1;
   text-indent: 20px;
 }
-
 .review__radio-group{
   min-width: 0;
   padding: 0px 20px 14px 20px;
   border: none;
   border-bottom: solid $border-group-color 1px;
 }
-
+.review__group-header--radio-style{
+  padding-left: 12px;
+  padding-top: 18px;
+  padding-right: 0px;
+}
 .review__radio-wrapper{
   height: 55px;
   line-height: 55px;
   margin: 0px 0 14px 0;
 }
-.review__radio{
-/*  transform:scale(4.4);
-  opacity:0.9;
-  cursor:pointer;*/
-  margin: 0px 40px 0px 20px;
-}
-
 .review__radio-caption{
   @include review-text();
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 78px;
+  margin-right: 0;
+  line-height: 52px;
+  &::before{
+    content: "";
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: #F8F8F8;
+    border-radius: 27px; /* половина w и h*/
+  }
 }
-
+.review__radio{
+  display: none;
+  /*transform:scale(4.4);
+  opacity:0.9;
+  cursor:pointer;
+  border: none;*/
+}
+.review__radio:checked + .review__radio-caption:before
+{
+  content: "\2022";
+  color: #333333;
+  font-size: 45px;
+  text-align: center;
+  line-height: 55px;
+  /*top: 60px;*/
+}
 .review__checkbox-group{
   padding: 0px 20px 0px 20px;
   border: none;
   border-bottom: solid $border-group-color 1px;
-
 }
-
 .review__checkbox-wrapper{
   height: 55px;
   line-height: 55px;
-  margin: 0px 0 24px 0;
+  margin: 0px 0 23px 0px;
 }
 .review__checkbox-caption{
   @include review-text();
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 79px;
+  line-height: 52px;
+  &::before{
+    content: "";
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+    background-color: #F8F8F8;
+  }
 }
-
 .review__checkbox{
-    margin: 0px 40px 0px 20px;
+  display: none;
+  margin: 0px 40px 0px 20px;
 }
-
+.review__checkbox:checked + .review__checkbox-caption:before{
+  content: "\2713";
+  color: #333333;
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  /*content: "";
+  display: block;
+  width: 55px;
+  height: 55px;
+  background: url("/img/icon-tick.svg") no-repeat;
+  background-position: 12px 21px;*/
+}
 .review__group-textarea{
   padding: 0px 20px 0px 20px;
   border: none;
 }
-
 .review__textarea{
   @include reset();
   @include review-text();
@@ -210,18 +235,16 @@
 @media (min-width: $width-tablet){
   .review{
     width: 650px;
-    margin: 0 auto 10px auto;
+    margin: 70px auto 10px auto;
     border: none;
   }
-
   .review__person-info{
     width: 325px;
     padding: 0px 0 0 57px;
     margin:0;
     border: none;
-    /*border-top: solid $border-group-color 1px;*/
+    border-left: solid $border-group-color 1px;
   }
-
   .review__group-header{
     padding: 4px 0 59px 0;
     text-align: left;
@@ -229,35 +252,31 @@
     font-size: 21px;
     letter-spacing: 0.01em;
   }
-
-  .review__group-header--radio-style{
-    padding-left: 80px;
-  }
   .review__contacts{
     width: 100%;
     @include reset();
-    margin-top: 40px;
+    margin-top: 50px;
     border: none;
     border-top: solid $border-group-color 1px;
   }
-
   .review__group-header--contacts-style{
+    width: 400px;
     text-align: center;
-    padding: 0px 0 28px 0;
+    margin: 0 auto;
+    padding:0;
   }
-
+  .review__contacts-container{
+    margin-top: 30px;
+  }
   .review__caption-first{
     display: none;
   }
-
   .review__caption-second{
     display: inline;
   }
-
   .review__wrapper-contacts{
     margin-bottom: 26px;
   }
-
   .review__radio-group{
     order: -1;
     box-sizing: border-box;
@@ -266,47 +285,74 @@
     border: none;
     border-top: solid $border-group-color 1px;
   }
-
   .review__radio-wrapper{
     padding:0;
-    margin-bottom: 26px;
+    margin-bottom: 22px;
+  }
+  .review__radio-caption{
+    padding-left: 78px;
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 55px;
+      height: 55px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      background-color: #F8F8F8;
+      border-radius: 27px; /* половина w и h*/
+    }
   }
 
+  .review__radio:checked + .review__radio-caption:before{
+    content: "\2022";
+    color: #333333;
+    font-size: 45px;
+    text-align: center;
+    line-height: 55px;
+    /*top: 60px;*/
+  }
   .review__checkbox-group{
     margin: 26px 0 0 0 ;
+    border: none;
   }
   .review__group-header--checkbox-style{
     width: auto;
     text-align: center;
     padding: 0px 150px;
   }
-
   .review__checkbox-container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: stretch;
-    height: 248px-102px;
+    height: 200px;
     width: 460px;
-    padding: 51px 0;
-    margin: 0 auto;
+    /*padding: 51px 0;*/
+    margin: 53px auto 0 auto;
   }
 
   .review__group-textarea{
     width: 100%;
-    @include reset();
-    margin-bottom: 53px;
+    padding: 0;
+    margin: 0px 0 52px 0;
+    border-top: solid $border-group-color 1px;
   }
 
-  .review__group-header--text-area-style{
+  .review__group-header--textarea-style{
+    width: 400px;
+    margin: 0 auto;
+    padding: 0px;
     text-align: center;
   }
-.review__textarea{
-  box-sizing: border-box;
-  height: 160px;
-  width: 100%;
-  margin:0px 0;
-  padding: 15px 20px;
+
+  .review__textarea{
+    box-sizing: border-box;
+    height: 160px;
+    width: 100%;
+    margin:59px 0 0 0;
+    padding: 15px 21px;
 }
   .review__send-button{
     width: 324px;
@@ -316,7 +362,6 @@
     text-align: left;
     padding-left:66px;
   }
-
   .review__note{
     display: block;
     margin: 24px 0;
@@ -326,14 +371,56 @@
 @media (min-width: $width-desktop){
   .review{
     width: 960px;
+    margin-top: 54px;
+    margin-bottom: -24px;
   }
-
   .review__person-info{
     width: 480px;
     padding: 0px 0 0 81px;
     margin:0;
     border: none;
     /*border-top: solid $border-group-color 1px;*/
+  }
+  .review__contacts{
+    margin-top: 50px;
+  }
+  .review__group-header--contacts-style{
+    width: 400px;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  .review__contacts-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 73px;
+  }
+  .review__wrapper-contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include reset();
+    margin-bottom: 18px;
+  }
+  .review__caption--contacts-style{
+    padding:0;
+    margin:0 15px 0 0;
+  }
+  .review__caption-first{
+    display: inline;
+  }
+  .review__caption-second{
+    display: none;
+  }
+  .review__value--contacts-style{
+    flex-grow: 0;
+    width: 317px;
+  }
+  .review__checkbox-group{
+    width: 100%;
+    @include reset();
+    margin-top: 35px;
   }
 
   .review__radio-group{
@@ -345,46 +432,51 @@
     border: none;
     border-top: solid $border-group-color 1px;
   }
-
-  .review__group-header--contacts-style{
-    padding: 0px;
+  .review__radio-wrapper{
+    margin-bottom: 22px;
   }
-  .review__contacts-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin-top: 70px;
+  .review__group-header--radio-style{
+    padding-left: 80px;
+  }
+  .review__radio-caption{
+    @include review-text();
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 80px;
+    margin-right: 25px;
+    line-height: 55px;
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 55px;
+      height: 55px;
+      margin-right: 10px;
+      position: absolute;
+      left: 5px;
+      bottom: 0px;
+      background-color: #F8F8F8;
+      border-radius: 27px; /* половина w и h*/
+    }
+  }
+  .review__radio:checked + .review__radio-caption:before
+  {
+    content: "\2022";
+    color: #333333;
+    font-size: 45px;
+    text-align: center;
+    line-height: 50px;
+    /*top: 60px;*/
   }
 
-  .review__wrapper-contacts{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    @include reset();
-    margin-bottom: 18px;
-
-  }
-
-  .review__caption--contacts-style{
-    padding:0;
-    margin:0 15px 0 0;
-  }
-
-  .review__value--contacts-style{
-    flex-grow: 0;
-    width: 317px;
-  }
-
-
-  .review__checkbox-group{
-    width: 100%;
-    @include reset();
-    margin-top: 35px;
-  }
   .review__group-header--checkbox-style{
-    width: auto;
-    padding: 0 339px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .review__checkbox-group{
+    border: none;
+    border-top: solid $border-group-color 1px;
   }
   .review__checkbox-container{
     padding: 0;
@@ -394,13 +486,42 @@
     justify-content: space-between;
     margin-top: 43px;
   }
-
+  .review__checkbox-wrapper{
+    &:nth-child(1){
+      order: 1;
+    }
+    &:nth-child(2){
+      order: 3;
+    }
+    &:nth-child(3){
+      order: 2;
+    }
+    &:nth-child(4){
+      order: 4;
+    }
+  }
   .review__checkbox-value{
     padding-bottom: 0px;
   }
 
   .review__group-textarea{
-    margin-top: 38px;
+    margin-top: 41px;
+    margin-bottom: 52px;
+    border-top: solid $border-group-color 1px;
   }
 
+  .review__group-header--textarea-style{
+    width: 400px;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+  }
+  .review__textarea{
+    margin-top:59px;
+  }
+  .review__send-button{
+    width: 480px;
+    padding: 0;
+    text-align: center;
+  }
 }

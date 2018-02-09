@@ -31,7 +31,7 @@
   font-size: 14px;
   text-align: center;
   width: auto;
-  margin: 27px 22px 26px 23px;
+  margin: 27px 22px 0px 23px;
 }
 
 .page-main__introduction--home{
@@ -68,7 +68,7 @@
    /* width: 440px;*/
    /* margin-left: auto;
     margin-right: auto;*/
-    margin:30px 164px 70px 164px;
+    margin:30px 164px 0px 164px;
     padding: 0;
     line-height: 24px;
   }
@@ -104,6 +104,10 @@
 
   .page-main__introduction{
     padding: 0;
-    margin: 30px 382px 55px 382px;
+    margin: 30px 380px 0px 380px;
+  }
+  .page-main__introduction--home{
+    padding: 0;
+    margin: 28px auto 0px auto;
   }
 }
