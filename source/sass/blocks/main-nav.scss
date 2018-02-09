@@ -28,14 +28,14 @@
 
   &:hover{
     @include link-hover();
-    border-bottom: 1px solid $menu-hover-bg;
-    border-top: 1px solid $menu-hover-bg;
+   /* border-bottom: 1px solid $menu-hover-bg;
+    border-top: 1px solid $menu-hover-bg;*/
   }
 
   &:active{
     @include link-active();
-    border-bottom: 1px solid $menu-active-bg;
-    border-top: 1px solid $menu-active-bg;
+    /*border-bottom: 1px solid $menu-active-bg;
+    border-top: 1px solid $menu-active-bg;*/
   }
 }
 
