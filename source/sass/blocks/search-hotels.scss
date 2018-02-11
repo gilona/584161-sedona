@@ -40,7 +40,6 @@
   }
 }
 
-
 .search-hotels__map{
   @include reset();
   height: 350px;
@@ -78,12 +77,15 @@
   .search-hotels__map{
     margin-top: 57px;
   }
-
 }
 
 @media (min-width: $width-desktop){
+  .search-hotels__slogan{
+    margin-top: 0px;
+    padding-top: 55px;
+  }
   .search-hotels__link-search{
     width: 458px;
-    margin-top: 53px;
+    margin-top: 49px;
   }
 }

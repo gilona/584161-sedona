@@ -10,27 +10,22 @@
     border-right: 160px solid $menu-bg;
   }
 }
-
 .reasons__inner{
   display: flex;
   flex-wrap: wrap;
 }
-
 .reasons__list{
   @include reset();
 }
-
 .reasons__item{
   @include reset();
   list-style: none;
 }
-
 .reasons__image-wrapper{
   height: 258px;
   width: 100%;
   overflow: hidden;
 }
-
 .reasons__slogan-wrapper{
   height: 153px;
   width: 100%;
@@ -40,16 +35,13 @@
   color: $menu-color;
   background: $menu-bg;
 }
-
 .reasons__slogan{
   font-size: 18px;
 }
-
 .reasons__description{
   line-height: 21px;
   margin: 13px 27px;
 }
-
 .reasons__list-options{
   @include reset();
   display: flex;
@@ -62,7 +54,6 @@
   padding-top: 35px;
   padding-bottom: 25px;
 }
-
 .reasons__item-options{
   width: 226px;
   text-align: left;
@@ -73,14 +64,12 @@
     background: url(/img/icon-house.svg) no-repeat;
   }
 }
-
 .reasons__option-title{
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
 
 }
-
 .reasons__option-description{
   font-size: 14px;
   line-height: 21px;
@@ -90,7 +79,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-
 .reasons__other-item{
   @include reset();
   height: 167px;
@@ -98,26 +86,22 @@
   background: $block-bg;
   border-bottom: 1px solid $border-group-color;
 }
-
 .reasons__other-item-slogan-wrapper{
   @include reset();
   text-align: center;
   padding-top: 28px;
 }
-
 .reasons__other-item-slogan{
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
 }
-
 .reasons__other-item-description{
   font-size: 14px;
   line-height: 21px;
   color: $description-color;
   margin: 11px 32px;
 }
-
 @media (min-width: $width-tablet){
   .reasons{
     margin-top: 52px;
@@ -209,52 +193,41 @@
     height: 256px;
     flex-direction: row-reverse;
   }
-
   .reasons__inner--full{
     flex-direction: row;
   }
-
   .reasons__image-wrapper{
     width: 800px;
     height: 256px;
   }
-
   .reasons__slogan-wrapper
   {
     width: 400px;
     height: 256px;
     padding: 0px;
   }
-
   .reasons__slogan{
     display: block;
     font-size: 21px;
-    padding: 50px 121px 0 121px;
+    padding: 53px 121px 0 121px;
     text-align: center;
   }
-
   .reasons__description{
-    padding: 0 100px 0 100px;
+    padding: 0 65px 0 65px;
   }
-
   .reasons__other-item{
     width: 400px;
     height: 256px;
   }
-
   .reasons__item-options{
     width: 280px;
-    height: 330px;
-    padding: 0 60px;
+    padding: 158px 60px 66px 60px;
     text-align: center;
   }
-
-
   .reasons__other-item-slogan{
     display: block;
     padding: 0px 80px 0 80px;
   }
-
   .reasons__other-item-description{
     padding: 0px 8px 0 8px;
   }

@@ -30,7 +30,6 @@
   border: none;
   border-bottom: solid $border-group-color 1px;
 }
-
 .review__group-header{
   @include review-text();
   width: 100%;
@@ -39,7 +38,6 @@
   /*letter-spacing: -0.09em;*/
   /*margin-bottom: 14px;*/
 }
-
 .review__wrapper-contacts{
   display: flex;
   flex-direction: column;
@@ -75,11 +73,9 @@
   flex-grow: 1;
   text-indent: 20px;
 }
-
 .review__value--contacts-style{
   padding: 0 0 4px 1px;
 }
-
 .review__radio-group{
   min-width: 0;
   padding: 0px 20px 14px 20px;
@@ -131,7 +127,6 @@
   font-size: 45px;
   text-align: center;
   line-height: 55px;
-  /*top: 60px;*/
 }
 .review__checkbox-group{
   padding: 0px 20px 0px 20px;
@@ -157,9 +152,10 @@
     height: 55px;
     margin-right: 10px;
     position: absolute;
-    left: 5px;
+    left: 0px;
     bottom: 0px;
     background-color: #F8F8F8;
+    border-radius: 5px;
   }
 }
 .review__checkbox{
@@ -167,17 +163,11 @@
   margin: 0px 40px 0px 20px;
 }
 .review__checkbox:checked + .review__checkbox-caption:before{
-  content: "\2713";
-  color: #333333;
-  font-size: 30px;
-  text-align: center;
-  line-height: 50px;
-  /*content: "";
+  content: "";
   display: block;
   width: 55px;
   height: 55px;
-  background: url("/img/icon-tick.svg") no-repeat;
-  background-position: 12px 21px;*/
+  background: #F8F8F8 url("/img/icon-tick.svg") no-repeat center center;
 }
 .review__group-textarea{
   padding: 0px 20px 0px 20px;
@@ -193,15 +183,12 @@
   margin-top: -7px;
   padding: 17px;
 }
-
 .review__textarea::-webkit-input-placeholder{
   color: $basic-color;
 }
-
 .review__value::-webkit-input-placeholder{
   color: $basic-color;
 }
-
 .review__textarea::-moz-placeholder{
   color: $basic-color;
   font-size: 18px;
@@ -210,7 +197,6 @@
 .review__value::-moz-placeholder{
   color: $basic-color;
 }
-
 .review__textarea:-ms-input-placeholder{
   color: $basic-color;
   font-size: 18px;
@@ -219,7 +205,6 @@
 .review__value:-ms-input-placeholder{
   color: $basic-color;
 }
-
 .review__send-button{
   display: block;
   width: 280px;
@@ -232,7 +217,6 @@
   color: $menu-color;
   text-align: center;
 }
-
 .review__note{
   display: none;
 }
@@ -309,7 +293,6 @@
       border-radius: 27px; /* половина w и h*/
     }
   }
-
   .review__radio:checked + .review__radio-caption:before{
     content: "\2022";
     color: #333333;
@@ -331,27 +314,36 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: flex-start;
     height: 200px;
     width: 460px;
     /*padding: 51px 0;*/
-    margin: 53px auto 0 auto;
+    margin: 45px auto 0 auto;
   }
-
+  .review__checkbox-wrapper{
+    margin-bottom: 31px;
+  }
+  .review__checkbox-wrapper{
+    width: 57%;
+  }
+  .review__checkbox{
+    margin: 0px;
+  }
+  .review__checkbox-caption{
+    padding-left: 79px;
+  }
   .review__group-textarea{
     width: 100%;
     padding: 0;
-    margin: 0px 0 52px 0;
+    margin: 8px 0 52px 0;
     border-top: solid $border-group-color 1px;
   }
-
   .review__group-header--textarea-style{
     width: 400px;
     margin: 0 auto;
     padding: 0px;
     text-align: center;
   }
-
   .review__textarea{
     box-sizing: border-box;
     height: 160px;
@@ -387,7 +379,7 @@
     /*border-top: solid $border-group-color 1px;*/
   }
   .review__contacts{
-    margin-top: 50px;
+    margin-top: 49px;
   }
   .review__group-header--contacts-style{
     width: 400px;
@@ -399,7 +391,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin-top: 73px;
+    margin-top: 75px;
   }
   .review__wrapper-contacts{
     display: flex;
@@ -410,7 +402,7 @@
   }
   .review__caption--contacts-style{
     padding:0;
-    margin:0 15px 0 0;
+    margin:0 16px 0 0;
   }
   .review__caption-first{
     display: inline;
@@ -421,13 +413,8 @@
   .review__value--contacts-style{
     flex-grow: 0;
     width: 317px;
+    padding-left: 2px;
   }
-  .review__checkbox-group{
-    width: 100%;
-    @include reset();
-    margin-top: 35px;
-  }
-
   .review__radio-group{
     width: 480px;
     order: -1;
@@ -471,27 +458,30 @@
     font-size: 45px;
     text-align: center;
     line-height: 50px;
-    /*top: 60px;*/
   }
-
   .review__group-header--checkbox-style{
     width: 400px;
     margin: 0 auto;
     padding: 0;
   }
   .review__checkbox-group{
+    width: 100%;
+    @include reset();
+    margin-top: 36px;
     border: none;
     border-top: solid $border-group-color 1px;
   }
   .review__checkbox-container{
     padding: 0;
-    width:100%;
+    width:auto;
     height: auto;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 43px;
+    margin-right: 5px;
   }
   .review__checkbox-wrapper{
+    width: auto;
     &:nth-child(1){
       order: 1;
     }
@@ -508,13 +498,11 @@
   .review__checkbox-value{
     padding-bottom: 0px;
   }
-
   .review__group-textarea{
-    margin-top: 41px;
-    margin-bottom: 52px;
+    margin-top: 33px;
+    margin-bottom: 53px;
     border-top: solid $border-group-color 1px;
   }
-
   .review__group-header--textarea-style{
     width: 400px;
     margin: 0 auto;
@@ -522,7 +510,7 @@
     text-align: center;
   }
   .review__textarea{
-    margin-top:59px;
+    margin-top:57px;
   }
   .review__send-button{
     width: 480px;
