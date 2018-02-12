@@ -1,5 +1,6 @@
 .photos{
   position: relative;
+  margin-top: 27px;
   background-color: $basic-bg;
   border-top: solid 1px $border-group-color ;
 }
@@ -12,8 +13,8 @@
 }
 
 .photos__item{
-    width: 280px;
-    height: 416px-46px;
+    width: 320px;
+    height: 414px-46px;
     list-style: none;
     border: none;
     border-bottom: solid 1px $border-group-color ;
@@ -21,16 +22,67 @@
     padding: 23px 0 23px 0;
 }
 
+.photos__image-wrapper{
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+}
+
+.photos__info-image
+{
+  width: auto;
+  margin: 0 auto;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.photos__info-wrapper{
+  height: 56px-18px;
+  padding-top: 18px;
+  padding-left: 20px;
+}
 .photos__name{
+  /*position: absolute;
+  top: 17px;
+  left: 20px;*/
   text-transform: uppercase;
+  display:block;
 }
 
 .photos__author{
+  /*position: absolute;
+  top: 27px;
+  left: 20px;*/
+  @include reset();
   color: $description-color;
+  padding-top: 5px;
+}
+
+.photos__likes{
+  /*position: absolute;
+  top: 67px;
+  left: 20px;*/
+  /*right: 231px;*/
+  font-weight: bold;
+  height: 56px-18px;
+  padding-top: 18px;
+  padding-left:20px;
+}
+
+.photos__like-link{
+  width: 25px;
+  margin-right: 11px;
 }
 
 @media (min-width: $width-tablet){
 
+  .photos
+  {
+    margin-top: 70px;
+  }
   .photos__list{
     width: 650px;
   }
@@ -43,18 +95,32 @@
     background-color: #cccccc; /*временно*/
     border: none;
   }
+  .photos__info-image{
+    flex-direction: row;
+    justify-content: space-between;
+  }
   .photos__item--big{
     width: 650px;
     height: 480px;
     background-color: #cccccc; /*временно*/
   }
-
+  .photos__image-wrapper{
+    height: 265px;
+  }
   .photos__image-wrapper--big{
     height: 400px;
+  }
+  .photos__likes{
+    padding-left: 0px;
+    padding-right: 20px;
+    padding-top: 30px;
   }
 }
 
 @media (min-width: $width-desktop){
+  .photos{
+    margin-top: 70px;
+  }
   .photos__list{
     width: 1200px;
     height: 667px;
@@ -77,11 +143,11 @@
 
   .photos__image-wrapper{
     height: 100%;
-
   }
 
   .photos__info-image{
-    height: 79px;
-    margin-top: -79px;
+    height: 80px;
+    margin-top: -80px;
+    color: #ffffff;
   }
 }

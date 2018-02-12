@@ -2,83 +2,194 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 280px;
-  margin: 0 auto;
+  width: 320px;
+  padding: 0 0px;
+  margin: 16px 0 0 0;
+  border-top: solid $border-group-color 1px;
 }
-
-.review__group{
+.review__person-info{
   @include reset();
-  width: 280px;
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 0px 20px 8px 20px;
   border: none;
   border-bottom: solid $border-group-color 1px;
 }
-
+.review__wrapper-person{
+  display: flex;
+  align-items: center;
+  width: auto;
+  @include reset();
+  margin-bottom: 18px;
+}
+.review__contacts{
+  @include reset();
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px 20px 12px 20px;
+  border: none;
+  border-bottom: solid $border-group-color 1px;
+}
 .review__group-header{
   @include review-text();
-  /*padding: 23px 0 23px 0;*/
-  text-align: center;
-}
-
-.review__wrapper{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-}
-
-.review__wrapper--wrap{
-  flex-wrap: wrap;
-}
-
-.review__value{
-  @include review-text();
   width: 100%;
+  padding: 18px 0px 24px 0px;
+  text-align: center;
+  /*letter-spacing: -0.09em;*/
+  /*margin-bottom: 14px;*/
 }
-
-.review__radio-caption{
-  @include review-text();
+.review__wrapper-contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  @include reset();
+  margin-bottom: 15px;
 }
-
-.review__checkbox-caption{
-  @include review-text();
-}
-
-.review__caption-second{
+.review__caption-first{
   display: none;
 }
-
 .review__send-button{
   @include review-text();
 }
-
 .review__caption{
   color: $description-color;
   white-space: nowrap;
-  padding-right: 14px;
+  flex-shrink: 0;
+  margin-right: 12px;
 }
-
+.review__caption--contacts-style{
+  text-align: left;
+  margin-left: 22px;
+  margin-bottom: 12px;
+}
 .review__value{
-  background-color: $input-bg;
-  border: none;
-  height: 58px;
-}
-
-.review__group-textarea{
   @include review-text();
   background-color: $input-bg;
   border: none;
-  width: 100%;
-  height: 160px;
+  height: 58px;
+  min-width: 0;
+  box-sizing: border-box;
+  flex-grow: 1;
+  text-indent: 20px;
 }
-
-.review__group-textarea::-webkit-input-placeholder{
+.review__value--contacts-style{
+  padding: 0 0 4px 1px;
+}
+.review__radio-group{
+  min-width: 0;
+  padding: 0px 20px 14px 20px;
+  border: none;
+  border-bottom: solid $border-group-color 1px;
+}
+.review__group-header--radio-style{
+  padding-left: 12px;
+  padding-top: 18px;
+  padding-right: 0px;
+}
+.review__radio-wrapper{
+  height: 55px;
+  line-height: 55px;
+  margin: 0px 0 14px 0;
+}
+.review__radio-caption{
+  @include review-text();
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 78px;
+  margin-right: 0;
+  line-height: 52px;
+  &::before{
+    content: "";
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: #F8F8F8;
+    border-radius: 27px; /* половина w и h*/
+  }
+}
+.review__radio{
+  display: none;
+  /*transform:scale(4.4);
+  opacity:0.9;
+  cursor:pointer;
+  border: none;*/
+}
+.review__radio:checked + .review__radio-caption:before
+{
+  content: "\2022";
+  color: #333333;
+  font-size: 45px;
+  text-align: center;
+  line-height: 55px;
+}
+.review__checkbox-group{
+  padding: 0px 20px 0px 20px;
+  border: none;
+  border-bottom: solid $border-group-color 1px;
+}
+.review__checkbox-wrapper{
+  height: 55px;
+  line-height: 55px;
+  margin: 0px 0 23px 0px;
+}
+.review__checkbox-caption{
+  @include review-text();
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 79px;
+  line-height: 52px;
+  &::before{
+    content: "";
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+  }
+}
+.review__checkbox{
+  display: none;
+  margin: 0px 40px 0px 20px;
+}
+.review__checkbox:checked + .review__checkbox-caption:before{
+  content: "";
+  display: block;
+  width: 55px;
+  height: 55px;
+  background: #F8F8F8 url("/img/icon-tick.svg") no-repeat center center;
+}
+.review__group-textarea{
+  padding: 0px 20px 0px 20px;
+  border: none;
+}
+.review__textarea{
+  @include reset();
+  @include review-text();
+  background-color: $input-bg;
+  border: none;
+  width: 280px-38px;
+  height: 160px-34px;
+  margin-top: -7px;
+  padding: 17px;
+}
+.review__textarea::-webkit-input-placeholder{
   color: $basic-color;
 }
-
 .review__value::-webkit-input-placeholder{
   color: $basic-color;
 }
-
-.review__group-textarea::-moz-placeholder{
+.review__textarea::-moz-placeholder{
   color: $basic-color;
   font-size: 18px;
   font-weight: bold;
@@ -86,8 +197,7 @@
 .review__value::-moz-placeholder{
   color: $basic-color;
 }
-
-.review__group-textarea:-ms-input-placeholder{
+.review__textarea:-ms-input-placeholder{
   color: $basic-color;
   font-size: 18px;
   font-weight: bold;
@@ -95,16 +205,18 @@
 .review__value:-ms-input-placeholder{
   color: $basic-color;
 }
-
 .review__send-button{
-  width: 100%;
+  display: block;
+  width: 280px;
   height: 58px;
+  padding: 0;
+  margin: 48px auto -4px auto;
   border:none;
+  font-size: 21px;
   background-color: $menu-bg;
   color: $menu-color;
   text-align: center;
 }
-
 .review__note{
   display: none;
 }
@@ -112,108 +224,297 @@
 @media (min-width: $width-tablet){
   .review{
     width: 650px;
-    margin: 0 auto;
+    margin: 70px auto 10px auto;
+    border: none;
   }
-
-  .review__group{
+  .review__person-info{
+    width: 325px;
+    padding: 0px 0 0 57px;
+    margin:0;
+    border: none;
+    border-left: solid $border-group-color 1px;
+  }
+  .review__group-header{
+    padding: 4px 0 59px 0;
+    text-align: left;
+    line-height: 26px;
+    font-size: 21px;
+    letter-spacing: 0.01em;
+  }
+  .review__contacts{
+    width: 100%;
+    @include reset();
+    margin-top: 50px;
     border: none;
     border-top: solid $border-group-color 1px;
   }
-  .review__group--floating{
-    order: -1;
-  }
-
-  .review__group--center{
+  .review__group-header--contacts-style{
+    width: 400px;
+    text-align: center;
     margin: 0 auto;
+    padding:0;
   }
-
-  .review__group--big
-  {
-    width: 100%;
+  .review__contacts-container{
+    margin-top: 30px;
   }
-
-  .review__container{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .review__container--resize{
-    height: 140px; /*временно*/
-  }
-
   .review__caption-first{
     display: none;
   }
-
   .review__caption-second{
     display: inline;
   }
-
-  .review__group-textarea{
-    margin-bottom: 58px;
+  .review__wrapper-contacts{
+    margin-bottom: 26px;
   }
-
+  .review__radio-group{
+    order: -1;
+    box-sizing: border-box;
+    @include reset();
+    text-align: left;
+    border: none;
+    border-top: solid $border-group-color 1px;
+  }
+  .review__radio-wrapper{
+    padding:0;
+    margin-bottom: 22px;
+  }
+  .review__radio-caption{
+    padding-left: 78px;
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 55px;
+      height: 55px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      background-color: #F8F8F8;
+      border-radius: 27px; /* половина w и h*/
+    }
+  }
+  .review__radio:checked + .review__radio-caption:before{
+    content: "\2022";
+    color: #333333;
+    font-size: 45px;
+    text-align: center;
+    line-height: 55px;
+    /*top: 60px;*/
+  }
+  .review__checkbox-group{
+    margin: 26px 0 0 0 ;
+    border: none;
+  }
+  .review__group-header--checkbox-style{
+    width: auto;
+    text-align: center;
+    padding: 0px 150px;
+  }
+  .review__checkbox-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 200px;
+    width: 460px;
+    /*padding: 51px 0;*/
+    margin: 45px auto 0 auto;
+  }
+  .review__checkbox-wrapper{
+    margin-bottom: 31px;
+  }
+  .review__checkbox-wrapper{
+    width: 57%;
+  }
+  .review__checkbox{
+    margin: 0px;
+  }
+  .review__checkbox-caption{
+    padding-left: 79px;
+  }
+  .review__group-textarea{
+    width: 100%;
+    padding: 0;
+    margin: 8px 0 52px 0;
+    border-top: solid $border-group-color 1px;
+  }
+  .review__group-header--textarea-style{
+    width: 400px;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+  }
+  .review__textarea{
+    box-sizing: border-box;
+    height: 160px;
+    width: 100%;
+    margin:59px 0 0 0;
+    padding: 15px 21px;
+}
   .review__send-button{
     width: 324px;
+    margin: 0;
+    line-height: 26px;
+    font-size: 21px;
+    text-align: left;
+    padding-left:66px;
   }
-
   .review__note{
     display: block;
+    margin: 24px 0;
   }
 }
 
 @media (min-width: $width-desktop){
   .review{
     width: 960px;
+    margin-top: 54px;
+    margin-bottom: -24px;
   }
-
-  .review__group{
-    width:400px;
+  .review__person-info{
+    width: 480px;
+    padding: 0px 0 0 81px;
+    margin:0;
     border: none;
+    /*border-top: solid $border-group-color 1px;*/
   }
-  .review__group-header{
-    font-size: 21px;
+  .review__contacts{
+    margin-top: 49px;
   }
-  .review__group--big
-  {
-    width: 100%;
+  .review__group-header--contacts-style{
+    width: 400px;
+    margin: 0 auto;
+    padding: 0px;
   }
-  .review__wrapper--wrap{
-    flex-wrap: nowrap;
-  }
-
-  .review__container{
+  .review__contacts-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    margin-top: 75px;
+  }
+  .review__wrapper-contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include reset();
+    margin-bottom: 18px;
+  }
+  .review__caption--contacts-style{
+    padding:0;
+    margin:0 16px 0 0;
+  }
+  .review__caption-first{
+    display: inline;
+  }
+  .review__caption-second{
+    display: none;
+  }
+  .review__value--contacts-style{
+    flex-grow: 0;
+    width: 317px;
+    padding-left: 2px;
+  }
+  .review__radio-group{
+    width: 480px;
+    order: -1;
+    box-sizing: border-box;
+    @include reset();
+    text-align: left;
+    border: none;
+    border-top: solid $border-group-color 1px;
+  }
+  .review__radio-wrapper{
+    margin-bottom: 22px;
+  }
+  .review__group-header--radio-style{
+    padding-left: 80px;
+  }
+  .review__radio-caption{
+    @include review-text();
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 80px;
+    margin-right: 25px;
+    line-height: 55px;
+    &::before{
+      content: "";
+      display: inline-block;
+      width: 55px;
+      height: 55px;
+      margin-right: 10px;
+      position: absolute;
+      left: 5px;
+      bottom: 0px;
+      background-color: #F8F8F8;
+      border-radius: 27px; /* половина w и h*/
+    }
+  }
+  .review__radio:checked + .review__radio-caption:before
+  {
+    content: "\2022";
+    color: #333333;
+    font-size: 45px;
+    text-align: center;
+    line-height: 50px;
+  }
+  .review__group-header--checkbox-style{
+    width: 400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .review__checkbox-group{
+    width: 100%;
+    @include reset();
+    margin-top: 36px;
+    border: none;
+    border-top: solid $border-group-color 1px;
+  }
+  .review__checkbox-container{
+    padding: 0;
+    width:auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 43px;
+    margin-right: 5px;
+  }
+  .review__checkbox-wrapper{
+    width: auto;
+    &:nth-child(1){
+      order: 1;
+    }
+    &:nth-child(2){
+      order: 3;
+    }
+    &:nth-child(3){
+      order: 2;
+    }
+    &:nth-child(4){
+      order: 4;
+    }
   }
   .review__checkbox-value{
     padding-bottom: 0px;
   }
-
-  .review__wrapper--resize{
-    min-width: 400px; /*временно*/
+  .review__group-textarea{
+    margin-top: 33px;
+    margin-bottom: 53px;
+    border-top: solid $border-group-color 1px;
   }
-
-  .review__wrapper--grow{
-    flex-grow: 0.47;
+  .review__group-header--textarea-style{
+    width: 400px;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
   }
-
-  .review__group--floating{
-    order: -1;
+  .review__textarea{
+    margin-top:57px;
   }
-
-  .review__group--center{
-    width: 100%;
+  .review__send-button{
+    width: 480px;
+    padding: 0;
+    text-align: center;
   }
-
-  .review__caption-first{
-    display: inline;
-  }
-
-  .review__caption-second{
-    display: none;
-  }
-
 }
