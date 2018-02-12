@@ -94,10 +94,10 @@
 }
 .review__radio-caption{
   @include review-text();
-	display: inline-block;
-	cursor: pointer;
-	position: relative;
-	padding-left: 78px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 78px;
   margin-right: 0;
   line-height: 52px;
   &::before{
@@ -140,10 +140,10 @@
 }
 .review__checkbox-caption{
   @include review-text();
-	display: inline-block;
-	cursor: pointer;
-	position: relative;
-	padding-left: 79px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 79px;
   line-height: 52px;
   &::before{
     content: "";
@@ -220,7 +220,6 @@
 .review__note{
   display: none;
 }
-
 @media (min-width: $width-tablet){
   .review{
     width: 650px;
@@ -364,7 +363,6 @@
     margin: 24px 0;
   }
 }
-
 @media (min-width: $width-desktop){
   .review{
     width: 960px;

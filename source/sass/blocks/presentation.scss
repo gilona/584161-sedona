@@ -1,58 +1,67 @@
 .presentation{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   height: 458px;
   text-align: center;
-
 }
-
 .presentation__slogan{
   margin: 33px 0 0 3px;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.01em;
 }
-
 .presentation__introduction{
   width: 250px;
-  margin: -5px auto 0 auto;
+  margin: 29px auto 0 auto;
   color: $description-color;
   letter-spacing: 0.01em;
   line-height: 24px;
 }
-
+.presentation__video-wrapper{
+  margin-top: 35px;
+}
+.presentation__video-tools{
+  width: 280px;
+  height: 67px;
+  margin: -5px auto 0 auto;
+  background-color: #f2f2f2;
+}
 @media (min-width: $width-tablet){
   .presentation{
-    height: 740px-65px;
+    height: 740px;
     width: 647px;
     padding-top: 65px;
-    margin: 0 auto;
+    margin: 0 auto -65px auto;
   }
-
   .presentation__slogan{
     line-height: 30px;
     font-size: 30px;
     margin: 0;
   }
-
   .presentation__introduction{
     width: 420px;
-    margin: -43px auto 0 auto;
+    margin: 28px auto 0 auto;
   }
-
   .presentation__video{
     height: 500px;
-    background-color: #cccccc; /*временно*/
+  }
+  .presentation__video-wrapper{
+    margin-top: 72px;
+  }
+  .presentation__video-tools{
+    width: 100%;
+    height: 94px;
+    margin-top: -96px;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1000;
   }
 }
-
 @media (min-width: $width-desktop){
-
   .presentation{
-    height: 745px-65px;
-    width: 647px;
-    margin: 0 auto 0px auto;
-    padding-top: 65px;
+    height: 745px;
+    width: 800px;
+    margin: 0 auto -65px auto;
+    padding-top: 70px;
   }
 }

@@ -4,14 +4,12 @@
   background-color: $basic-bg;
   border-top: solid 1px $border-group-color ;
 }
-
 .photos__list{
   @include reset();
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
 }
-
 .photos__item{
     width: 320px;
     height: 414px-46px;
@@ -21,15 +19,12 @@
     margin: 0 auto;
     padding: 23px 0 23px 0;
 }
-
 .photos__image-wrapper{
   width: 280px;
   height: 280px;
   margin: 0 auto;
 }
-
-.photos__info-image
-{
+.photos__info-image{
   width: auto;
   margin: 0 auto;
   height: 112px;
@@ -38,7 +33,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 .photos__info-wrapper{
   height: 56px-18px;
   padding-top: 18px;
@@ -51,7 +45,6 @@
   text-transform: uppercase;
   display:block;
 }
-
 .photos__author{
   /*position: absolute;
   top: 27px;
@@ -60,7 +53,6 @@
   color: $description-color;
   padding-top: 5px;
 }
-
 .photos__likes{
   /*position: absolute;
   top: 67px;
@@ -71,44 +63,48 @@
   padding-top: 18px;
   padding-left:20px;
 }
-
 .photos__like-link{
   width: 25px;
   margin-right: 11px;
 }
-
 @media (min-width: $width-tablet){
-
   .photos
   {
     margin-top: 70px;
+    border: none;
   }
   .photos__list{
     width: 650px;
   }
-
   .photos__item{
     width: 325px;
     height: 347px;
     padding: 0px;
     margin: 0;
-    background-color: #cccccc; /*временно*/
     border: none;
   }
   .photos__info-image{
     flex-direction: row;
     justify-content: space-between;
+    height:80px;
+    background-color: #f2f2f2;
   }
   .photos__item--big{
     width: 650px;
     height: 480px;
-    background-color: #cccccc; /*временно*/
   }
   .photos__image-wrapper{
+    width: 100%;
     height: 265px;
   }
   .photos__image-wrapper--big{
+    width: 100%;
     height: 400px;
+  }
+  .photos__info-wrapper{
+    height: 56px-20px;
+    padding-top: 20px;
+    padding-left: 22px;
   }
   .photos__likes{
     padding-left: 0px;
@@ -116,7 +112,6 @@
     padding-top: 30px;
   }
 }
-
 @media (min-width: $width-desktop){
   .photos{
     margin-top: 70px;
@@ -125,7 +120,6 @@
     width: 1200px;
     height: 667px;
   }
-
   .photos__item{
     width: 400px;
     height: 267px;
@@ -134,20 +128,22 @@
     background-color: #cccccc; /*временно*/
     border: none;
   }
-
   .photos__item--big{
     width: 100%;
     height: 400px;
     background-color: #cccccc; /*временно*/
   }
-
   .photos__image-wrapper{
     height: 100%;
   }
-
   .photos__info-image{
     height: 80px;
     margin-top: -80px;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.3);    
+    z-index: 1000;
+  }
+  .photos__name{
     color: #ffffff;
   }
 }

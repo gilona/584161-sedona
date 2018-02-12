@@ -8,11 +8,21 @@
     height:156px;
     position: relative;
     top: 56px*4+56px;
-    background-color: $menu-bg; /*временно*/
+    background-color: $menu-bg;
+    background:
+    url("/img/text-sedona.svg")  center 50px no-repeat,
+    url("/img/bg-intro-triangle-mobile.svg") 49.85%  100% no-repeat,
+    url("/img/bg-back-mobile@1x.jpg") center bottom no-repeat;
+    background-size: 72%, cover,auto;
   }
 }
 .page-header--home::after{
   height:390px;
+  background:
+  url("/img/text-sedona-index.svg")  center 90px no-repeat,
+  url("/img/bg-intro-triangle-mobile.svg") 49.85%  100% no-repeat,
+  url("/img/bg-back-mobile@1x.jpg") center bottom no-repeat;
+  background-size: 87.5%, cover,auto;
 }
 .page-header__logo-wrapper{
   position: absolute;
@@ -31,14 +41,22 @@
       display: block;
       position: static;
       width: 100%;
-      height: 350px;
-      background-color: $menu-bg; /*временно*/
+      height: 345px;
+      background-color: $menu-bg;
+      background:url("/img/text-sedona.svg")  156px 151px no-repeat,
+      url("/img/bg-intro-triangle-tablet.svg") 49.85% bottom no-repeat,
+      url("/img/bg-back-tablet@1x.jpg") center bottom no-repeat;
+      background-size: 60%, 100%,auto;
     }
   }
   .page-header--home{
     &::after{
       width: 100%;
       height: 575px;
+      background:url("/img/text-sedona-index.svg")  center 133px no-repeat,
+      url("/img/bg-intro-triangle-tablet.svg") center bottom no-repeat,
+      url("/img/bg-back-tablet@1x.jpg") center bottom no-repeat;
+      background-size: 60%,100%,auto;
     }
   }
   .page-header__logo-wrapper{
@@ -55,22 +73,29 @@
     &::after{
       content: "";
       display: block;
-      /*top:54px;*/
       position: static;
       width: 100%;
-      height: 360px;
-      background-color: $menu-bg; /*временно*/
+      height: 356px;
+      background-color: $menu-bg;
+      background:url("/img/text-sedona.svg")  center 156px no-repeat,
+      url("/img/bg-intro-triangle-desktop.svg") center bottom no-repeat,
+      url("/img/bg-back-desktop@1x.jpg") center bottom no-repeat;
+      background-size: 38.5%, 100%,auto;
     }
   }
   .page-header--home{
     &::after{
       height: 576px;
+      background:url("/img/text-sedona-index.svg")  center 133px no-repeat,
+      url("/img/bg-intro-triangle-desktop.svg") center bottom no-repeat,
+      url("/img/bg-back-desktop@1x.jpg") center bottom no-repeat;
+      background-size: 38.5%, 100%,auto;
     }
   }
   .page-header__logo-wrapper{
     position: absolute;
     top: 0px;
-    left: 45.5%;
+    left: 42.2%;
     z-index: 10;
   }
 }

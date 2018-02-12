@@ -12,8 +12,12 @@
   <body>
     <header class="page-header page-header--home">
       <div class="page-header__logo-wrapper">
-        <img class="page-header__logo-image" src="/img/logo-sedona-mobile.svg" alt="Седона">
-       </div>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="/img/logo-sedona-tablet.svg">
+          <img class="page-header__logo-image" src="/img/logo-sedona-mobile.svg" alt="Седона">
+        </picture>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__menu-button-close" type="button">&times</button>
           <ul class="main-nav__list">
@@ -43,7 +47,11 @@
                 <p class="reasons__description">СЕДОНА-НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               </div>
               <div class="reasons__image-wrapper">
-                <img src="/img/main-city-mobile@1x.jpg" alt="Городок Седона">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg">
+                  <source media="(min-width: 768px)" srcset="/img/main-city-tablet@1x.jpg">
+                  <img src="/img/main-city-mobile@1x.jpg" alt="Городок Седона">
+                </picture>
               </div>
             </div>
             <ul class="reasons__list-options">
@@ -70,7 +78,11 @@
                 <p class="reasons__description">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</p>
               </div>
               <div class="reasons__image-wrapper">
-                <img src="/img/main-bridge-mobile@1x.jpg" alt="Мост Дьявола">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="/img/main-bridge-desktop@1x.jpg 1x, /img/main-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="/img/main-bridge-tablet@1x.jpg 1x, /img/main-bridge-tablet@2x.jpg 2x">
+                  <img src="/img/main-bridge-mobile@1x.jpg" srcset="/img/main-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+                </picture>
               </div>
             </div>
           </li>
@@ -128,7 +140,9 @@
           </ul>
       <div class="page-footer__copyright page-footer__copyright--home">
         <span class="page-footer__copyright-text">РАЗРАБОТАНО</span>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptives"><img src="http://placehold.it/40x40" alt="HtmlAcademy"></a>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptives">
+          <img src="/img/logo-htmlacademy.svg" alt="HtmlAcademy">
+        </a>
       </div>
     </footer>
   </body>
