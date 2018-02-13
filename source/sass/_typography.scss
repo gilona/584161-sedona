@@ -3,8 +3,6 @@ html{
   overflow-x: hidden;
   background-color: $body-bg;
 }
-
-
 body{
   min-width: 320px;
   width: 320px;
@@ -17,14 +15,12 @@ body{
   color: $basic-color;
   background-color: $basic-bg;
 }
-
 @media (min-width: 768px){
   body{
     width: 768px;
     min-width: 768px;
   }
 }
-
 @media (min-width: 1200px){
   body{
     width: 1200px;
