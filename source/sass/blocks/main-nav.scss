@@ -4,7 +4,6 @@
   width: 100%;
   background-color: $basic-bg;
 }
-
 .main-nav__list{
   display: flex;
   flex-wrap: wrap;
@@ -12,40 +11,33 @@
   justify-content: space-between;
 
 }
-
 .main-nav__item{
   list-style: none;
   border-bottom: 1px solid #73a7c7;
   border-top: 1px solid #8fbdda;
   width: 320px;
 }
-
 .main-nav__item-link{
   height: 54px;
   line-height: 54px;
   display: block;
   @include link-basic(18px);
-
   &:hover{
     @include link-hover();
-   /* border-bottom: 1px solid $menu-hover-bg;
-    border-top: 1px solid $menu-hover-bg;*/
   }
-
   &:active{
     @include link-active();
     /*border-bottom: 1px solid $menu-active-bg;
     border-top: 1px solid $menu-active-bg;*/
   }
 }
-
 .main-nav__menu-button-close{
   position: absolute;
   top: -3px;
   right: 4px;
   width: 55px;
   height: 55px;
-  background-color: $menu-bg;
+  background-color: rgba(129,179,211, 0);
   border: none;
   color:$menu-color;
   font-weight: bolder;
@@ -53,13 +45,11 @@
   text-align: center;
   line-height: 55px;
 }
-
 .main-nav__menu-button-open-wrapper{
   position: relative;
   height: 56px;
   background-color: $basic-bg;
 }
-
 .main-nav__menu-button-open{
   position: absolute;
   top: 0px;
@@ -73,8 +63,6 @@
   text-align: center;
   color:$menu-bg;
 }
-
-
 @media (min-width: $width-tablet){
   .main-nav__item{
     width: 144px;
@@ -99,7 +87,6 @@
       padding-right: 5px;
     }
   }
-
   .main-nav__item-link{
     background-color: $basic-bg;
     border: none;
@@ -126,7 +113,6 @@
     right: 0px;
     display: none;
   }
-
     .main-nav__menu-button-open-wrapper{
       display: none;
     }
@@ -134,9 +120,7 @@
     .main-nav__menu-button-open{
       display: none;
     }
-
 }
-
 @media (min-width: $width-desktop){
   .main-nav__item{
     width: 252px;
@@ -148,7 +132,6 @@
       padding: 0px;
       padding-right: 11px;
     }
-
     &:nth-child(2){
       width: 252px-40px;
       padding: 0px;
@@ -161,45 +144,36 @@
       padding-left: 40px;
       margin-left: 96px;
     }
-
     &:nth-child(4){
       width: 252px-15px;
       padding: 0px;
       padding-left: 15px;
     }
   }
-
   .main-nav__item-link{
     background-color: $basic-bg;
     border: none;
     color: $basic-color;
     font-size: 14px;
     font-weight: bold;
-
     &:hover{
       background-color: $basic-bg;
       color: $basic-color;
       border: none;
     }
-
     &:active{
       background-color: $basic-bg;
       color: $basic-color;
       border: none;
     }
   }
-
   .main-nav__menu-button-close{
     display: none;
   }
-
   .main-nav__menu-button-open-wrapper{
     display: none;
   }
-
   .main-nav__menu-button-open{
     display: none;
   }
-
-
 }

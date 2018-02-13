@@ -94,10 +94,10 @@
 }
 .review__radio-caption{
   @include review-text();
-	display: inline-block;
-	cursor: pointer;
-	position: relative;
-	padding-left: 78px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 78px;
   margin-right: 0;
   line-height: 52px;
   &::before{
@@ -133,17 +133,20 @@
   border: none;
   border-bottom: solid $border-group-color 1px;
 }
+.review__group-header--checkbox-style{
+  padding-bottom: 18px;
+}
 .review__checkbox-wrapper{
   height: 55px;
   line-height: 55px;
-  margin: 0px 0 23px 0px;
+  margin: 0px 0 25px 0px;
 }
 .review__checkbox-caption{
   @include review-text();
-	display: inline-block;
-	cursor: pointer;
-	position: relative;
-	padding-left: 79px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 79px;
   line-height: 52px;
   &::before{
     content: "";
@@ -181,7 +184,7 @@
   width: 280px-38px;
   height: 160px-34px;
   margin-top: -7px;
-  padding: 17px;
+  padding: 15px 17px;
 }
 .review__textarea::-webkit-input-placeholder{
   color: $basic-color;
@@ -220,7 +223,6 @@
 .review__note{
   display: none;
 }
-
 @media (min-width: $width-tablet){
   .review{
     width: 650px;
@@ -364,7 +366,6 @@
     margin: 24px 0;
   }
 }
-
 @media (min-width: $width-desktop){
   .review{
     width: 960px;
@@ -467,7 +468,7 @@
   .review__checkbox-group{
     width: 100%;
     @include reset();
-    margin-top: 36px;
+    margin-top: 34px;
     border: none;
     border-top: solid $border-group-color 1px;
   }
@@ -499,7 +500,7 @@
     padding-bottom: 0px;
   }
   .review__group-textarea{
-    margin-top: 33px;
+    margin-top: 35px;
     margin-bottom: 53px;
     border-top: solid $border-group-color 1px;
   }
@@ -511,6 +512,7 @@
   }
   .review__textarea{
     margin-top:57px;
+    padding: 17px 21px;
   }
   .review__send-button{
     width: 480px;

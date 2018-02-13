@@ -13,7 +13,11 @@
     <header class="page-header">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="/img/logo-sedona-mobile.svg" alt="Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="/img/logo-sedona-tablet.svg">
+            <img class="page-header__logo-image" src="/img/logo-sedona-mobile.svg" alt="Седона">
+          </picture>
         </a>
       </div>
       <nav class="main-nav">
@@ -39,8 +43,12 @@
           <ul class="photos__list">
               <li class="photos__item photos__item--big">
                 <div class="photos__image-wrapper photos__image-wrapper--big">
-                  <a class="photos__link-image" href="http://placehold.it/350x150" target="_blank">
-                    <img class="photos-image" src="http://placehold.it/280x281" alt="Неродные просторы">
+                  <a class="photos__link-image" href="#" target="_blank">
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="/img/photo-sunset-desktop@1x.jpg 1x, /img/photo-sunset-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="/img/photo-sunset-tablet@1x.jpg 1x, /img/photo-sunset-tablet@2x.jpg 2x">
+                        <img class="photos-image" src="/img/photo-sunset-mobile@1x.jpg" srcset="photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+                      </picture>
                   </a>
                 </div>
                 <div class="photos__info-image">
@@ -56,8 +64,12 @@
               </li>
               <li class="photos__item">
                 <div class="photos__image-wrapper">
-                    <a class="photos__link-image" href="http://placehold.it/350x150" target="_blank">
-                      <img class="photos__image" src="http://placehold.it/280x267" alt="Местная растительность">
+                    <a class="photos__link-image" href="#" target="_blank">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="/img/photo-cactus-desktop@1x.jpg 1x, /img/photo-cactus-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="/img/photo-cactus-tablet@1x.jpg 1x, /img/photo-cactus-tablet@2x.jpg 2x">
+                        <img class="photos__image" src="/img/photo-cactus-mobile@1x.jpg" srcset="/img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+                      </picture>
                     </a>
                 </div>
                 <div class="photos__info-image">
@@ -73,9 +85,13 @@
               </li>
               <li class="photos__item">
                 <div class="photos__image-wrapper">
-                    <a class="photos__link-image" href="http://placehold.it/350x150" target="_blank">
-                      <img class="photos__image" src="http://placehold.it/280x267" alt="Дорога на север">
-                    </a>
+                  <a class="photos__link-image" href="#" target="_blank">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="/img/photo-roads-desktop@1x.jpg 1x, /img/photo-roads-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="/img/photo-roads-tablet@1x.jpg 1x, /img/photo-roads-tablet@2x.jpg 2x">
+                      <img class="photos__image" src="/img/photo-roads-mobile@1x.jpg" srcset="/img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+                    </picture>
+                  </a>
                 </div>
                 <div class="photos__info-image">
                   <div class="photos__info-wrapper">
@@ -91,7 +107,11 @@
               <li class="photos__item">
                 <div class="photos__image-wrapper">
                     <a class="photos__link-image" href="http://placehold.it/350x150" target="_blank">
-                      <img class="photos__image" src="http://placehold.it/280x267" alt="Мост Дьявола">
+                      <picture>
+                        <source media="(min-width: 1200px)" srcset="/img/photo-bridge-desktop@1x.jpg 1x, /img/photo-bridge-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="/img/photo-bridge-tablet@1x.jpg 1x, /img/photo-bridge-tablet@2x.jpg 2x">
+                        <img class="photos__image" src="/img/photo-bridge-mobile@1x.jpg" srcset="/img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+                      </picture>
                     </a>
                 </div>
                 <div class="photos__info-image">
@@ -109,9 +129,14 @@
             <div class="presentation">
               <b class="presentation__slogan">ВСЕ ЕЩЕ СОМНЕВАЕТЕСЬ?</b>
               <p class="presentation__introduction">СМОТРИТЕ ВИДЕОПРЕЗЕНТАЦИЮ И СКОРЕЕ ЗА БИЛЕТАМИ, ПОКА ОНИ НЕ ПОДОРОЖАЛИ В ОЧЕРЕДНОЙ РАЗ!</p>
-              <video class="presentation__video" poster="http://placehold.it/320x270">
-                <source src="#">
-              </video>
+              <div class="presentation__video-wrapper">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="/img/video-desktop@1x.jpg 1x, /img/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="/img/video-tablet@1x.jpg 1x, /img/video-tablet@2x.jpg 2x">
+                  <img class="presentation__video" src="/img/video-mobile@1x.jpg" srcset="/img/video-mobile@2x.jpg 2x" alt="Видеопрезентация">
+                </picture>
+              </div>
+              <div class="presentation__video-tools"></div>
             </div>
           </div>
     </main>

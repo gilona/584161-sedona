@@ -47,7 +47,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   height: 418px;
   box-sizing: border-box;
   list-style: none;
@@ -58,17 +58,22 @@
   width: 226px;
   text-align: left;
   padding-left: 70px;
-  &::before{
-    content: "";
-    display: block;
+  position: relative;
+  /* &:nth-child(1){
+    background-size: 38px 39px;
     background: url(/img/icon-house.svg) no-repeat;
   }
+  &:nth-child(2){
+    background:url(/img/icon-gift.svg) no-repeat;
+  }
+  &:nth-child(3){
+    background:url(/img/icon-burger.svg) no-repeat;
+  }*/
 }
 .reasons__option-title{
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-
 }
 .reasons__option-description{
   font-size: 14px;
