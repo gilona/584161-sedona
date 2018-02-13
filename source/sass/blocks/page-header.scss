@@ -18,11 +18,16 @@
 }
 .page-header--home::after{
   height:390px;
-  background:
-  url("/img/text-sedona-index.svg")  center 90px no-repeat,
+  background: url("/img/text-sedona-index.svg")  center 90px no-repeat,
   url("/img/bg-intro-triangle-mobile.svg") 49.85%  100% no-repeat,
   url("/img/bg-back-mobile@1x.jpg") center bottom no-repeat;
   background-size: 87.5%, cover,auto;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("/img/text-sedona-index.svg")  center 90px no-repeat,
+    url("/img/bg-intro-triangle-mobile.svg") 49.85%  100% no-repeat,
+    url("/img/bg-back-mobile@2x.jpg") center bottom no-repeat;
+    background-size: 87.5%, cover,auto;
+  }
 }
 .page-header__logo-wrapper{
   position: absolute;
@@ -47,6 +52,14 @@
       url("/img/bg-intro-triangle-tablet.svg") 49.85% bottom no-repeat,
       url("/img/bg-back-tablet@1x.jpg") center bottom no-repeat;
       background-size: 60%, 100%,auto;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background:url("/img/text-sedona.svg")  156px 151px no-repeat,
+        url("/img/bg-intro-triangle-tablet.svg") 49.85% bottom no-repeat,
+        url("/img/bg-back-tablet@2x.jpg") center bottom no-repeat;
+        background-size: 60%, 100%,auto;
+        /* background-image: url("img/bg-header@2x.jpg");
+        background-size: 1338px auto;*/
+      }
     }
   }
   .page-header--home{
@@ -66,7 +79,6 @@
     z-index: 10;
   }
 }
-
 @media (min-width: $width-desktop){
   .page-header{
     margin-bottom: 0px;
@@ -81,6 +93,12 @@
       url("/img/bg-intro-triangle-desktop.svg") center bottom no-repeat,
       url("/img/bg-back-desktop@1x.jpg") center bottom no-repeat;
       background-size: 38.5%, 100%,auto;
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+        background:url("/img/text-sedona.svg")  center 156px no-repeat,
+        url("/img/bg-intro-triangle-desktop.svg") center bottom no-repeat,
+        url("/img/bg-back-desktop@2x.jpg") center bottom no-repeat;
+        background-size: 38.5%, 100%,auto;
+      }
     }
   }
   .page-header--home{
