@@ -8,6 +8,7 @@
 .main-nav__list {
   display: flex;
   flex-wrap: wrap;
+
   @include reset();
   justify-content: space-between;
 }
@@ -23,6 +24,7 @@
   height: 54px;
   line-height: 54px;
   display: block;
+
   @include link-basic(18px);
 
   &:hover {
@@ -42,9 +44,9 @@
   right: 4px;
   width: 55px;
   height: 55px;
-  background-color: rgba(129,179,211, 0);
+  background-color: rgba(129, 179, 211, 0);
   border: none;
-  color:$menu-color;
+  color: $menu-color;
   font-weight: bolder;
   font-size: 40px;
   text-align: center;
@@ -192,6 +194,7 @@
   .main-nav__menu-button-close {
     display: none;
   }
+
   .main-nav__menu-button-open-wrapper {
     display: none;
   }
