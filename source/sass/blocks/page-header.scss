@@ -2,7 +2,7 @@
   position: relative;
   margin-bottom: 280px;
 
-  &::after{
+  &::after {
     content: "";
     display: block;
     width: 100%;
@@ -10,10 +10,9 @@
     position: relative;
     top: 280px;
     background-color: $menu-bg;
-    background:
-    url("/img/text-sedona.svg")  center 50px no-repeat,
-    url("/img/bg-intro-triangle-mobile.svg") 49.85%  100% no-repeat,
-    url("/img/bg-back-mobile@1x.jpg") center bottom no-repeat;
+    background: url("/img/text-sedona.svg")  center 50px no-repeat,
+          url("/img/bg-intro-triangle-mobile.svg") 49.85%  100% no-repeat,
+          url("/img/bg-back-mobile@1x.jpg") center bottom no-repeat;
     background-size: 72%, cover, auto;
   }
 }
@@ -21,8 +20,8 @@
 .page-header--home::after {
   height: 390px;
   background: url("/img/text-sedona-index.svg")  center 90px no-repeat,
-      url("/img/bg-intro-triangle-mobile.svg") 49.85%  100% no-repeat,
-      url("/img/bg-back-mobile@1x.jpg") center bottom no-repeat;
+        url("/img/bg-intro-triangle-mobile.svg") 49.85%  100% no-repeat,
+        url("/img/bg-back-mobile@1x.jpg") center bottom no-repeat;
   background-size: 87.5%, cover, auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -46,7 +45,8 @@
 @media (min-width: $width-tablet) {
   .page-header {
     margin-bottom: 0;
-    &::after{
+
+    &::after {
       content: "";
       display: block;
       position: static;
