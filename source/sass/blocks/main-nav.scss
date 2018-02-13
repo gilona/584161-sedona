@@ -1,36 +1,42 @@
-.main-nav{
+.main-nav {
   position: absolute;
-  top: 0px;
+  top: 0;
   width: 100%;
   background-color: $basic-bg;
 }
-.main-nav__list{
+
+.main-nav__list {
   display: flex;
   flex-wrap: wrap;
   @include reset();
   justify-content: space-between;
 }
-.main-nav__item{
+
+.main-nav__item {
   list-style: none;
   border-bottom: 1px solid #73a7c7;
   border-top: 1px solid #8fbdda;
   width: 320px;
 }
-.main-nav__item-link{
+
+.main-nav__item-link {
   height: 54px;
   line-height: 54px;
   display: block;
   @include link-basic(18px);
-  &:hover{
+
+  &:hover {
     @include link-hover();
   }
-  &:active{
+
+  &:active {
     @include link-active();
     /*border-bottom: 1px solid $menu-active-bg;
     border-top: 1px solid $menu-active-bg;*/
   }
 }
-.main-nav__menu-button-close{
+
+.main-nav__menu-button-close {
   position: absolute;
   top: -3px;
   right: 4px;
@@ -44,130 +50,153 @@
   text-align: center;
   line-height: 55px;
 }
-.main-nav__menu-button-open-wrapper{
+
+.main-nav__menu-button-open-wrapper {
   position: relative;
   height: 56px;
   background-color: $basic-bg;
 }
-.main-nav__menu-button-open{
+
+.main-nav__menu-button-open {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   width: 63px;
   height: 55px;
-  padding: 0px 0 5px 0;
+  padding: 0 0 5px 0;
   background-color: $basic-bg;
   border: none;
   font-size: 40px;
   text-align: center;
-  color:$menu-bg;
+  color: $menu-bg;
 }
-@media (min-width: $width-tablet){
-  .main-nav__item{
+
+@media (min-width: $width-tablet) {
+  .main-nav__item {
     width: 144px;
     height: 56px;
     border: none;
-    &:nth-child(1){
+
+    &:nth-child(1) {
       width: 144px - 10px;
       padding-left: 10px;
     }
-    &:nth-child(2){
-      width: 144px-30px;
+
+    &:nth-child(2) {
+      width: 144px - 30px;
       padding-right: 30px;
       margin-right: 51px;
     }
-    &:nth-child(3){
+
+    &:nth-child(3) {
       width: 144px - 40px;
       padding-left: 40px;
       margin-left: 51px;
     }
-    &:nth-child(4){
+
+    &:nth-child(4) {
       width: 144px - 5px;
       padding-right: 5px;
     }
   }
-  .main-nav__item-link{
+
+  .main-nav__item-link {
     background-color: $basic-bg;
     border: none;
     color: $basic-color;
     font-size: 14px;
     font-weight: bold;
-    &:hover{
+
+    &:hover {
       background-color: $basic-bg;
       color: $basic-color;
       border: none;
     }
-    &:active{
+
+    &:active {
       background-color: $basic-bg;
       color: $basic-color;
       border: none;
     }
   }
-  .main-nav__menu-button-close{
+
+  .main-nav__menu-button-close {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     display: none;
   }
-    .main-nav__menu-button-open-wrapper{
-      display: none;
-    }
-    .main-nav__menu-button-open{
-      display: none;
-    }
+
+  .main-nav__menu-button-open-wrapper {
+    display: none;
+  }
+
+  .main-nav__menu-button-open {
+    display: none;
+  }
 }
-@media (min-width: $width-desktop){
-  .main-nav__item{
+
+@media (min-width: $width-desktop) {
+  .main-nav__item {
     width: 252px;
     height: 56px;
     border: none;
-    &:nth-child(1){
-      width: 252px-11px;
-      padding: 0px;
+
+    &:nth-child(1) {
+      width: 252px - 11px;
+      padding: 0;
       padding-right: 11px;
     }
-    &:nth-child(2){
-      width: 252px-40px;
-      padding: 0px;
+
+    &:nth-child(2) {
+      width: 252px - 40px;
+      padding: 0;
       padding-right: 40px;
       margin-right: 96px;
     }
-    &:nth-child(3){
-      width: 252px-40px;
-      padding: 0px;
+
+    &:nth-child(3) {
+      width: 252px - 40px;
+      padding: 0;
       padding-left: 40px;
       margin-left: 96px;
     }
-    &:nth-child(4){
-      width: 252px-15px;
-      padding: 0px;
+
+    &:nth-child(4) {
+      width: 252px - 15px;
+      padding: 0;
       padding-left: 15px;
     }
   }
-  .main-nav__item-link{
+
+  .main-nav__item-link {
     background-color: $basic-bg;
     border: none;
     color: $basic-color;
     font-size: 14px;
     font-weight: bold;
-    &:hover{
+
+    &:hover {
       background-color: $basic-bg;
       color: $basic-color;
       border: none;
     }
-    &:active{
+
+    &:active {
       background-color: $basic-bg;
       color: $basic-color;
       border: none;
     }
   }
-  .main-nav__menu-button-close{
+
+  .main-nav__menu-button-close {
     display: none;
   }
-  .main-nav__menu-button-open-wrapper{
+  .main-nav__menu-button-open-wrapper {
     display: none;
   }
-  .main-nav__menu-button-open{
+
+  .main-nav__menu-button-open {
     display: none;
   }
 }
