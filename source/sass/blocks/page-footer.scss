@@ -42,6 +42,18 @@
   height: 47px - 16px;
   background: $menu-bg;
   padding-top: 16px;
+
+  &:hover {
+    background-color: $menu-hover-bg;
+  }
+
+  &:active {
+    background-color: $menu-active-bg;
+  }
+
+  &:active .page-footer__social-image{
+    fill: #88b6d1;
+  }
 }
 
 .page-footer__social-image {
@@ -72,6 +84,14 @@
 .page-footer__copyright-link {
   width: 26px;
   margin-left: 5px;
+
+  &:hover .page-footer__copyright-image {
+    fill: $menu-bg;
+  }
+
+  &:active .page-footer__copyright-image {
+    fill: #b2b2b2;
+  }
 }
 
 @media (min-width: $width-tablet){

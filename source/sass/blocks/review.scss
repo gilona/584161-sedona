@@ -39,8 +39,6 @@
   width: 100%;
   padding: 18px 0 24px 0px;
   text-align: center;
-  /*letter-spacing: -0.09em;*/
-  /*margin-bottom: 14px;*/
 }
 
 .review__wrapper-contacts {
@@ -95,7 +93,7 @@
 }
 
 .review__value--contacts-style {
-  padding: 0 0 4px 1px;
+  padding: 0 0 4px 3px;
 }
 
 .review_image-container--phone {
@@ -327,7 +325,7 @@
   }
 
   .review__contacts-container {
-    margin-top: 30px;
+    margin-top: 29px;
   }
 
   .review__caption-first {
@@ -401,7 +399,7 @@
     align-items: flex-start;
     height: 200px;
     width: 460px;
-    margin: 45px auto 0 auto;
+    margin: 44px auto 0 auto;
   }
 
   .review__checkbox-wrapper {
