@@ -25,7 +25,6 @@
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__item-link" href="index.html">ГЛАВНАЯ</a></li>
             <li class="main-nav__item"><a class="main-nav__item-link" href="photo.html">ФОТО И ВИДЕО</a></li>
-            <!--li class="main-nav__item-spacer"></li-->
             <li class="main-nav__item"><a class="main-nav__item-link" href="form.html">ФОРМА ОТЗЫВА</a></li>
             <li class="main-nav__item"><a class="main-nav__item-link" href="#">HTML ACADEMY</a></li>
           </ul>
@@ -38,8 +37,6 @@
           <img class="page-header__image" src="/img/text-sedona.svg" width="70%" alt="Добро пожаловать в Седону!">
         </div>
       </div>
-      <!--div class="page-header__picture">
-      </div-->
     </header>
     <main class="page-main">
       <div class="page-main__header-wrapper">
@@ -69,17 +66,21 @@
         <fieldset class="review__contacts">
           <legend class="review__group-header review__group-header--contacts-style">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
           <div class="review__contacts-container">
-            <p class="review__wrapper-contacts">
-                <label class="review__caption review__caption--contacts-style" for="phone" >
-                  <span class="review__caption-first">ТЕЛЕФОН*:</span>
-                  <span class="review__caption-second">КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
-                </label>
-                <input class="review__value review__value--contacts-style" type="tel" id="phone" required placeholder="Введите телефон">
-              </p>
-              <p class="review__wrapper-contacts">
-                <label class="review__caption review__caption--contacts-style" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
-                <input class="review__value review__value--contacts-style" type="email" id="email" required placeholder="Введите e-mail">
-            </p>
+            <div class="review__wrapper-contacts">
+              <label class="review__caption review__caption--contacts-style" for="phone" >
+                <span class="review__caption-first">ТЕЛЕФОН*:</span>
+                <span class="review__caption-second">КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
+              </label>
+              <div class="review_image-container review_image-container--phone">
+                <input class="review__value review__value--contacts-style review__value--phone" type="tel" id="phone" required placeholder="Введите телефон">
+              </div>
+            </div>
+            <div class="review__wrapper-contacts">
+              <label class="review__caption review__caption--contacts-style" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+              <div class="review_image-container review_image-container--email">
+                <input class="review__value review__value--contacts-style review__value--email" type="email" id="email" required placeholder="Введите e-mail">
+              </div>
+            </div>
           </div>
         </fieldset>
 
