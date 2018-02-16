@@ -56,18 +56,6 @@
   display: none;
 }
 
-.review__send-button {
-  @include review-text();
-
-  &:hover {
-    @include link-hover();
-  }
-
-  &:active {
-    @include link-active();
-  }
-}
-
 .review__caption {
   color: $description-color;
   white-space: nowrap;
@@ -273,7 +261,6 @@
 
 .review__textarea {
   @include reset();
-
   @include review-text();
   background-color: $input-bg;
   border: none;
@@ -290,7 +277,8 @@
 .review__value::-webkit-input-placeholder {
   color: $basic-color;
 }
-.review__textarea::-moz-placeholder{
+
+.review__textarea::-moz-placeholder {
   color: $basic-color;
   font-size: 18px;
   font-weight: bold;
@@ -311,6 +299,7 @@
 }
 
 .review__send-button {
+  @include review-text();
   display: block;
   width: 280px;
   height: 58px;
@@ -321,6 +310,14 @@
   background-color: $menu-bg;
   color: $menu-color;
   text-align: center;
+
+  &:hover {
+    @include link-hover();
+  }
+
+  &:active {
+    @include link-active();
+  }
 }
 
 .review__note {
@@ -328,7 +325,7 @@
 }
 
 @media (min-width: $width-tablet) {
-  .review{
+  .review {
     width: 650px;
     margin: 70px auto 10px auto;
     border: none;
@@ -374,9 +371,10 @@
     display: none;
   }
 
-  .review__caption-second{
+  .review__caption-second {
     display: inline;
   }
+
   .review__wrapper-contacts {
     margin-bottom: 26px;
   }
@@ -412,12 +410,12 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      background-color: #F8F8F8;
+      background-color: #f8f8f8;
       border-radius: 27px; /* половина w и h*/
     }
   }
 
-  .review__radio:checked + .review__radio-caption:before {
+  .review__radio:checked + .review__radio-caption::before {
     content: "\2022";
     color: #333333;
     font-size: 45px;
@@ -426,7 +424,7 @@
   }
 
   .review__checkbox-group {
-    margin: 26px 0 0 0 ;
+    margin: 26px 0 0 0;
     border: none;
   }
 
@@ -447,11 +445,8 @@
   }
 
   .review__checkbox-wrapper {
-    margin-bottom: 31px;
-  }
-
-  .review__checkbox-wrapper {
     width: 57%;
+    margin-bottom: 31px;
   }
 
   .review__checkbox {
@@ -480,7 +475,7 @@
     box-sizing: border-box;
     height: 160px;
     width: 100%;
-    margin:59px 0 0 0;
+    margin: 59px 0 0 0;
     padding: 15px 21px;
   }
 
@@ -596,12 +591,12 @@
       position: absolute;
       left: 5px;
       bottom: 0;
-      background-color: #F8F8F8;
+      background-color: #f8f8f8;
       border-radius: 27px; /* половина w и h*/
     }
   }
 
-  .review__radio:checked + .review__radio-caption:before {
+  .review__radio:checked + .review__radio-caption::before {
     content: "\2022";
     color: #333333;
     font-size: 45px;
@@ -626,7 +621,7 @@
 
   .review__checkbox-container {
     padding: 0;
-    width:auto;
+    width: auto;
     height: auto;
     flex-direction: row;
     justify-content: space-between;
