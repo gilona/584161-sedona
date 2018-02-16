@@ -79,7 +79,8 @@
 }
 
 .photos__like-icon {
-  fill: #b2b2b2;
+  fill: #ffffff;
+  fill-opacity: 0.3;
 }
 
 @media (min-width: $width-tablet) {
@@ -163,6 +164,7 @@
   }
 
   .photos__info-image {
+    position: relative;
     height: 80px;
     margin-top: -80px;
     color: #ffffff;
