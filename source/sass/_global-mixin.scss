@@ -1,35 +1,34 @@
-@mixin reset(){
+@mixin reset() {
   margin: 0;
   padding: 0;
 }
 
-@mixin link-basic($font-size){
+@mixin link-basic($font-size) {
   background-color: $menu-bg;
   color: $menu-color;
-  font-family: "ptsans","Tahoma","sans-serif";
+  font-family: "ptsans", "Tahoma", sans-serif;
   font-weight: bold;
   font-size: $font-size;
   text-decoration: none;
   text-align: center;
 }
 
-
-@mixin link-hover(){
+@mixin link-hover() {
   background-color: $menu-hover-bg;
 }
 
-@mixin link-active(){
+@mixin link-active() {
   background-color: $menu-active-bg;
   color: $menu-active-color;
 }
 
-@mixin link-disable(){
+@mixin link-disable() {
   background-color: $menu-disable-bg;
   color: $menu-color;
 }
 
-@mixin review-text(){
-  font-family: "ptsans","Tahoma","sans-serif";
+@mixin review-text() {
+  font-family: "ptsans", "Tahoma", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;

@@ -1,17 +1,12 @@
 .page-main{
   @include reset();
 }
-
 .page-main__header-wrapper{
-  /*height: 190px-39px;*/
   padding-top: 39px;
 }
-
 .page-main__header-wrapper--home{
-  /*height: 239px-57px;*/
   padding-top: 38px;
 }
-
 .page-main__header{
   @include reset();
   background-color: $basic-bg;
@@ -21,9 +16,7 @@
   text-align: center;
   white-space: pre-wrap;
   margin: 0 32px;
-
 }
-
 .page-main__introduction{
   background-color: $basic-bg;
   color: $description-color;
@@ -33,76 +26,54 @@
   width: auto;
   margin: 27px 22px 0px 23px;
 }
-
 .page-main__introduction--home{
   line-height: 26px;
 }
-
 @media (min-width: $width-tablet){
   .page-main__header-wrapper{
-    /*height: 245px-70px;*/
-    padding-top: 70px;
+    padding-top: 75px;
   }
-
   .page-main__header-wrapper--home{
-    /*height: 206px-50px;*/
     padding-top: 50px;
-    /*padding-bottom: 26px;*/
   }
-
   .page-main__header{
-    /*width: 440px;*/
-    /*margin-left: 164px;
-    margin-right: 164px;*/
     margin: 0;
     padding: 0 164px;
     font-size: 30px;
     line-height: 26px;
   }
-
   .page-main__header--home{
     font-size: 21px;
     line-height: 26px;
   }
   .page-main__introduction{
-   /* width: 440px;*/
-   /* margin-left: auto;
-    margin-right: auto;*/
     margin:30px 164px 0px 164px;
     padding: 0;
     line-height: 24px;
   }
-
   .page-main__introduction--home{
     line-height: 26px;
     margin: 26px 0px 24px 0px;
     text-align: center;
   }
 }
-
 @media (min-width: $width-desktop){
   .page-main__header-wrapper{
-    /*height: 287px-110px;*/
-    padding-top: 110px;
+    padding-top: 113px;
   }
-
   .page-main__header-wrapper--home{
-    /*height: 205px-48px;*/
     padding: 48px 0 25px 0;
   }
-
   .page-main__header{
     font-size: 30px;
     line-height: 26px;
     padding: 0 380px;
   }
-
   .page-main__header--home{
     font-size: 21px;
     line-height: 26px;
     padding: 0 380px;
   }
-
   .page-main__introduction{
     padding: 0;
     margin: 30px 380px 0px 380px;
