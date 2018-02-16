@@ -79,7 +79,7 @@
 }
 
 .photos__like-icon {
-  fill: #ffffff;
+  fill: #000000;
   fill-opacity: 0.3;
 }
 
@@ -178,5 +178,10 @@
 
   .photos__author {
     color: #ffffff;
+  }
+
+  .photos__like-icon {
+    fill: #ffffff;
+    fill-opacity: 1;
   }
 }
