@@ -75,6 +75,17 @@
   color: $menu-bg;
 }
 
+@media (max-width: $mobile-width-only) {
+
+  .main-nav--closed .main-nav__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
 @media (min-width: $width-tablet) {
   .main-nav__item {
     width: 144px;
