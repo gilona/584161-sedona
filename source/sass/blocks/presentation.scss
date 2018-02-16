@@ -79,7 +79,7 @@
 .presentation__video-runer-cyrcle {
   width: 10px;
   height: 10px;
-  margin:-25px 0 0 58px;
+  margin: -25px 0 0 58px;
   border-radius: 5px;
   background-color: rgba(256, 256, 256, 1);
 }
@@ -116,23 +116,23 @@
   }
 
   .presentation__video-tools {
-  width: auto;
-  height: 95px;
-  padding: 0 41px 0 34px;
-  margin-top: -80px;
-  background-color: rgba(0, 0, 0, 0);
-  z-index: 1000;
+    width: auto;
+    height: 95px;
+    padding: 0 41px 0 34px;
+    margin-top: -80px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1000;
   }
 
   .presentation__video-tools-link {
-      margin-top: 22px;
+    margin-top: 22px;
   }
 
   .presentation__video-tools-link--subtitles {
     margin-left: 440px;
   }
 
-  .presentation__video-tools-icon{
+  .presentation__video-tools-icon {
     fill: #ffffff;
   }
 
@@ -154,7 +154,7 @@
   .presentation__video-runer-cyrcle {
     width: 10px;
     height: 10px;
-    margin:-25px 0 0 204px;
+    margin: -25px 0 0 204px;
     border-radius: 5px;
     background-color: rgba(256, 256, 256, 1);
   }
