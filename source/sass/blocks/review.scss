@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   width: auto;
+
   @include reset();
   margin-bottom: 18px;
 }
@@ -37,7 +38,7 @@
 .review__group-header {
   @include review-text();
   width: 100%;
-  padding: 18px 0 24px 0px;
+  padding: 18px 0 24px 0;
   text-align: center;
 }
 
@@ -46,6 +47,7 @@
   flex-direction: column;
   align-items: stretch;
   width: 100%;
+
   @include reset();
   margin-bottom: 15px;
 }
@@ -209,7 +211,7 @@
 .review__checkbox-wrapper {
   height: 55px;
   line-height: 55px;
-  margin: 0 0 25px 0px;
+  margin: 0 0 25px 0;
 }
 
 .review__checkbox-caption {
@@ -272,6 +274,7 @@
 
 .review__textarea {
   @include reset();
+
   @include review-text();
   background-color: $input-bg;
   border: none;
@@ -314,7 +317,7 @@
   height: 58px;
   padding: 0;
   margin: 51px auto -4px auto;
-  border:none;
+  border: none;
   font-size: 21px;
   background-color: $menu-bg;
   color: $menu-color;
@@ -350,6 +353,7 @@
 
   .review__contacts {
     width: 100%;
+
     @include reset();
     margin-top: 50px;
     border: none;
@@ -385,6 +389,7 @@
   .review__radio-group {
     order: -1;
     box-sizing: border-box;
+
     @include reset();
     text-align: left;
     border: none;
@@ -468,7 +473,7 @@
   .review__group-header--textarea-style {
     width: 400px;
     margin: 0 auto;
-    padding: 0px;
+    padding: 0;
     text-align: center;
   }
 
@@ -531,6 +536,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     @include reset();
     margin-bottom: 18px;
   }
@@ -558,6 +564,7 @@
     width: 480px;
     order: -1;
     box-sizing: border-box;
+
     @include reset();
     text-align: left;
     border: none;
