@@ -34,7 +34,7 @@
   border-bottom: solid $border-group-color 1px;
 }
 
-.review__group-header{
+.review__group-header {
   @include review-text();
   width: 100%;
   padding: 18px 0 24px 0px;
@@ -145,7 +145,8 @@
   padding-left: 78px;
   margin-right: 0;
   line-height: 52px;
-  &::before{
+
+  &::before {
     content: "";
     display: inline-block;
     width: 55px;
@@ -154,12 +155,20 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     border-radius: 27px; /* половина w и h*/
+  }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
   }
 }
 
-.review__radio{
+.review__radio {
   display: none;
   /*transform:scale(4.4);
   opacity:0.9;
@@ -167,12 +176,16 @@
   border: none;*/
 }
 
-.review__radio:checked + .review__radio-caption:before {
+.review__radio:checked + .review__radio-caption::before {
   content: "\2022";
   color: #333333;
   font-size: 45px;
   text-align: center;
   line-height: 55px;
+}
+
+.review__radio:checked + .review__radio-caption:active::before {
+  color: #a4a4a4;
 }
 
 .review__checkbox-group {
@@ -208,9 +221,18 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     border-radius: 5px;
   }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
+  }
+
 }
 
 .review__checkbox {
@@ -218,12 +240,21 @@
   margin: 0 40px 0 20px;
 }
 
-.review__checkbox:checked + .review__checkbox-caption:before {
+.review__checkbox:checked + .review__checkbox-caption::before {
   content: "";
   display: block;
   width: 55px;
   height: 55px;
-  background: #F8F8F8 url("/img/icon-tick.svg") no-repeat center center;
+  background: #f8f8f8 url("/img/icon-tick.svg") no-repeat center center;
+}
+
+.review__checkbox:checked + .review__checkbox-caption:hover::before {
+  background: #e5e5e5 url("/img/icon-tick.svg") no-repeat center center;
+}
+
+.review__checkbox:checked + .review__checkbox-caption:active::before {
+  background: #b5b5b5 url("/img/icon-tick.svg") no-repeat center center;
+  opacity: 0.6;
 }
 
 .review__group-textarea {
@@ -359,7 +390,8 @@
 
   .review__radio-caption {
     padding-left: 78px;
-    &::before{
+
+    &::before {
       content: "";
       display: inline-block;
       width: 55px;
@@ -571,6 +603,7 @@
 
   .review__checkbox-group {
     width: 100%;
+
     @include reset();
     margin-top: 34px;
     border: none;
