@@ -33,9 +33,11 @@
 
   &:active {
     @include link-active();
-    /*border-bottom: 1px solid $menu-active-bg;
-    border-top: 1px solid $menu-active-bg;*/
   }
+}
+
+.main-nav__item-link--disabled {
+  @include link-disable();
 }
 
 .main-nav__menu-button-close {
@@ -111,13 +113,13 @@
 
     &:hover {
       background-color: $basic-bg;
-      color: $basic-color;
+      color: #81b3d2;
       border: none;
     }
 
     &:active {
       background-color: $basic-bg;
-      color: $basic-color;
+      color: #b2b2b2;
       border: none;
     }
   }
@@ -180,13 +182,13 @@
 
     &:hover {
       background-color: $basic-bg;
-      color: $basic-color;
+      color: #81b3d2;
       border: none;
     }
 
     &:active {
       background-color: $basic-bg;
-      color: $basic-color;
+      color: #b2b2b2;
       border: none;
     }
   }

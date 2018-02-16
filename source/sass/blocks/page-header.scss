@@ -3,7 +3,7 @@
   height: 436px;
 }
 
-.page-header__image-container {
+.page-header__image-wrapper {
   position: absolute;
   width: 100%;
   height: 159px;
@@ -18,11 +18,20 @@
     background-size: cover, auto;
   }
 }
+
+.page-header__image {
+  display: block;
+  width: 90%;
+  height: 40px;
+  margin: 50px auto 0 auto;
+}
+
 .page-header--home {
   position: relative;
   height: 670px;
 }
-.page-header__image-container-home {
+
+.page-header__image-wrapper--home {
   position: absolute;
   width: 100%;
   height: 390px;
@@ -38,13 +47,10 @@
   }
 }
 
-.page-header__image {
+.page-header__image--home {
   display: block;
-  margin: 50px auto 0 auto;
-}
-
-.page-header__image-home {
-  display: block;
+  width: 88%;
+  height: auto;
   margin: 90px auto 0 auto;
 }
 
@@ -57,18 +63,48 @@
   height: 80px;
 }
 
+.main-nav__menu-button-open {
+  visibility: hidden;
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header--closed-menu {
+    height: 212px;
+
+    &.page-header--home {
+      height: 446px;
+    }
+
+    & .main-nav__list {
+      display: none;
+    }
+
+    & .page-header__logo-wrapper {
+      top: 0;
+    }
+
+    & .page-header__image-wrapper {
+      top: 56px;
+    }
+
+    & .main-nav__menu-button-open {
+      visibility: visible;
+    }
+  }
+}
+
 @media (min-width: $width-tablet) {
   .page-header {
     height: 346px;
   }
 
-  .page-header__image-container {
+  .page-header__image-wrapper {
     position: absolute;
     width: 100%;
     height: 290px;
     top: 56px;
     background: url("/img/bg-intro-triangle-tablet.svg") center bottom no-repeat,
-        url("/img/bg-back-tablet@1x.jpg") center bottom no-repeat;
+      url("/img/bg-back-tablet@1x.jpg") center bottom no-repeat;
     background-size: 100%, auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -79,21 +115,23 @@
   }
 
   .page-header__image {
+    display: block;
+    width: 59.5%;/*460px;*/
+    height: auto;
     margin: 95px auto 0 auto;
-    width: 60%;
   }
 
   .page-header--home {
     height: 575px;
   }
 
-  .page-header__image-container-home {
+  .page-header__image-wrapper--home {
     position: absolute;
     width: 100%;
     height: 520px;
     top: 56px;
     background: url("/img/bg-intro-triangle-tablet.svg") center bottom no-repeat,
-        url("/img/bg-back-tablet@1x.jpg") center bottom no-repeat;
+      url("/img/bg-back-tablet@1x.jpg") center bottom no-repeat;
     background-size: 100%, auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -103,9 +141,9 @@
     }
   }
 
-  .page-header__image-home {
-      margin: 75px auto 0 auto;
-      width: 60%;
+  .page-header__image--home {
+    width: 60%;
+    margin: 75px auto 0 auto;
   }
 
   .page-header__logo-wrapper {
@@ -121,13 +159,13 @@
     height: 357px;
   }
 
-  .page-header__image-container {
+  .page-header__image-wrapper {
     position: absolute;
     width: 100%;
     height: 302px;
     top: 56px;
     background: url("/img/bg-intro-triangle-desktop.svg") center bottom no-repeat,
-        url("/img/bg-back-desktop@1x.jpg") center bottom no-repeat;
+      url("/img/bg-back-desktop@1x.jpg") center bottom no-repeat;
     background-size: 100%, auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -138,21 +176,23 @@
   }
 
   .page-header__image {
-      margin: 103px auto 0 auto;
-      width: 39%;
+    display: block;
+    width: 38%;
+    height: auto;
+    margin: 103px auto 0 auto;
   }
 
   .page-header--home {
     height: 575px;
   }
 
-  .page-header__image-container-home {
+  .page-header__image-wrapper--home {
     position: absolute;
     width: 100%;
     height: 520px;
     top: 56px;
     background: url("/img/bg-intro-triangle-desktop.svg") center bottom no-repeat,
-        url("/img/bg-back-desktop@1x.jpg") center bottom no-repeat;
+      url("/img/bg-back-desktop@1x.jpg") center bottom no-repeat;
     background-size: 100%, auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -162,9 +202,10 @@
     }
   }
 
-  .page-header__image-home {
-      margin: 75px auto 0 auto;
-      width: 39%;
+  .page-header__image--home {
+    display: block;
+    width: 39%;
+    margin: 75px auto 0 auto;
   }
 
   .page-header__logo-wrapper {
