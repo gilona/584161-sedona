@@ -56,6 +56,14 @@
 
 .review__send-button {
   @include review-text();
+
+  &:hover {
+    @include link-hover();
+  }
+
+  &:active {
+    @include link-active();
+  }
 }
 
 .review__caption {
