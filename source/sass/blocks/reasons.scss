@@ -78,11 +78,13 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  text-transform: uppercase;
 }
 
 .reasons__option-description {
   font-size: 14px;
   line-height: 21px;
+  text-transform: uppercase;
 }
 
 .reasons__option-icon-wrapper {
@@ -123,13 +125,15 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 26px;
+  text-transform: uppercase;
 }
 
 .reasons__other-item-description {
+  margin: 11px 32px;
   font-size: 14px;
   line-height: 21px;
   color: $description-color;
-  margin: 11px 32px;
+  text-transform: uppercase;
 }
 
 @media (min-width: $width-tablet) {

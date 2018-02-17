@@ -40,6 +40,7 @@
   width: 100%;
   padding: 18px 0 24px 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .review__wrapper-contacts {
@@ -61,6 +62,7 @@
   white-space: nowrap;
   flex-shrink: 0;
   margin-right: 12px;
+  text-transform: uppercase;
 }
 
 .review__caption--contacts-style {
@@ -86,7 +88,6 @@
 
   &:focus {
     background-color: #ffffff;
-    border: solid 2px #e5e5e5;
     outline: solid 4px #e5e5e5;
   }
 }
@@ -311,6 +312,7 @@
   background-color: $menu-bg;
   color: $menu-color;
   text-align: center;
+  text-transform: uppercase;
 
   &:hover {
     @include link-hover();
@@ -319,10 +321,15 @@
   &:active {
     @include link-active();
   }
+
+  &:disabled {
+    @include link-disable();
+  }
 }
 
 .review__note {
   display: none;
+  text-transform: uppercase;
 }
 
 @media (min-width: $width-tablet) {

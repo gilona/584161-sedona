@@ -124,6 +124,18 @@
     }
   }
 
+  .main-nav__item-link--active {
+    color: #766357;
+
+    &:hover {
+      color: #604e43;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
+  }
+
   .main-nav__menu-button-close {
     position: absolute;
     top: 0;
@@ -170,26 +182,6 @@
       width: 252px - 15px;
       padding: 0;
       padding-left: 15px;
-    }
-  }
-
-  .main-nav__item-link {
-    background-color: $basic-bg;
-    border: none;
-    color: $basic-color;
-    font-size: 14px;
-    font-weight: bold;
-
-    &:hover {
-      background-color: $basic-bg;
-      color: #81b3d2;
-      border: none;
-    }
-
-    &:active {
-      background-color: $basic-bg;
-      color: #b2b2b2;
-      border: none;
     }
   }
 
