@@ -44,7 +44,8 @@
     @include link-active();
   }
 }
-.search-hotels__map{
+
+.search-hotels__map {
   @include reset();
   position: relative;
   width: 100%;
@@ -52,18 +53,19 @@
   margin-top: 50px;
 }
 
-.search-hotels__map-image-wrapper{
+.search-hotels__map-image-wrapper {
   position: absolute;
   top: 0;
   left: 0;
 }
-.search-hotels__map-marker{
+
+.search-hotels__map-marker {
   position: absolute;
   top: 162px;
   left: 46%;
 }
 
-.search-hotels__interactive-map{
+.search-hotels__interactive-map {
   position: absolute;
   top: 0;
   left: 0;
@@ -106,7 +108,6 @@
     top: 164px;
     left: 48%;
   }
-
 }
 
 @media (min-width: $width-desktop) {

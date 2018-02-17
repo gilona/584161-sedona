@@ -263,7 +263,6 @@
 
 .review__textarea {
   @include reset();
-
   @include review-text();
   background-color: $input-bg;
   border: none;
