@@ -81,19 +81,19 @@
   box-sizing: border-box;
   flex-grow: 1;
   text-indent: 20px;
+  outline: 0;
+  border: solid 4px #e5e5e5;
+  padding: 0 0 4px 0;
 
   &:hover {
     background-color: #e5e5e5;
+    border-color: #e5e5e5;
   }
 
   &:focus {
     background-color: #ffffff;
-    outline: solid 4px #e5e5e5;
+    border-color: #e5e5e5;
   }
-}
-
-.review__value--contacts-style {
-  padding: 0 0 4px 3px;
 }
 
 .review_image-container--phone {

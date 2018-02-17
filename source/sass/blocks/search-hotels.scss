@@ -70,6 +70,8 @@
   top: 0;
   left: 0;
   z-index: 1000;
+  width: 100%;
+  border: none;
 }
 
 @media (min-width: $width-tablet) {
@@ -102,6 +104,7 @@
 
   .search-hotels__map {
     margin-top: 57px;
+    overflow: hidden;
   }
 
   .search-hotels__map-marker {
