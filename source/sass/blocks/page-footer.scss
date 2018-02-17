@@ -6,9 +6,8 @@
   align-items: flex-end;
   background-color: $basic-bg;
 }
-/*.page-footer__hashtag*/
 
-.page-footer b {
+.page-footer__hashtag {
   font-size: 21px;
   line-height: 26px;
   width: 320px;
@@ -16,7 +15,7 @@
   padding-top: 73px;
 }
 
-.page-footer--home b {
+.page-footer__hashtag--home {
   padding-top: 5px;
 }
 
@@ -111,7 +110,7 @@
     padding-top: 70px;
   }
 
-  .page-footer b {
+  .page-footer__hashtag {
     width: 162px;
     height: 160px;
     padding: 0;
@@ -128,7 +127,7 @@
   }
 
   .page-footer__copyright-link {
-    margin-bottom: -20px;
+    margin-bottom: -25px;
     margin-left: 6px;
   }
 
@@ -136,7 +135,7 @@
     text-transform: uppercase;
   }
 
-  .page-footer--home b {
+  .page-footer__hashtag--home {
     padding-top: 15px;
     text-transform: uppercase;
   }
@@ -169,7 +168,7 @@
     padding-top: 118px;
   }
 
-  .page-footer b {
+  .page-footer__hashtag {
     width: 136px;
     height: 205px - 128px;
     padding: 0;
@@ -188,10 +187,10 @@
   .page-footer__copyright-link {
     margin: 0;
     margin-left: 6px;
-    margin-top: 24px;
+    margin-top: 26px;
   }
 
-  .page-footer--home b {
+  .page-footer__hashtag--home {
     padding-top: 81px;
   }
 
