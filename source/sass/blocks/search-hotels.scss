@@ -9,6 +9,7 @@
   color: $basic-color;
   font-size: 21px;
   margin-top: 27px;
+  text-transform: uppercase;
 }
 
 .search-hotels__introduction {
@@ -18,6 +19,7 @@
   font-size: 14px;
   line-height: 24px;
   white-space: normal;
+  text-transform: uppercase;
 
   & br {
     display: none;
@@ -30,6 +32,7 @@
   height: 58px;
   margin: 33px auto 0 auto;
   line-height: 58px;
+  text-transform: uppercase;
 
   @include link-basic(21px);
 
@@ -41,28 +44,30 @@
     @include link-active();
   }
 }
-
-/*.search-hotels__map {
+.search-hotels__map{
   @include reset();
-  height: 350px;
-  margin-top: 50px;
-}
-
-.search-hotels__map-image {
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 352px;
+  margin-top: 50px;
 }
 
-.search-hotels__map-marker {
-  width: 27px;
-  height: 27px;
-  margin: -192px auto 0 auto;
-}*/
+.search-hotels__map-image-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.search-hotels__map-marker{
+  position: absolute;
+  top: 162px;
+  left: 46%;
+}
 
-.search-hotels__map {
-  @include reset();
-  height: 350px;
-  margin-top: 50px;
+.search-hotels__interactive-map{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 @media (min-width: $width-tablet) {
@@ -96,6 +101,12 @@
   .search-hotels__map {
     margin-top: 57px;
   }
+
+  .search-hotels__map-marker {
+    top: 164px;
+    left: 48%;
+  }
+
 }
 
 @media (min-width: $width-desktop) {
@@ -114,6 +125,7 @@
   }
 
   .search-hotels__map-marker {
-    margin-top: -190px;
+    top: 168px;
+    left: 49%;
   }
 }

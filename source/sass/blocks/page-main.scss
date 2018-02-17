@@ -19,16 +19,18 @@
   text-align: center;
   white-space: pre-wrap;
   margin: 0 32px;
+  text-transform: uppercase;
 }
 
 .page-main__introduction {
+  width: auto;
+  margin: 27px 22px 0 23px;
   background-color: $basic-bg;
   color: $description-color;
   line-height: 24px;
   font-size: 14px;
   text-align: center;
-  width: auto;
-  margin: 27px 22px 0 23px;
+  text-transform: uppercase;
 }
 
 .page-main__introduction--home {
