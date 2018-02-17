@@ -68,6 +68,16 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .page-header--nojs {
+    & .main-nav__menu-button-open {
+      display: none;
+    }
+
+    & .main-nav__menu-button-close {
+      display: none;
+    }
+  }
+
   .page-header--closed-menu {
     height: 212px;
 

@@ -81,14 +81,17 @@
   box-sizing: border-box;
   flex-grow: 1;
   text-indent: 20px;
+  outline: 0;
+  border: 4px solid #f2f2f2;
 
   &:hover {
     background-color: #e5e5e5;
+    border-color: #e5e5e5;
   }
 
   &:focus {
     background-color: #ffffff;
-    outline: solid 4px #e5e5e5;
+    border-color: #e5e5e5;
   }
 }
 
