@@ -6,11 +6,14 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Оставить отзыв о Седоне</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/pp-form.css">
+    <link rel="stylesheet" type="text/css" href="css/pp-photo.css">
     <link rel="stylesheet" href="pixel-glass/styles.css">
     <script src="/pixel-glass/script.js"></script>
   </head>
   <body>
+     <div style="display:none">
+        <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo" href="index.html">
@@ -163,32 +166,32 @@
         </div>
       </div>
     </main>
-    <footer class="page-footer">
-      <b class="page-footer__hashtag">#VISITSEDONA</b>
-      <ul class="page-footer__social-list">
+    <footer class="page-footer page-footer--home">
+      <b class="page-footer__hashtag page-footer__hashtag--home">#VISITSEDONA</b>
+      <ul class="page-footer__social-list page-footer__social-list--home">
           <li class="page-footer__social-item">
             <a class="page-footer__social-link page-footer__social-link--twitter" href="https://twitter.com" target="_blank">
-              <svg class="page-footer__social-image" width="17.5" height="14.663" viewBox="0 0 17.5 14.663">
-                <path d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.84-.538 1.478-.883 1.728.704.166 1.343-.48 1.343-.48-.175.977-1.035 1.746-1.61 1.977-.24 6.592-3.273 10.956-10.383 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.34.192 4.01-.412 4.835-1.15-.99-.293-2.76-.464-3.07-2.88.362.104.583.222 1.228.116C1.757 8.067.385 7.366.46 5.218c.295.32 1.1.523 1.382.46C1.117 5.445-.188 2.4.922.844c1.872 1.812 3.847 3.52 7.368 3.685.216-2.24 1.17-3.74 2.993-4.375z"/>
+              <svg class="page-footer__social-image" width="17.5" height="14.663">
+                <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__social-item">
             <a class="page-footer__social-link page-footer__social-link--facebook" href="https://ru-ru.facebook.com" target="_blank">
-              <svg class="page-footer__social-image" width="8.672" height="18.944" viewBox="0 0 8.672 18.944">
-                <path d="M6.275 3.356h2.398V0H5.795C2.655.18 1.54 2.387 1.948 6.114H0v3.518h1.96v9.312h3.836V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"/>
+              <svg class="page-footer__social-image" width="8.672" height="18.944">
+                <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__social-item">
             <a class="page-footer__social-link page-footer__social-link--youtube" href="https://www.youtube.com/?gl=RU&hl=ru" target="_blank">
-              <svg class="page-footer__social-image" width="19.979" height="14.015" viewBox="0 0 19.979 14.015">
-                <path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.035 10.392v-6.77l6.77 3.385-6.77 3.385z"/>
+              <svg class="page-footer__social-image" width="19.979" height="14.015">
+                <use xlink:href="#icon-youtube"></use>
               </svg>
             </a>
           </li>
       </ul>
-      <div class="page-footer__copyright">
+      <div class="page-footer__copyright page-footer__copyright--home">
         <span class="page-footer__copyright-text">РАЗРАБОТАНО</span>
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__copyright-image" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09">
@@ -197,6 +200,7 @@
         </a>
       </div>
     </footer>
-    <script src="js/manage_elements.js"></script>
+    <script src="js/manage-elements.min.js"></script>
+    <script src="js/picturefill.min.min.js"></script>
   </body>
 </html>
