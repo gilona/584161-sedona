@@ -74,7 +74,6 @@
 .review__value {
   @include review-text();
   background-color: $input-bg;
-  border: none;
   height: 58px;
   width: 280px - 58px;
   min-width: 0;
