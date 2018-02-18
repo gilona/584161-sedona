@@ -14,6 +14,7 @@ body {
   font-size: 14px;
   color: $basic-color;
   background-color: $basic-bg;
+  box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
 }
 
 @media (min-width: 768px) {
@@ -27,6 +28,5 @@ body {
   body {
     width: 1200px;
     min-width: 1200px;
-    box-shadow: 0 0 15px 5px rgba(0, 1, 1, 0.2);
   }
 }
