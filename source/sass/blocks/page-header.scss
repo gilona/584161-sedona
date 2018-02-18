@@ -33,6 +33,8 @@
 
 .page-header__image-wrapper--home {
   position: absolute;
+  display: flex;
+  align-items: flex-start;
   width: 100%;
   height: 390px;
   top: 280px;
@@ -51,7 +53,6 @@
   display: block;
   width: 88%;
   height: auto;
-  margin: 0 auto 0 auto;
   margin: 90px auto 0 auto;
 }
 
