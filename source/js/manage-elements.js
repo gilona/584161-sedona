@@ -8,6 +8,7 @@ if (blMap != null) {
 }
 
 pageHeader.classList.remove('page-header--nojs');
+pageHeader.classList.add('page-header--closed-menu');
 
 btnOpen.addEventListener('click', function() {
   if (pageHeader.classList.contains('page-header--closed-menu')) {

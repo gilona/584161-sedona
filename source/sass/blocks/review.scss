@@ -560,7 +560,7 @@
 
   .review__value--contacts-style {
     flex-grow: 0;
-    width: 259px;
+    width: 258px;
     padding-left: 2px;
   }
 
@@ -682,8 +682,10 @@
   }
 
   .review__send-button {
+    position: relative;
     width: 480px;
     padding: 0;
     text-align: center;
+    z-index: 10;
   }
 }
