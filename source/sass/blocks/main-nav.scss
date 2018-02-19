@@ -1,8 +1,8 @@
 .main-nav {
-  position: absolute;
   top: 0;
   width: 100%;
   background-color: $basic-bg;
+  order: -1;
 }
 
 .main-nav__list {
@@ -22,8 +22,10 @@
 
 .main-nav__item-link {
   height: 54px;
-  line-height: 54px;
-  display: block;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include link-basic(18px);
 
