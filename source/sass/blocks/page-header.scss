@@ -6,6 +6,8 @@
 }
 
 .page-header__image-wrapper {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 159px;
   top: 280px;
@@ -24,7 +26,8 @@
   display: block;
   width: 90%;
   height: 40px;
-  margin: 50px auto 0 auto;
+  /*margin: 50px auto 0 auto;*/
+  margin: 0 auto;
 }
 
 .page-header--home {
@@ -131,7 +134,8 @@
     display: block;
     width: 59.5%;/*460px;*/
     height: auto;
-    margin: 95px auto 0 auto;
+    /*margin: 95px auto 0 auto;*/
+    margin: 0 auto;
   }
 
   .page-header--home {
@@ -183,7 +187,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("/img/bg-intro-triangle-desktop.svg") center bottom no-repeat,
-        url("/img/bg-back-desctop@2x.jpg") center bottom no-repeat;
+        url("/img/bg-back-desktop@2x.jpg") center bottom no-repeat;
       background-size: 100%, auto;
     }
   }
@@ -192,7 +196,8 @@
     display: block;
     width: 38%;
     height: auto;
-    margin: 103px auto 0 auto;
+   /* margin: 103px auto 0 auto;*/
+    margin: 0 auto;
   }
 
   .page-header--home {
@@ -210,7 +215,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("/img/bg-intro-triangle-desktop.svg") center bottom no-repeat,
-        url("/img/bg-back-desctop@2x.jpg") center bottom no-repeat;
+        url("/img/bg-back-desktop@2x.jpg") center bottom no-repeat;
       background-size: 100%, auto;
     }
   }

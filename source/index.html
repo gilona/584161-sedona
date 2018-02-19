@@ -184,8 +184,11 @@
       <div class="search-hotels">
         <b class="search-hotels__slogan">ЗАИНТЕРЕСОВАЛИСЬ?</b>
         <p class="search-hotels__introduction">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-        <a class="search-hotels__link-search" href="search-hotel.html">НАЙТИ ГОСТИНИЦУ</a>
-        <div class="search-hotels__map search-hotels__map--nojs">
+        <!--a class="search-hotels__link-search" href="search-hotel.html">НАЙТИ ГОСТИНИЦУ</a-->
+        <form class="search-hotels__form" action="search-hotel.html">
+          <button class="search-hotels__link-search" type="submit">НАЙТИ ГОСТИНИЦУ</button>
+        </form>
+          <div class="search-hotels__map search-hotels__map--nojs">
             <div class="search-hotels__map-image-wrapper">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="/img/bg-map-desktop@1x.jpg 1x, /img/bg-map-desktop@2x.jpg.jpg 2x">

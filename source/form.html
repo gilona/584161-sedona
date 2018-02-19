@@ -80,13 +80,13 @@
                 <span class="review__caption-first">ТЕЛЕФОН*:</span>
                 <span class="review__caption-second">КОНТАКТНЫЙ ТЕЛЕФОН*:</span>
               </label>
-              <div class="review_image-container review_image-container--phone">
+              <div class="review__image-container review__image-container--phone">
                 <input class="review__value review__value--contacts-style review__value--phone" type="tel" id="phone-number" name="phone" required placeholder="Введите телефон">
               </div>
             </div>
             <div class="review__wrapper-contacts">
               <label class="review__caption review__caption--contacts-style" for="email">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
-              <div class="review_image-container review_image-container--email">
+              <div class="review__image-container review__image-container--email">
                 <input class="review__value review__value--contacts-style review__value--email" type="email" id="email" name="email" required placeholder="Введите e-mail">
               </div>
             </div>
@@ -147,28 +147,28 @@
           </div>
         </fieldset>
         <fieldset class="review__group-textarea">
-            <legend class="review__group-header review__group-header--textarea-style">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
-            <textarea class="review__textarea" name="emotions" placeholder="Опишите подробно все свои восторги" ></textarea>
+          <legend class="review__group-header review__group-header--textarea-style">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
+          <textarea class="review__textarea" name="emotions" placeholder="Опишите подробно все свои восторги" ></textarea>
         </fieldset>
         <button class="review__send-button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
         <p class="review__note">* - ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
       </form>
-      <div class="popup">
-        <div class="popup__container popup__container--failure" id="popup-failure">
-            <b class="popup__message">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
-            <p class="popup__description">ПРОВЕРЬТЕ ПОЛЯ, ВЫДЕЛЕННЫЕ КРАСНЫМ, СКОРЕЕ ВСЕГО ВЫ ЗАБЫЛИ ИХ ЗАПОЛНИТЬ</p>
-            <a href="#" class="popup__close-link">ОК</a>
+      <form class="popup popup--failure" id="popup-failure">
+        <b class="popup__message">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
+        <p class="popup__description">ПРОВЕРЬТЕ ПОЛЯ, ВЫДЕЛЕННЫЕ КРАСНЫМ, СКОРЕЕ ВСЕГО ВЫ ЗАБЫЛИ ИХ ЗАПОЛНИТЬ</p>
+        <button class="popup__ok-button" type="submit">ОК</button>
+      </form>
+      <form class="popup popup--success" id="popup-success">
+        <b class="popup__message">ВАШ ОТЗЫВ ОТПРАВЛЕН!</b>
+        <p class="popup__description">СПАСИБО ЗА ВАШЕ УЧАСТИЕ, ВАШ ОТЗЫВ УЖЕ ПОСТУПИЛ К НАМ. В БЛИЖАЙШЕЕ ВРЕМЯ МЫ ОПУБЛИКУЕМ ЕГО НА САЙТЕ.</p>
+        <div class="popup__button-wrapper">
+          <button class="popup__close-button" type="submit">ЗАКРЫТЬ ОКНО</button>
         </div>
-        <div class="popup__container popup__container--success" id="popup-success">
-            <b class="popup__message">ВАШ ОТЗЫВ ОТПРАВЛЕН!</b>
-            <p class="popup__description">СПАСИБО ЗА ВАШЕ УЧАСТИЕ, ВАШ ОТЗЫВ УЖЕ ПОСТУПИЛ К НАМ. В БЛИЖАЙШЕЕ ВРЕМЯ МЫ ОПУБЛИКУЕМ ЕГО НА САЙТЕ.</p>
-            <a href="#" class="popup__close-link">ЗАКРЫТЬ ОКНО</a>
-        </div>
-      </div>
+      </form>
     </main>
-    <footer class="page-footer page-footer--home">
-      <b class="page-footer__hashtag page-footer__hashtag--home">#VISITSEDONA</b>
-      <ul class="page-footer__social-list page-footer__social-list--home">
+    <footer class="page-footer">
+      <b class="page-footer__hashtag">#VISITSEDONA</b>
+      <ul class="page-footer__social-list">
           <li class="page-footer__social-item">
             <a class="page-footer__social-link page-footer__social-link--twitter" href="https://twitter.com" target="_blank">
               <svg class="page-footer__social-image" width="17.5" height="14.663">
@@ -191,7 +191,7 @@
             </a>
           </li>
       </ul>
-      <div class="page-footer__copyright page-footer__copyright--home">
+      <div class="page-footer__copyright">
         <span class="page-footer__copyright-text">РАЗРАБОТАНО</span>
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__copyright-image" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09">

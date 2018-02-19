@@ -75,7 +75,8 @@
   @include review-text();
   background-color: $input-bg;
   height: 58px;
-  width: 280px - 58px;
+  /*width: 280px - 58px;*/
+  width: 200px;
   min-width: 0;
   box-sizing: border-box;
   flex-grow: 1;
@@ -98,7 +99,7 @@
   padding: 0 0 4px 0px;
 }
 
-.review_image-container--phone {
+.review__image-container--phone {
   &::after {
     content: "";
     display: block;
@@ -109,7 +110,7 @@
   }
 }
 
-.review_image-container--email {
+.review__image-container--email {
   &::after {
     content: "";
     display: block;
@@ -160,7 +161,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-color: #f8f8f8;
+    background-color: #f2f2f2;
     border-radius: 27px; /* половина w и h*/
   }
 
@@ -169,7 +170,7 @@
   }
 
   &:active::before {
-    background-color: #d5d5d5;
+    background-color: #d5d5d5
   }
 }
 
@@ -227,7 +228,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-color: #f8f8f8;
+    background-color: #f2f2f2;
     border-radius: 5px;
   }
 
@@ -425,7 +426,6 @@
       position: absolute;
       left: 0;
       bottom: 0;
-      background-color: #f8f8f8;
       border-radius: 27px; /* половина w и h*/
     }
   }
@@ -607,7 +607,6 @@
       position: absolute;
       left: 5px;
       bottom: 0;
-      background-color: #f8f8f8;
       border-radius: 27px; /* половина w и h*/
     }
   }

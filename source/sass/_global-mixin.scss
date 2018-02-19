@@ -12,20 +12,24 @@
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  border: none;
 }
 
 @mixin link-hover() {
   background-color: $menu-hover-bg;
+  border: none;
 }
 
 @mixin link-active() {
   background-color: $menu-active-bg;
   color: rgba(256, 256, 256, 0.3);
+  border: none;
 }
 
 @mixin link-disable() {
   background-color: $menu-disable-bg;
   color: $menu-color;
+  border: none;
 }
 
 @mixin review-text() {

@@ -27,9 +27,11 @@
 }
 
 .presentation__video-tools-wrapper {
+  position: relative;
   width: 280px;
   height: 111px;
   margin: -50px auto 0 auto;
+  z-index: 1000;
 }
 
 .presentation__video-tools {
@@ -88,7 +90,7 @@
 @media (min-width: $width-tablet) {
   .presentation {
     height: 740px;
-    width: 647px;
+    width: 650px;
     padding-top: 65px;
     margin: 0 auto;
   }
@@ -113,7 +115,7 @@
   }
 
   .presentation__video-tools-wrapper {
-    width: 647px;
+    width: 650px;
   }
 
   .presentation__video-tools {
