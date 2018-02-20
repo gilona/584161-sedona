@@ -96,7 +96,7 @@
 }
 
 .review__value--contacts-style {
-  padding: 0 0 4px 0px;
+  padding: 0 0 4px 0;
   width: 222px;
 }
 
@@ -172,7 +172,7 @@
   }
 
   &:active::before {
-    background-color: #d5d5d5
+    background-color: #d5d5d5;
   }
 }
 
