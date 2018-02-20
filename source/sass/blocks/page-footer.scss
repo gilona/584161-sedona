@@ -13,7 +13,6 @@
   line-height: 26px;
   width: 320px;
   height: 16px;
-  /*padding-top: 73px;*/
 }
 
 .page-footer__social-list {
@@ -21,8 +20,7 @@
   height: 49px;
 
   @include reset();
-   margin: 45px auto 39px auto;
-  /*margin: 0 auto;*/
+  margin: 45px auto 39px auto;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -35,7 +33,6 @@
   background: $menu-bg;
   display: flex;
   align-items: center;
-  /*padding-top: 16px;*/
 
   &:hover {
     background-color: $menu-hover-bg;
@@ -73,7 +70,6 @@
 }
 
 .page-footer__copyright-link {
-  width: 26px;
   margin-left: 5px;
 
   &:hover .page-footer__copyright-image {
@@ -92,7 +88,6 @@
     padding: 36px 0;
     margin: 0 auto;
     align-items: center;
-    /*line-height: 121px;*/
   }
 
   .page-footer__social-list {
@@ -100,7 +95,6 @@
     height: 47px;
     padding: 0;
     margin: 0 auto;
-    /*padding-top: 70px;*/
   }
 
   .page-footer__hashtag {
@@ -108,7 +102,6 @@
     height: 47px;
     padding: 20px 0 0 0;
     text-align: left;
-    /*padding-top: 90px;*/
   }
 
   .page-footer__copyright {
@@ -130,7 +123,6 @@
     width: 1023px;
     margin: 0;
     margin-left: 133px;
-    /*line-height: 121px;*/
     justify-content: space-between;
   }
 
@@ -139,7 +131,6 @@
     height: 47px;
     padding: 0;
     margin: 0;
-    /*padding-top: 118px;*/
   }
 
   .page-footer__hashtag {
@@ -147,7 +138,6 @@
     height: 47px;
     padding: 20px 0 0 0;
     margin: 0;
-    /*padding-top: 128px;*/
   }
 
   .page-footer__copyright {
@@ -155,7 +145,6 @@
     height: 47px;
     padding: 0;
     margin: 0;
-    /*padding-top: 75px;*/
   }
 
   .page-footer__copyright-link {
