@@ -28,9 +28,6 @@
 }
 
 .search-hotels__link-search {
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
   width: 280px;
   height: 58px;
   margin: 33px auto 0 auto;
@@ -45,6 +42,10 @@
 
   &:active {
     @include link-active();
+  }
+
+  &:disabled {
+    @include link-disable();
   }
 }
 
