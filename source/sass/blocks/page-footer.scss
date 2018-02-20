@@ -21,7 +21,8 @@
   height: 49px;
 
   @include reset();
-  margin: 45px auto 39px auto;
+   margin: 45px auto 39px auto;
+  /*margin: 0 auto;*/
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -98,6 +99,7 @@
     width: 152px;
     height: 47px;
     padding: 0;
+    margin: 0 auto;
     /*padding-top: 70px;*/
   }
 

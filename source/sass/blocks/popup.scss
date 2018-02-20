@@ -1,14 +1,18 @@
 .popup {
-  position: absolute;
+  position: fixed;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
   text-transform: uppercase;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: solid 1px;
   background-color: $basic-bg;
+  z-index: 50;
+  box-shadow: 0px 7px 28px 0px rgba(0, 0, 0, 0.15);
 }
 
 .popup--success {
@@ -27,8 +31,8 @@
   width: 320px - 40px;
   height: 282px - 48px - 34px;
   padding: 48px 20px 34px 20px;
-
 }
+
 .popup__message {
   font-size: 18px;
   font-weight: bold;
@@ -63,8 +67,7 @@
     line-height: 40px;
   }
 
-  .popup--success{
-    left: 60px;
+  .popup--success {
     width: 650px;
     height: 350px - 65px;
     margin: 0 auto;
@@ -90,7 +93,6 @@
   }
 
   .popup--failure {
-    left: 180px;
     width: 400px;
     height: 348px - 66px - 49px;
     margin: 0 auto;
@@ -111,15 +113,5 @@
     width: 458px;
     height: 56px;
     margin: 0 auto;
-  }
-}
-
-@media (min-width: $width-desktop) {
-  .popup--success{
-    left: 250px;
-  }
-
-  .popup--failure {
-    left: 370px;
   }
 }
