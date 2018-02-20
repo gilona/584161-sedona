@@ -82,8 +82,8 @@
 }
 
 .photos__like-icon {
-  fill: #000000;
-  fill-opacity: 0.3;
+  fill: rgba(0, 0, 0, 0.3);
+  /*fill-opacity: 0.3;*/
 }
 
 .photos__like-counter {
@@ -208,7 +208,7 @@
   }
 
   .photos__like-icon {
-    fill: #ffffff;
-    fill-opacity: 1;
+    fill: rgba(256, 256, 256, 1);
+    /*fill-opacity: 1;*/
   }
 }
