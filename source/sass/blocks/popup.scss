@@ -49,12 +49,14 @@
 
 .popup__ok-button {
   @include link-basic(18px);
+  line-height: 26px;
   width: 180px;
   height: 60px;
 }
 
 .popup__close-button {
   @include link-basic(18px);
+  line-height: 26px;
   width: 280px;
   height: 60px;
   margin: 0 auto;
@@ -104,13 +106,20 @@
     }
 
     & .popup__description {
-      width: 280px;
+      width: 278px;
       margin: 0 auto;
     }
   }
 
+  .popup__ok-button {
+    @include link-basic(21px);
+    line-height: 26px;
+    width: 272px;
+    height: 60px;
+  }
+
   .popup__close-button {
-    @include link-basic(18px);
+    @include link-basic(21px);
     width: 458px;
     height: 56px;
     margin: 0 auto;
