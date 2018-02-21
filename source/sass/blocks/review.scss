@@ -75,7 +75,6 @@
   @include review-text();
   background-color: $input-bg;
   height: 58px;
-  /*width: 280px - 58px;*/
   width: 200px;
   min-width: 0;
   box-sizing: border-box;
@@ -137,14 +136,11 @@
 
 .review__radio-wrapper {
   height: 55px;
-  /*line-height: 55px;*/
   margin: 0 0 14px 0;
 }
 
 .review__radio-caption {
   @include review-text();
-  /*display: flex;
-  align-items: center;*/
   display: inline-block;
   cursor: pointer;
   position: relative;
