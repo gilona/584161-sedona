@@ -80,6 +80,12 @@
   }
 }
 
+.page-footer__copyright--home {
+  & .page-footer__copyright-link {
+    padding-top: 10px;
+  }
+}
+
 @media (min-width: $width-tablet) {
   .page-footer {
     width: 648px;
@@ -115,6 +121,12 @@
     margin-bottom: -5px;
     margin-left: 6px;
   }
+
+  .page-footer__copyright--home {
+    & .page-footer__copyright-link {
+      padding-top: 0;
+    }
+  }
 }
 
 @media (min-width: $width-desktop) {
@@ -149,5 +161,11 @@
   .page-footer__copyright-link {
     margin: 0;
     margin-left: 6px;
+  }
+
+  .page-footer__copyright--home {
+    & .page-footer__copyright-text {
+      padding-bottom: 10px;
+    }
   }
 }
